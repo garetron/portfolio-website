@@ -25,6 +25,7 @@
 /* Set up custom color variables */
 :root {
   --default-gray: #4a4a4a;
+  --divider-gray: #C3BFBF;
   --teal0: #4FBDAB;
   --teal1: #ACEDE2;
   --teal2: #78D7C7;
@@ -35,6 +36,7 @@
   --yellow2: #FFD58E;
   --yellow3: #FEBC4C;
   --yellow4: #E69E24;
+  --header: #f9f9f9;
 }
 
 * {
@@ -55,12 +57,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.7em;
-  font-weight: 600;
+  font-size: 2.2em;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 1.8em;
   font-weight: 500;
 }
 
@@ -77,17 +79,6 @@ h4 {
 
 img {
   width: 100%;
-}
-
-#logo {
-  color: var(--default-gray);
-}
-
-#logo:hover,
-#logo:focus,
-#logo:active {
-  text-decoration: none;
-  color: var(--yellow4);
 }
 
 
@@ -170,6 +161,7 @@ header {
   text-align: right;
 }
 
+
 /* LAYOUT STYLING */
 
 .container {
@@ -184,9 +176,99 @@ header {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 1px solid var(--divider-gray);
 }
 
 #hero h1 {
   text-align: center;
+  margin: 0 0 .6em 0;
+}
+
+#hero {
+  background-color: var(--header);
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid var(--divider-gray)
+}
+
+header {
+  background-color: var(--header);
+  /* border-bottom: 1px solid #d9d9d9; */
+  box-shadow: 0px 4px 8px 0px #00000026;
+  position: relative;
+}
+/*
+main {
+  padding-top: 113px;
+  margin-top: 113px:
+} */
+
+.logo {
+  color: var(--default-gray);
+  /* max-width: 250px; */
+  text-align: center;
+  padding: 16px 0 0 0;
+  width: 100%;
+  display: inline-block;
+  font-size: 0.8em;
+
+}
+
+.logo h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.logo:hover,
+.logo:active,
+.logo:visited {
+  color: var(--default-gray);
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#logo:hover,
+#logo:focus,
+#logo:active {
+  text-decoration: none;
+  color: var(--yellow4);
+}
+
+.button-contact {
+  text-align: center;
+  margin: 24px 0px;
+  /* position: relative;   */
+}
+
+#contact ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#contact ul li {
+  display: inline-block;
+  padding: 0 16px;
 }
