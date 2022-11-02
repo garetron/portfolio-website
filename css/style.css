@@ -133,6 +133,7 @@ a:active {
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: inline-block;
   font-weight: 500;
   transition: background-color 0.5s, color 0.3s;
 }
@@ -255,10 +256,9 @@ nav ul li a {
   color: var(--yellow4);
 }
 
-.button-contact {
+.contact-wrap {
+  margin: 0 auto;
   text-align: center;
-  margin: 24px 0px;
-  /* position: relative;   */
 }
 
 #contact ul {
@@ -266,9 +266,11 @@ nav ul li a {
   padding-left: 0;
   width: 100%;
   text-align: center;
+  margin: 24px 0;
+  display: inline-block;
 }
 
 #contact ul li {
   display: inline-block;
-  padding: 0 16px;
+  padding: 0 24px;
 }
