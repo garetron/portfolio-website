@@ -158,9 +158,35 @@ header {
 
 }
 
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
 /* LAYOUT STYLING */
 
 .container {
   /* left and right padding */
-  padding: 0 15px;
+  padding: 0 16px;
+}
+
+.row {
+  /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  text-align: center;
 }
