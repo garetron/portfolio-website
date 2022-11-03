@@ -33,7 +33,7 @@
 <body>
 
   <header>
-    <div class="">
+    <div class="container">
       <a href="#" class="logo">
         <!-- <img src="https://via.placeholder.com/250x80" alt="Gareth Hobbs Logo"> -->
         <h2>Gareth Hobbs</h2>
@@ -49,13 +49,13 @@
 
   </header>
 
-  <main>
+  <main id="otto">
     <!-- HERO SECTION -->
     <!-- section -->
     <div class="">
       <!-- wrapper -->
-      <div class="">
-        <h1>Otto</h1>
+      <div class="container">
+        <h1 class="center">Otto</h1>
         <h3>Otto is a native mobile app designed to help users save money for upcoming expenses. I created UI/UX designs in addition to developing a brand identity and guidelines.</h3>
         <!-- <img src="https://via.placeholder.com/608x536" alt="Otto hero Image"> -->
         <picture>
@@ -66,18 +66,19 @@
     </div>
 
     <!-- stat section -->
-    <div class="">
+    <div class="section-spacer">
       <!-- wrapper -->
-      <div class="">
+      <div class="container">
         <!-- column 1 -->
-        <div class="">
-          <ul>
+        <div>
+          <ul class="stats1">
             <li>Case study</li>
             <li>My Role: UI/UX Designer</li>
           </ul>
         </div>
         <!-- column 2 -->
-        <div class="">
+        <div>
+          <p id="tools-label"><strong>Tools and skills used</strong></p>
           <ul>
             <li>Figma</li>
             <li>Photoshop</li>
@@ -96,13 +97,13 @@
     <!-- Overview Section -->
     <div class="">
       <!-- wrapper -->
-      <div class="">
+      <div class="container">
 
         <!-- overview row -->
         <div class="">
           <!-- icon column -->
-          <div class="">
-            <svg width="64" height="58" viewBox="0 0 64 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="intro-icon">
+            <svg width="64" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_118_741)">
                 <path d="M0.100098 46.8367H29.0627L19.6713 55.4808L21.8205 57.7813L31.9256 48.5024L41.9514 57.7836L44.1006 55.4831L34.7903 46.8367H63.7505V0.0393066H0.102604L0.100098 46.8367ZM3.2819 3.21116H60.5686V43.6624H3.2819V3.21116Z"
                   fill="#4365B1" />
@@ -119,16 +120,21 @@
           </div>
           <!-- Text Column -->
           <div class="">
-            <h4>Overview</h4>
-            <h3>An app to help save money for an upcoming event.</h3>
-            <p>I created a proof-of-concept design for a native mobile app designed to help people save for an upcoming purchase or expense. Additionally, I made a brand guidelines document to maintain consistency across platforms.</p>
+            <div class="intro-header">
+              <h4 class="margin16">Overview</h4>
+            </div>
+            <div class="center">
+              <h3 class="margin16">An app to help save money for an upcoming event.</h3>
+            </div>
+            <p class="section-spacer">I created a proof-of-concept design for a native mobile app designed to help people save for an upcoming purchase or expense. Additionally, I authored a brand guidelines document to maintain consistency across
+              platforms.</p>
           </div>
         </div>
 
         <!-- The Problem Row -->
-        <div class="">
+        <div>
           <!-- icon column -->
-          <div class="">
+          <div class="intro-icon">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_118_751)">
                 <path
@@ -144,9 +150,14 @@
           </div>
           <!-- Text Column -->
           <div class="">
-            <h4>The Problem</h4>
-            <h3>How do you make saving money easy?</h3>
-            <p>Saving money is hard, partly because it can be challenging to keep track of your bills, expenses, and income. When looking at your bank balance, it may be hard to calculate how much you can spend freely while still setting aside
+            <div class="intro-header">
+              <h4 class="margin16">The Problem</h4>
+            </div>
+            <div class="center">
+              <h3 class="margin16">How do you make saving money easy?</h3>
+            </div>
+            <p class="section-spacer">Saving money is hard, partly because it can be challenging to keep track of your bills, expenses, and income. When looking at your bank balance, it may be hard to calculate how much you can spend freely while
+              still setting aside
               funds for bills, rent, or upcoming expenses.</p>
           </div>
         </div>
@@ -154,7 +165,7 @@
         <!-- Hypothesis Row -->
         <div class="">
           <!-- icon column -->
-          <div class="">
+          <div class="intro-icon">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_118_747)">
                 <path
@@ -172,11 +183,15 @@
           </div>
           <!-- Text Column -->
           <div class="">
-            <h4>Hypothesis</h4>
-            <h3>People want the assistance of an expert.</h3>
+            <div class="intro-header">
+              <h4 class="margin16">Hypothesis</h4>
+            </div>
+            <div class="center">
+              <h3 class="margin16">People want the assistance of an expert.</h3>
+            </div>
             <p>My working hypothesis was that many people would happily hand over their financial planning to an experienced professional if they felt this was feasible or affordable. If an app can carry out financial planning with minimal user
               involvement, many people would want to take advantage of that service. Key messaging for this approach, as defined by the project brief, included:</p>
-            <ul>
+            <ul class="section-spacer">
               <li>A finance app you can trust.</li>
               <li>A financial advisor in your pocket.</li>
               <li>Anyone can save money.</li>
@@ -184,13 +199,13 @@
           </div>
         </div>
       </div>
-      <hr class="solid">
+      <!-- <hr class="solid"> -->
     </div>
 
     <!-- My Approach Section -->
     <div class="">
       <!-- Top Section -->
-      <div class="">
+      <div class="container">
         <!-- wrapper -->
         <div class="">
           <h2>My Approach</h2>
@@ -206,7 +221,7 @@
         </div>
       </div>
       <!-- Bottom Image section -->
-      <div class="">
+      <div class="container">
         <!-- wrapper -->
         <div class="">
           <picture>
@@ -222,10 +237,10 @@
     <!-- Low Fidelity Wireframes Section -->
 
     <!-- Top Section -->
-    <div class="">
+    <div class="otto-light">
       <!-- wrapper -->
-      <div class="">
-        <h2>Low Fidelity Wireframes</h2>
+      <div class="container">
+        <h2 class="block-header-black">Low Fidelity Wireframes</h2>
         <p>Once I have determined how the app would function, I began by sketching out the low-fidelity wireframes for the central saving functions of the app. These were summarized in the design brief as the following:</p>
         <!-- User goal paper slips wrapper -->
         <div class="">
@@ -234,7 +249,7 @@
             <!-- column 1 -->
             <div class="">
               <!-- text wrapper -->
-              <div class="">
+              <div class="paper-slip">
                 <ul>
                   <li>As a user, I want to receive a personalized saving plan so that I can save enough money to reach my goal in time.</li>
                 </ul>
@@ -243,7 +258,7 @@
             <!-- column 2 -->
             <div class="">
               <!-- text wrapper -->
-              <div class="">
+              <div class="paper-slip">
                 <ul>
                   <li>As a user, I want to see an overview of how much my finances have changed and how much I am saving throughout the saving period so that I can stay on track.</li>
                 </ul>
@@ -251,11 +266,11 @@
             </div>
           </div>
           <!-- bottom row -->
-          <div class="">
+          <div class="padding-spacer">
             <!-- column 1 -->
             <div class="">
               <!-- text wrapper -->
-              <div class="">
+              <div class="paper-slip">
                 <ul>
                   <li>As a user, I want to see a dashboard of my finances clearly and visually so that I can see how much I am spending on what at a glance.</li>
                 </ul>
@@ -270,11 +285,11 @@
     <!-- BOTTOM SECTION LOW FIDELITY WIREFRAMES -->
 
     <!-- Section -->
-    <div class="">
+    <div class="otto-blue">
       <!-- wrapper -->
-      <div class="">
+      <div class="container">
         <picture>
-          <img src="img/otto/lofid_1.png" alt="low fidelity wireframes">
+          <img class="padding-top" src="img/otto/lofid_1.png" alt="low fidelity wireframes">
         </picture>
         <picture>
           <img src="img/otto/lofid_2.png" alt="low fidelity wireframes">
@@ -282,8 +297,8 @@
         <picture>
           <img src="img/otto/lofid_3.png" alt="low fidelity wireframes">
         </picture>
-        <picture>
-          <img src="img/otto/lofid_4.png" alt="low fidelity wireframes">
+        <picture class="small-wireframe">
+          <img class="section-spacer" class="img-66" src="img/otto/lofid_4.png" alt="low fidelity wireframes">
         </picture>
       </div>
     </div>
@@ -291,20 +306,20 @@
     <!-- BRAND GUIDELINES -->
 
     <!-- Top Section -->
-    <div class="">
+    <div class="container">
       <h2>Brand Guidelines</h2>
       <p>At this point, I also developed a set of brand guidelines to focus the rest of the design process and define the app's personality. I began by articulating the brand’s guiding principles:</p>
       <!-- brand guidelines box -->
-      <div class="">
+      <div class="brand-box">
         <!-- Wrapper -->
-        <div class="">
-          <h4>Welcoming</h4>
+        <div class="box-padding">
+          <h4 class="intro-header">Welcoming</h4>
           <p>You don’t need a high income or an economics degree to use Otto. Everyone needs some help to reach their unique financial goals, and that’s where we come in.</p>
-          <h4>Trustworthy</h4>
+          <h4 class="intro-header">Trustworthy</h4>
           <p>Otto takes financial privacy seriously. We protect your data with industry-leading encryption and never share your information with third parties.</p>
-          <h4>Smart</h4>
+          <h4 class="intro-header">Smart</h4>
           <p>Never look at your calculator again. Otto uses sophisticated algorithms to figure out how much money needs to be put aside and then takes care of it for you. Otto will not remove money if your balance is low.</p>
-          <h4>Easy</h4>
+          <h4 class="intro-header">Easy</h4>
           <p>Financial planning doesn’t need to be difficult, and Otto makes saving and investing simple and rewarding. Let Otto handle your finances and give you a leg up on your goals.</p>
         </div>
       </div>
@@ -312,31 +327,22 @@
     <!-- Bottom Section Otto brand guidlines images -->
     <div class="">
       <picture>
-        <source srcset="img/otto/brand_guidelines_document.png" media="(max-width:767px)">
+        <source srcset="img/otto/brand_guidelines_document_mobile.png" media="(max-width:767px)">
         <img src="img/otto/brand_guidelines_document@2x.png" alt="Otto brand guidelines document images">
       </picture>
     </div>
 
     <!-- LOGO DESIGN SECTION -->
-    <!-- Left Side (Images) -->
-    <div class="">
-      <!-- wrapper -->
-      <div class="">
-        <picture>
-          <source srcset="img/otto/logo_sketches.jpg" media="(max-width:767px)">
-          <img src="img/otto/logo_sketches@2x.jpg" alt="Otto logo sketches">
-        </picture>
-      </div>
-    </div>
+
     <!-- Right Side (Text) -->
-    <div class="">
+    <div>
       <!-- wrapper -->
-      <div class="">
+      <div class="container">
         <h2>Logo Design</h2>
         <p>I developed the name Otto to humanize the app by using a person’s name while also giving a nod to the automatic functionality of the app. While designing the logo, I sought to include a high density of meanings resulting in an engaging and
-          memorable logo. Some references in the logo include:</p>
+          memorable logo.</p>
         <!-- logo row -->
-        <div class="">
+        <div class="otto-logos">
           <!-- wrapper -->
           <div class="">
             <picture>
@@ -346,127 +352,139 @@
             </picture>
           </div>
         </div>
+        <p>Some references in the logo include:</p>
         <p><strong>The letter O:</strong> Otto's initial.</p>
         <p><strong>A pie chart:</strong> Representing the app’s financial saving tools.</p>
         <p><strong>A circle:</strong> Representing holistic understanding and simplicity.</p>
-        <p><strong>An upward arrow:</strong> Representing growth and prosperity.</p>
+        <p class="section-spacer"><strong>An upward arrow:</strong> Representing growth and prosperity.</p>
+      </div>
+    </div>
+
+    <!-- Left Side (Images) -->
+    <div class="otto-blue">
+      <!-- wrapper -->
+      <div class="container">
+        <picture>
+          <source class="padding-top" srcset="img/otto/logo_sketches.png" media="(max-width:767px)">
+          <img class="picture-padding" class="padding-spacer" src="img/otto/logo_sketches@2x.png" alt="Otto logo sketches">
+        </picture>
       </div>
     </div>
 
     <!-- USER TESTING SECTION -->
     <!-- section -->
-    <div class="">
+    <div class="padding-top" id="otto-user-testing">
       <!-- wrapper -->
-      <div class="">
+      <div class="container">
         <h2>User Testing / Mid-Fidelity Wireframes</h2>
         <p>Next, I created mid-fidelity wireframes and a clickable prototype in Figma to conduct user testing and identify pain points. I have included the synthesized takeaways from this research below.</p>
         <!-- Pain Point Chart -->
-        <div class="">
+        <div class="pain-chart">
           <!-- row 1 Pain Point Chart Headers -->
-          <div class="">
+          <div class="headers">
             <!-- Column 1 -->
-            <h3>Pain Point</h3>
+            <h3 class="col-1">Pain Point</h3>
             <!-- Column 2 -->
-            <h3>Priority (1-5)</h3>
+            <h3 class="col-2">Priority (1-5)</h3>
             <!-- Column 3-->
-            <h3>Design Solution</h3>
+            <h3 class="col-3">Design Solution</h3>
           </div>
 
           <!-- row 2 Pain Point #1-->
-          <div class="">
+          <div class="post-it-row">
             <!-- Column 1 post it -->
-            <div class="">
+            <div class="post-it-column-1">
               <!-- Wrapper -->
-              <div class="">
+              <div class="yellow-post-it">
                 <p>Users are confused by the ‘connect bank’ screen after clicking ‘create goal.’</p>
               </div>
             </div>
             <!-- Column 2 post it -->
-            <div class="">
+            <div class="post-it-column-2">
               <!-- Wrapper -->
-              <div class="">
+              <div class="pink-post-it">
                 <p><strong>5 - Critical</strong></p>
               </div>
             </div>
             <!-- Column 3 post it -->
-            <div class="">
+            <div class="post-it-column-3">
               <!-- Wrapper -->
-              <div class="">
+              <div class="green-post-it">
                 <p>Make this screen part of the onboarding process. Consider allowing to skip.</p>
               </div>
             </div>
           </div>
 
           <!-- row 3 Pain Point #2-->
-          <div class="">
+          <div class="post-it-row">
             <!-- Column 1 post it -->
-            <div class="">
+            <div class="post-it-column-1">
               <!-- Wrapper -->
-              <div class="">
+              <div class="yellow-post-it">
                 <p>The “create goal” button text is confusing on the plan confirmation screen.</p>
               </div>
             </div>
             <!-- Column 2 post it -->
-            <div class="">
+            <div class="post-it-column-2">
               <!-- Wrapper -->
-              <div class="">
+              <div class="pink-post-it">
                 <p><strong>4 - Critical</strong></p>
               </div>
             </div>
             <!-- Column 3 post it -->
-            <div class="">
+            <div class="post-it-column-3">
               <!-- Wrapper -->
-              <div class="">
+              <div class="green-post-it">
                 <p>Adjust wording to include “save” and consider adding a caption beneath.</p>
               </div>
             </div>
           </div>
 
           <!-- row 4 Pain Point #3-->
-          <div class="">
+          <div class="post-it-row">
             <!-- Column 1 post it -->
-            <div class="">
+            <div class="post-it-column-1">
               <!-- Wrapper -->
-              <div class="">
+              <div class="yellow-post-it">
                 <p>Users wanted to see whether they were on track with their goals from the home screen.</p>
               </div>
             </div>
             <!-- Column 2 post it -->
-            <div class="">
+            <div class="post-it-column-2">
               <!-- Wrapper -->
-              <div class="">
+              <div class="pink-post-it">
                 <p><strong>3 - Nice to have</strong></p>
               </div>
             </div>
             <!-- Column 3 post it -->
-            <div class="">
+            <div class="post-it-column-3">
               <!-- Wrapper -->
-              <div class="">
+              <div class="green-post-it">
                 <p>Replace the percentage metric with a tag confirming the goal is on schedule.</p>
               </div>
             </div>
           </div>
 
           <!-- row 5 Pain Point #4-->
-          <div class="">
+          <div class="post-it-row">
             <!-- Column 1 post it -->
-            <div class="">
+            <div class="post-it-column-1">
               <!-- Wrapper -->
-              <div class="">
+              <div class="yellow-post-it">
                 <p>The category input is seen as unnecessary when creating a goal.</p>
               </div>
             </div>
             <!-- Column 2 post it -->
-            <div class="">
+            <div class="post-it-column-2">
               <!-- Wrapper -->
-              <div class="">
+              <div class="pink-post-it">
                 <p><strong>1 - Low prioty</strong></p>
               </div>
             </div>
             <!-- Column 3 post it -->
-            <div class="">
+            <div class="post-it-column-3">
               <!-- Wrapper -->
-              <div class="">
+              <div class="green-post-it">
                 <p>This opinion may change with the introduction of icons and advanced metrics. Test again at a later point.</p>
               </div>
             </div>
@@ -480,103 +498,112 @@
     <!-- MID FIDELITY WIREFRAMES section -->
 
     <!-- section -->
-    <div class="">
+    <div class="otto-dark">
       <!-- wrapper -->
-      <div class="">
-        <h2>Mid-Fidelity Wireframes Used in User Tests</h2>
-        <picture>
-          <source srcset="img/otto/mid_fid.png" media="(max-width:767px)">
-          <img src="img/otto/mid_fid@2x.png" alt="Otto mid fidelity images">
-        </picture>
+      <div class="container">
+        <h3 class="block-header">Mid-Fidelity Wireframes Used in User Tests</h3>
+        <!-- mid-fid screen wrapper -->
+        <div class="padding-spacer">
+          <picture>
+            <img src="img/otto/mid_fid_1.png" alt="Otto mid fidelity images">
+          </picture>
+          <picture>
+            <img src="img/otto/mid_fid_2.png" alt="Otto mid fidelity images">
+          </picture>
+        </div>
+
       </div>
     </div>
 
     <!-- Final UI Design -->
 
-    <div class="">
-      <picture>
-        <source srcset="img/otto/final_ui.jpg" media="(max-width:767px)">
-        <img src="img/otto/final_ui@2x.jpg" alt="Otto final UI image">
-      </picture>
+    <div id="final-otto-image">
       <!-- Wrapper -->
-      <div class="">
+      <div class="container">
         <h2>Final UI Design</h2>
         <p>The final UI Design for Otto incorporates user test results and consistent brand guidelines. It adheres to the core design goals of the brief. Simplicity is the overarching goal, and a polished UI establishes the app as trustworthy and
           sophisticated.</p>
         <p>Icons and language are friendly and intuitive. I chose blue as a primary brand color due to established psychological associations with trustworthiness and simplicity.</p>
       </div>
+      <picture>
+        <source srcset="img/otto/final_ui_mobile.jpg" media="(max-width:767px)">
+        <img src="img/otto/final_ui@2x.jpg" alt="Otto final UI image">
+      </picture>
     </div>
 
     <!-- DESIGN OF PRIMARY USER FLOW SECTION -->
     <!-- Section (black background) -->
-    <div class="">
+    <div class="black-radial">
       <!-- wrapper -->
-      <div class="">
-        <!-- top text row -->
-        <div class="">
-          <div class="">
-            <p>Connecting bank is a part of the app onboarding, and offering a help overlay menu helps to build trust.</p>
-          </div>
-          <div class="">
-          </div>
-          <div class="">
-            <p>The goal creation screen is simple and consistent in style. The category dropdown accesses a variety of descriptions and icons.</p>
-          </div>
-          <div class="">
-          </div>
-          <div class="">
-            <p>The goal is added to the home screen with animation to draw attention to the change of state. Traffic-light color-coded completion bars indicate whether you are on track.</p>
-          </div>
-        </div>
+      <div class="container">
         <!-- primary flow image -->
-        <div class="">
+        <h2 class="block-header">Design of Primary User Flow</h2>
+        <div class="pf-pic">
           <picture>
-            <img src="img/otto/primary_flow.png" alt="primary flow screens">
+            <img src="img/otto/pf_1.png" alt="primary flow screens">
           </picture>
         </div>
-        <!-- bottom text row -->
-        <div class="">
-          <div class="">
-          </div>
-          <div class="">
-            <p>The Bank confirmation screen emphasizes security and offers access to the homepage if a user wants to look around before committing to a goal.</p>
-          </div>
-          <div class="">
-          </div>
-          <div class="">
-            <p>The plan summary allows users to understand what they are committing to. The app guarantees this is a safe amount based on bank records of income and spending.</p>
-          </div>
-          <div class="">
-          </div>
+        <div class="pf-caption">
+          <p>Connecting bank is a part of the app onboarding, and offering a help overlay menu helps to build trust.</p>
         </div>
-        <picture>
-          <img src="img/otto/floating_primary.png" alt="primary flow help screen">
-        </picture>
+        <div class="pf-pic">
+          <picture>
+            <img src="img/otto/pf_2.png" alt="primary flow screens">
+          </picture>
+        </div>
+        <div class="pf-caption">
+          <p>The goal creation screen is simple and consistent in style. The category dropdown accesses a variety of descriptions and icons.</p>
+        </div>
+        <div class="pf-pic">
+          <picture>
+            <img src="img/otto/pf_3.png" alt="primary flow screens">
+          </picture>
+        </div>
+        <div class="pf-caption">
+          <p>The goal is added to the home screen with animation to draw attention to the change of state. Traffic-light color-coded completion bars indicate whether you are on track.</p>
+        </div>
+
+        <div class="pf-pic">
+          <picture>
+            <img src="img/otto/pf_4.png" alt="primary flow screens">
+          </picture>
+        </div>
+        <div class="pf-caption">
+          <p>The Bank confirmation screen emphasizes security and offers access to the homepage if a user wants to look around before committing to a goal.</p>
+        </div>
+        <div class="pf-pic">
+          <picture>
+            <img src="img/otto/pf_5.png" alt="primary flow screens">
+          </picture>
+        </div>
+        <div class="pf-caption">
+          <p class="padding-spacer-32">The plan summary allows users to understand what they are committing to. The app guarantees this is a safe amount based on bank records of income and spending.</p>
+        </div>
       </div>
     </div>
 
     <!-- DATA VISUALIZATIONS SECTION -->
     <!-- section -->
     <div class="">
-      <picture>
-        <source srcset="img/otto/data_vis.jpg" media="(max-width:767px)">
-        <img src="img/otto/data_vis@2x.jpg" alt="data visualizations image">
-      </picture>
       <!-- wrapper for text -->
-      <div class="">
+      <div class="container">
         <h2>Data Visualizations</h2>
         <p>Otto also offers users <strong>interactive visualizations</strong> of users' imported bank data, allowing them to spot trends and develop insights about their spending.</p>
         <p>If you want to spend less in a particular category after viewing your trends, Otto allows you to create a monthly budget based on previous averages.</p>
         <p>I designed this section of the app for users who want to take a more hands-on approach to their finances. A contrasting dark UI color scheme hints at this functional change. I conducted an <strong>A/B test to validate this decision, with
             88% of respondents preferring the dark option.</strong></p>
       </div>
+      <picture>
+        <source srcset="img/otto/data_vis_mobile.jpg" media="(max-width:767px)">
+        <img src="img/otto/data_vis@2x.jpg" alt="data visualizations image">
+      </picture>
     </div>
 
     <!-- DESKTOP WEBSITE SECTION -->
 
     <div class="">
       <!-- left side -->
-      <div class="">
+      <div class="container">
         <h2>Desktop Website</h2>
         <p>I designed the desktop website to promote the Otto mobile app, ensuring the messaging and visuals were consistent with the existing brand guidelines. As a result, the brand identity of Otto feels cohesive regardless of device or platform.
         </p>
@@ -601,10 +628,10 @@
         </picture>
       </div>
       <!-- Text Pane Right side -->
-      <div class="">
+      <div class="container">
         <h2>Project Takeaways</h2>
         <p>This project offered an exciting set of challenges, and I enjoyed designing solutions to these complex problems. Some key moments and decisions throughout this project included:</p>
-        <ul>
+        <ul class="section-spacer">
           <li>Deciding on an automated withdrawal system to simplify users’ experience.</li>
           <li>Addressing the issues of trust and security that arise from that choice.</li>
           <li>Using user interviews to refine what they want to see from the product.</li>
@@ -622,16 +649,15 @@
     </div>
 
     <!-- Interactive Prototype -->
+    <!--
     <div class="">
-      <!-- wrapper -->
       <div class="">
         <h2>Interactive Prototype</h2>
-        <!-- wrapper for figma screen -->
         <iframe width="390" height="950"
           src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fgnxuw4IfPU9utlVQVoUz3G%2FOtto---Money-Saving-Hi-Fid%3Fpage-id%3D43%253A348%26node-id%3D43%253A354%26viewport%3D397%252C538%252C0.13%26scaling%3Dscale-down%26starting-point-node-id%3D43%253A354"
           allowfullscreen></iframe>
       </div>
-    </div>
+    </div> -->
 
   </main>
 
@@ -642,7 +668,7 @@
     <!-- wrapper -->
     <div class="container">
       <h2>Get in Touch</h2>
-      <p>Want to discuss my work or oppurtunities? Please get in touch.</p>
+      <p class="spacer-24">Want to discuss my work or oppurtunities? Please get in touch.</p>
       <!-- email -->
       <div class="contact-wrap">
         <a href="mailto:garethhobbs01@gmail.com" class="button-contact">Send Email</a>
