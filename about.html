@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body id="about-page">
   <header>
     <div class="container">
       <a href="#" class="logo">
@@ -51,7 +51,7 @@
   <main>
 
     <!-- h1 section -->
-    <div class="container">
+    <div class="" id="hero">
       <!-- wrapper -->
       <div class="center">
         <h1>About</h1>
@@ -62,16 +62,19 @@
     <div class="">
       <!-- wrapper picture and info -->
       <div class="container">
-        <picture>
-          <source srcset="img/about/gh_headshot.jpg" media="(max-width:767px)">
-          <img src="img/about/gh_headshot@2x.jpg" alt="Gareth Hobbs headshot">
-        </picture>
+        <div class="">
+          <picture class="col-lg-5 headshot">
+            <source srcset="img/about/gh_headshot.jpg" media="(max-width:767px)">
+            <img src="img/about/gh_headshot@2x.jpg" alt="Gareth Hobbs headshot">
+          </picture>
+        </div>
+
 
         <!-- row wrapper for story / skills and tools -->
         <div class="">
 
           <!-- My Story Column -->
-          <div class="" id="my-story">
+          <div class="col-lg-7" id="my-story">
             <h2>My Story</h2>
             <p>Hi, I'm Gareth. I'm a product designer with a background in sound design. I've always loved puzzling my way through tricky problems, and that, combined with my experience in design, led me to pursue a career in UX. My past work in
               sound design for theater allows me to look at user experience through the lens of narrative storytelling and what makes things engaging and understandable. I have been a part of many design projects where I have contributed to creating
@@ -87,9 +90,9 @@
           <div class="">
             <h2>Skills and Tools</h2>
             <!-- row for skills and tools sections -->
-            <div class="">
+            <div class="row col-md-12 col-lg-8">
               <!-- Left column "relevant skills" -->
-              <div class="skills">
+              <div class="col-md-6 col-lg-6">
                 <h3>Relevant Skills:</h3>
                 <ul>
                   <li>Lean UX / Design thinking / UCD</li>
@@ -111,7 +114,7 @@
                 </ul>
               </div>
               <!-- Right Column "tools" -->
-              <div class="tools">
+              <div id="tools" class="col-md-6 col-lg-6">
                 <h3>Tools Used:</h3>
                 <ul>
                   <li>Figma</li>
