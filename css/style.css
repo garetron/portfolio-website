@@ -156,12 +156,14 @@ a:active {
   from {
     transform: scaleX(0.5);
     transform: scaleY(1.2);
+    scale: 0.5;
     fill: #f8fdc6;
   }
   to {
     fill: #def7ff;
     transform: scaleX(1.2);
     transform: scaleY(0.7);
+    scale: 1.2;
   }
 }
 
