@@ -154,16 +154,16 @@ a:active {
 
 @keyframes glimmer {
   from {
-    transform: scaleX(0.5);
+    transform: scaleX(0.9);
     transform: scaleY(1.2);
-    scale: 0.5;
+    scale: 0.8;
     fill: #f8fdc6;
   }
   to {
     fill: #def7ff;
     transform: scaleX(1.2);
     transform: scaleY(0.7);
-    scale: 1.2;
+    scale: 1.1;
   }
 }
 
@@ -208,7 +208,7 @@ a:active {
     fill: #D8939C;
   }
   33% {
-    fill: #8169BF;
+    fill: #4e6a97;
   }
   66% {
     fill: #D5A17E;
@@ -216,20 +216,21 @@ a:active {
   100% {
     fill: #8AABC1;
   }
-}
+} 
+
 
 @keyframes building-2-color {
   0% {
-    fill: #9C697D;
+    fill: #964f65;
   }
   33% {
-    fill: #805C88;
+    fill: rgb(164, 102, 179);
   }
   66% {
-    fill: #9C6F73;
+    fill: #6f769c;
   }
   100% {
-    fill: #837189;
+    fill: #7d4e7d;
   }
 }
 
@@ -302,7 +303,7 @@ a:active {
 
 
 #star-r {
-  animation: 8s glimmer infinite alternate ease-in-out;
+  animation: 9s glimmer infinite alternate ease-in-out;
 
 }
 
@@ -312,7 +313,7 @@ a:active {
 }
 
 #star-bl {
-  animation: 8s glimmer infinite alternate ease-in-out;
+  animation: 10s glimmer infinite alternate ease-in-out;
 }
 
 
