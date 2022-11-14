@@ -35,11 +35,15 @@
 <body>
 
   <header>
-    <div class="container">
-      <a href="#" class="logo">
-        <!-- <img src="https://via.placeholder.com/250x80" alt="Gareth Hobbs Logo"> -->
-        <h2>Gareth Hobbs</h2>
-      </a>
+    <div class="wrapper container">
+      <div class="">
+
+        <a href="#" class="logo">
+          <!-- <img src="https://via.placeholder.com/250x80" alt="Gareth Hobbs Logo"> -->
+          <h2>Gareth Hobbs</h2>
+        </a>
+
+      </div class="wrapper">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -54,53 +58,65 @@
   <main id="otto">
     <!-- HERO SECTION -->
     <!-- section -->
-    <div class="otto-dark white-text" id="hero">
+    <div class="otto-blue white-text" id="project-hero">
       <!-- wrapper -->
       <div class="container">
         <h1 class="center">Otto</h1>
         <h3>Otto is a native mobile app designed to help users save money for upcoming expenses. I created UI/UX designs
           in addition to developing a brand identity and guidelines.</h3>
         <!-- <img src="https://via.placeholder.com/608x536" alt="Otto hero Image"> -->
-        <picture>
-          <source srcset="img/otto/otto_cover.png" media="(max-width:767px)">
-          <img class=""src="img/otto/otto_cover@2x.png" alt="Otto cover image">
-        </picture>
+        <div class="hero-box">
+          <picture>
+            <source srcset="img/otto/otto_cover.png" media="(max-width:767px)">
+            <img class="" src="img/otto/otto_cover@2x.png" alt="Otto cover image">
+          </picture>
+        </div class="hero-box">
       </div>
     </div>
 
     <!-- stat section -->
-    <div class="container section-spacer stats">
-      <!-- wrapper -->
-      <div class="row">
-        <!-- column 1 -->
-        <div class="md-col-6">
-          <ul class="stats1">
-            <li>Case study</li>
-            <li>My Role: UI/UX Designer</li>
-          </ul>
+    <div class="container section-spacer">
+
+      <!-- stat row -->
+      <div class="new-stat-row">
+
+        <div class="stat-columns-center">
+
+          <!-- column 1 -->
+          <div class="new-stat-col">
+
+            <ul class="">
+              <li>Case study</li>
+              <li>My Role: UI/UX Designer</li>
+            </ul>
+          </div>
+
+          <!-- column 2 -->
+          <div class="new-stat-col">
+            <p id="tools-label"><strong>Tools and skills used</strong></p>
+            <ul>
+              <li>Figma</li>
+              <li>Photoshop</li>
+              <li>Wireframing</li>
+              <li>Interactive Prototyping</li>
+              <li>User Testing</li>
+              <li>A/B Testing</li>
+              <li>Branding</li>
+            </ul>
+          </div>
+
         </div>
-        <!-- column 2 -->
-        <div class="md-col-6">
-          <p id="tools-label"><strong>Tools and skills used</strong></p>
-          <ul>
-            <li>Figma</li>
-            <li>Photoshop</li>
-            <li>Wireframing</li>
-            <li>Interactive Prototyping</li>
-            <li>User Testing</li>
-            <li>A/B Testing</li>
-            <li>Branding</li>
-          </ul>
-        </div>
-        <!-- divider line -->
-        <hr class="solid">
       </div>
+
+      <!-- divider line -->
+      <hr class="solid">
+    </div>
     </div>
 
     <!-- Overview Section -->
     <div class="overview">
       <!-- wrapper -->
-      <div class="container">
+      <div class="container col-lg-8 col-md-8">
 
         <!-- overview row -->
         <div class="row-lg">
@@ -220,22 +236,25 @@
       <div class="container">
         <!-- wrapper -->
         <div class="">
-          <h2>My Approach</h2>
+          <h2 class="otto-headers-whitebg">My Approach</h2>
           <p>I began by trying to identify how this app would help users save money. Would it automate the process? Or
             would it offer tools to allow users insight into their finances and let them take action themselves?</p>
 
           <p>Because I wanted tosimplify the process for users as much as possible, I determined that the app would
-            function as a separate bank account that automatically withdraws funds from a user’s primary bank to be set
-            aside for their saving
-            goals. While this automated withdrawal might feel invasive to certain people, the trade-off was providing a
-            set-and-forget savings tool.</p>
+            <strong> as a separate bank account that automatically withdraws funds from a user’s primary bank to be set
+              aside for their saving
+              goals.</strong> While this automated withdrawal might feel invasive to certain people, the trade-off was
+            providing a
+            set-and-forget savings tool.
+          </p>
 
           <p>This approach also ensures that the balance in a user’s primary account is always money they can spend
             freely
             without worrying whether they should be setting it aside.</p>
 
-          <p>I plotted out how users would complete these tasks in the app by creating three user flows, and combining
-            these in a user flow diagram.</p>
+          <p class="section-spacer">I plotted out how users would complete these tasks in the app by creating three user
+            flows, and combining
+            these in a <strong>user flow diagram.</strong></p>
         </div>
       </div>
       <!-- Bottom Image section -->
@@ -243,7 +262,7 @@
         <!-- wrapper -->
         <div class="container center row-lg padding-spacer-32">
           <picture>
-            <img class="img-800-max" src="img/otto/flow1.png" alt="user flow image">
+            <img class="img-800-max section-spacer" src="img/otto/flow1.png" alt="user flow image">
           </picture>
           <picture>
             <img class="img-800-max" src="img/otto/flow_diagram.png" alt="user flow digram">
@@ -258,7 +277,7 @@
     <div class="otto-light">
       <!-- wrapper -->
       <div class="container">
-        <h2 class="block-header-black">Low Fidelity Wireframes</h2>
+        <h2 class="block-header-black otto-headers-whitebg">Low Fidelity Wireframes</h2>
         <p>Once I have determined how the app would function, I began by sketching out the low-fidelity wireframes for
           the central saving functions of the app. These were summarized in the design brief as the following:</p>
         <!-- User goal paper slips wrapper -->
@@ -276,7 +295,7 @@
               </div>
             </div>
             <!-- column 2 -->
-            <div class="">
+            <div class="top-r-paper">
               <!-- text wrapper -->
               <div class="paper-slip">
                 <ul>
@@ -287,7 +306,7 @@
             </div>
           </div>
           <!-- bottom row -->
-          <div class="row-lg paper-row padding-spacer-32">
+          <div class="row-lg paper-row bottom-paper-row padding-spacer-32">
             <!-- column 1 -->
             <div class="">
               <!-- text wrapper -->
@@ -328,37 +347,42 @@
     <!-- BRAND GUIDELINES -->
 
     <!-- Top Section -->
-    <div class="container brand-back-blue">
-      <h2 class="block-header-black">Brand Guidelines</h2>
-      <p class="padding-spacer-32">At this point, I also developed a set of brand guidelines to focus the rest of the
-        design process and define the app's personality. I began by articulating the brand’s guiding principles:</p>
-      <div class="shadow-wrapper">
-        <!-- brand guidelines box -->
-        <div class="brand-box">
-          <!-- Wrapper -->
-          <div class="box-padding">
-            <h4 class="intro-header">Welcoming</h4>
-            <p>You don’t need a high income or an economics degree to use Otto. Everyone needs some help to reach their
-              unique financial goals, and that’s where we come in.</p>
-            <h4 class="intro-header">Trustworthy</h4>
-            <p>Otto takes financial privacy seriously. We protect your data with industry-leading encryption and never
-              share your information with third parties.</p>
-            <h4 class="intro-header">Smart</h4>
-            <p>Never look at your calculator again. Otto uses sophisticated algorithms to figure out how much money
-              needs to be put aside and then takes care of it for you. Otto will not remove money if your balance is
-              low.</p>
-            <h4 class="intro-header">Easy</h4>
-            <p>Financial planning doesn’t need to be difficult, and Otto makes saving and investing simple and
-              rewarding. Let Otto handle your finances and give you a leg up on your goals.</p>
+    <div class="brand-back-blue">
+      <div class="container">
+
+        <h2 class="block-header-black otto-headers-whitebg">Brand Guidelines</h2>
+        <p class="padding-spacer-32">At this point, I also developed a set of brand guidelines to focus the rest of the
+          design process and define the app's personality. I began by articulating the brand’s guiding principles:</p>
+        <div class="shadow-wrapper">
+          <!-- brand guidelines box -->
+          <div class="brand-box">
+            <!-- Wrapper -->
+            <div class="box-padding">
+              <h4 class="intro-header">Welcoming</h4>
+              <p>You don’t need a high income or an economics degree to use Otto. Everyone needs some help to reach
+                their
+                unique financial goals, and that’s where we come in.</p>
+              <h4 class="intro-header">Trustworthy</h4>
+              <p>Otto takes financial privacy seriously. We protect your data with industry-leading encryption and never
+                share your information with third parties.</p>
+              <h4 class="intro-header">Smart</h4>
+              <p>Never look at your calculator again. Otto uses sophisticated algorithms to figure out how much money
+                needs to be put aside and then takes care of it for you. Otto will not remove money if your balance is
+                low.</p>
+              <h4 class="intro-header">Easy</h4>
+              <p>Financial planning doesn’t need to be difficult, and Otto makes saving and investing simple and
+                rewarding. Let Otto handle your finances and give you a leg up on your goals.</p>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
     <!-- Bottom Section Otto brand guidlines images -->
-    <div class="">
+    <div class="brand-guidelines-image">
       <picture>
         <source srcset="img/otto/brand_guidelines_document_mobile.png" media="(max-width:639px)">
-        <img src="img/otto/brand_guidelines_document@2x.png" alt="Otto brand guidelines document images">
+        <img class="" src="img/otto/brand_guidelines_document@2x.png" alt="Otto brand guidelines document images">
       </picture>
     </div>
 
@@ -373,7 +397,7 @@
             <div class="paper-drop padding-spacer-32">
               <!-- wrapper -->
               <div class="container">
-                <h2>Logo Design</h2>
+                <h2 class="center-small">Logo Design</h2>
                 <p>I developed the name Otto to humanize the app by using a person’s name while also giving a nod to the
                   automatic functionality of the app. While designing the logo, I sought to include a high density of
                   meanings
@@ -384,7 +408,7 @@
                   <!-- wrapper -->
                   <div class="">
                     <picture>
-                      <img class="col-md-4" src="img/otto/logo_white.png" alt="otto logo">
+                      <img class="col-md-4" id="white-logo" src="img/otto/logo_white.png" alt="otto logo">
                       <img class="col-md-4" src="img/otto/logo_blue.png" alt="otto logo">
                       <img class="col-md-4" src="img/otto/logo_gray.png" alt="otto logo">
                     </picture>
@@ -421,7 +445,7 @@
     <div class="" id="otto-user-testing">
       <!-- wrapper -->
       <div class="container block-header-black-no-marg">
-        <h2>User Testing / Mid-Fidelity Wireframes</h2>
+        <h2 class="otto-headers-whitebg">User Testing / Mid-Fidelity Wireframes</h2>
         <p>Next, I created mid-fidelity wireframes and a clickable prototype in Figma to conduct user testing and
           identify pain points. I have included the synthesized takeaways from this research below.</p>
         <!-- Pain Point Chart -->
@@ -545,49 +569,75 @@
     <!-- MID FIDELITY WIREFRAMES section -->
 
     <!-- section -->
-    <div class="otto-dark">
+    <div id="mid-fid-wireframes" class="otto-dark">
       <!-- wrapper -->
-      <div class="container center padding-top">
-        <h3 class="block-header">Mid-Fidelity Wireframes Used in User Tests</h3>
+      <div class="container center">
+        <h3 class="section-spacer padding-top white-text">Mid-Fidelity Wireframes Used in User Tests</h3>
         <!-- mid-fid screen wrapper -->
-        <div class="padding-spacer">
+        <div class="padding-spacer row-lg">
           <picture>
             <img class="img-800-max" src="img/otto/mid_fid_1.png" alt="Otto mid fidelity images">
           </picture>
           <picture>
-            <img class="img-800-max" src="img/otto/mid_fid_2.png" alt="Otto mid fidelity images">
+            <img class="img-800-max section-spacer" src="img/otto/mid_fid_2.png" alt="Otto mid fidelity images">
           </picture>
         </div>
 
       </div>
     </div>
 
-    <!-- Final UI Design -->
+    <!-- Final UI Design MOBILE DEVICES -->
 
-    <div id="final-otto-image">
+    <div id="final-otto-image" class="hide-section lg-container lg-block-header row-lg black-radial"
+      data-attr="white-text">
       <!-- Wrapper -->
-      <div class="container">
-        <h2>Final UI Design</h2>
+      <div class="container white-text-lg col-lg-6">
+        <h2 class="otto-headers-whitebg">Final UI Design</h2>
         <p>The final UI Design for Otto incorporates user test results and consistent brand guidelines. It adheres to
           the core design goals of the brief. Simplicity is the overarching goal, and a polished UI establishes the app
           as trustworthy and
           sophisticated.</p>
-        <p>Icons and language are friendly and intuitive. I chose blue as a primary brand color due to established
+        <p class="section-spacer">Icons and language are friendly and intuitive. I chose blue as a primary brand color
+          due to established
           psychological associations with trustworthiness and simplicity.</p>
       </div>
-      <picture>
-        <source srcset="img/otto/final_ui_mobile.jpg" media="(max-width:600px)">
-        <img src="img/otto/final_ui@2x.jpg" alt="Otto final UI image">
+      <picture class="col-lg-7">
+        <source srcset="img/otto/two-up-trans.png" media="(max-width:1023px)">
+        <img class="" src="img/otto/two-up-trans@2x.png" alt="Otto final UI image">
       </picture>
     </div>
 
+    <!-- Final UI Design LARGE DEVICES -->
+
+    <div id="final-otto-image-large" class="lg-block-header black-radial show-section-lg"
+      data-attr="white-text">
+      <div class="row-lg">
+        <!-- Wrapper -->
+        <div class="container white-text-lg col-lg-5">
+          <h2 class="otto-headers-whitebg">Final UI Design</h2>
+          <p>The final UI Design for Otto incorporates user test results and consistent brand guidelines. It adheres to
+            the core design goals of the brief. Simplicity is the overarching goal, and a polished UI establishes the
+            app
+            as trustworthy and
+            sophisticated.</p>
+          <p class="section-spacer">Icons and language are friendly and intuitive. I chose blue as a primary brand color
+            due to established
+            psychological associations with trustworthiness and simplicity.</p>
+        </div>
+        <picture class="col-lg-7">
+          <source srcset="img/otto/two-up-trans2x.png" media="(max-width:1023px)">
+          <img class="" src="img/otto/two-up-trans@2x.png" alt="Otto final UI image">
+        </picture>
+      </div>
+    </div>
+
     <!-- DESIGN OF PRIMARY USER FLOW SECTION -->
-    <!-- Section (black background) -->
-    <div class="black-radial">
+    <!-- Section for mobile-md devices (black background) -->
+    <div id="primary-flow-mobile" class="black-radial white-slip-remover hide-section">
       <!-- wrapper -->
       <div class="container">
         <!-- primary flow image -->
-        <h2 class="block-header">Design of Primary User Flow</h2>
+        <h2 class="block-header center" data-attr="white-text">Design of Primary User Flow</h2>
         <div class="pf-pic">
           <picture>
             <img src="img/otto/pf_1.png" alt="primary flow screens">
@@ -636,37 +686,125 @@
       </div>
     </div>
 
+    <!-- Section for LARGE devices -->
+
+    <div class="black-radial show-section-lg" id="user-flow-large">
+      <!-- wrapper -->
+      <div class="container">
+        <!-- primary flow image grid -->
+        <h2 class="block-header center" data-attr="white-text">Design of Primary User Flow</h2>
+
+        <div class="flow-grid-p-top">
+
+          <div class="pf-caption">
+            <p>Connecting bank is a part of the app onboarding, and offering a help overlay menu helps to build trust.
+            </p>
+          </div>
+
+          <div class="pf-caption">
+            <p>The goal creation screen is simple and consistent in style. The category dropdown accesses a variety of
+              descriptions and icons.</p>
+          </div>
+
+          <div class="pf-caption">
+            <p>The goal is added to the home screen with animation to draw attention to the change of state.
+              Traffic-light color-coded completion bars indicate whether you are on track.</p>
+          </div>
+
+        </div>
+
+
+        <div class="flow-grid">
+          <div class="pf-pic">
+            <picture>
+              <img src="img/otto/pf_1.png" alt="primary flow screens">
+            </picture>
+          </div>
+          <div class="pf-pic pf-padder">
+            <picture>
+              <img src="img/otto/pf_2.png" alt="primary flow screens">
+            </picture>
+          </div>
+          <div class="pf-pic">
+            <picture>
+              <img src="img/otto/pf_3.png" alt="primary flow screens">
+            </picture>
+          </div>
+          <div class="pf-pic pf-padder">
+            <picture>
+              <img src="img/otto/pf_4.png" alt="primary flow screens">
+            </picture>
+          </div>
+          <div class="pf-pic">
+            <picture>
+              <img src="img/otto/pf_5.png" alt="primary flow screens">
+            </picture>
+          </div>
+        </div>
+
+
+        <div class="flow-grid-p-bottom">
+          <div class="pf-caption">
+            <p>The Bank confirmation screen emphasizes security and offers access to the homepage if a user wants to
+              look
+              around before committing to a goal.</p>
+          </div>
+
+          <div class="pf-caption">
+            <p class="padding-spacer-32">The plan summary allows users to understand what they are committing to. The
+              app guarantees this is a safe amount based on bank records of income and spending.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
     <!-- DATA VISUALIZATIONS SECTION -->
     <!-- section -->
-    <div class="">
-      <!-- wrapper for text -->
-      <div class="container">
-        <h2>Data Visualizations</h2>
-        <p>Otto also offers users <strong>interactive visualizations</strong> of users' imported bank data, allowing
-          them to spot trends and develop insights about their spending.</p>
-        <p>If you want to spend less in a particular category after viewing your trends, Otto allows you to create a
-          monthly budget based on previous averages.</p>
-        <p>I designed this section of the app for users who want to take a more hands-on approach to their finances. A
-          contrasting dark UI color scheme hints at this functional change. I conducted an <strong>A/B test to validate
-            this decision, with
-            88% of respondents preferring the dark option.</strong></p>
+    <!-- color block -->
+    <div id="data-vis" class="otto-dark-2-lg">
+      <div class="data-vis-image lg-block-header container row-lg">
+        <!-- wrapper for text -->
+        <div class="container white-text-lg col-lg-5">
+          <h2 class="center-small">Data Visualizations</h2>
+          <p>Otto also offers users <strong>interactive visualizations</strong> of users' imported bank data, allowing
+            them to spot trends and develop insights about their spending.</p>
+          <p>If you want to spend less in a particular category after viewing your trends, Otto allows you to create a
+            monthly budget based on previous averages.</p>
+          <p class="section-spacer">I designed this section of the app for users who want to take a more hands-on
+            approach to their finances. A
+            contrasting dark UI color scheme hints at this functional change. I conducted an <strong>A/B test to
+              validate
+              this decision, with
+              88% of respondents preferring the dark option.</strong></p>
+        </div>
+        <picture class="col-lg-7 hide hide-image-small">
+          <source srcset="" media="(max-width:1023px)">
+          <img class="col-lg-7" src="img/otto/data_vis@2x.jpg" alt="data visualizations image">
+        </picture>
       </div>
-      <picture>
-        <source srcset="img/otto/data_vis_mobile.jpg" media="(max-width:767px)">
-        <img src="img/otto/data_vis@2x.jpg" alt="data visualizations image">
+      <picture class="">
+        <source srcset="img/otto/data_vis_mobile.jpg" media="(max-width:1023px)">
+        <img class="hide-image" src="img/otto/data_vis@2x.jpg" alt="data visualizations image">
       </picture>
+
     </div>
 
     <!-- DESKTOP WEBSITE SECTION -->
 
-    <div class="">
+    <div class="row-lg white-bg" id="otto-desktop">
       <!-- left side -->
-      <div class="container">
-        <h2>Desktop Website</h2>
-        <p>I designed the desktop website to promote the Otto mobile app, ensuring the messaging and visuals were
-          consistent with the existing brand guidelines. As a result, the brand identity of Otto feels cohesive
-          regardless of device or platform.
-        </p>
+      <div class="paper-drop col-lg-5 padding-spacer-32 container">
+
+        <div class="">
+          <h2 class="center-small">Desktop Website</h2>
+          <p>I designed the desktop website to promote the Otto mobile app, ensuring the messaging and visuals were
+            consistent with the existing brand guidelines. As a result, the brand identity of Otto feels cohesive
+            regardless of device or platform.
+          </p>
+        </div>
+
       </div>
       <!-- right image side -->
       <div class="">
@@ -679,20 +817,27 @@
 
     <!-- PROJECT TAKEAWAYS SECTION -->
 
-    <div class="">
+    <!-- IMAGE FOR MOBILE SCREENS -->
+    <picture class="center-image hide-image">
+      <source class="white-slip-remover-no-l" srcset="img/otto/otto_2float.jpg" media="(max-width:1023px)">
+      <img class="white-slip-remover-no-l" src="img/otto/otto_2float@2x.jpg" alt="final screens mockup otto">
+    </picture>
+
+    <div class="row-lg container" id="otto-takeaways">
       <!-- Image left side -->
-      <div class="">
-        <picture>
-          <source srcset="img/otto/otto_2float.jpg" media="(max-width:600px)">
-          <img src="img/otto/otto_2float@2x.jpg" alt="final screens mockup otto">
+      <div class="col-lg-7 col-md-12 white-slip-remover-no-l">
+        <picture class="center-image hide-image-small">
+          <source srcset="img/otto/otto_2float.jpg" media="(max-width:1023px)">
+          <img class="" src="img/otto/otto_2float@2x.jpg" alt="final screens mockup otto">
         </picture>
       </div>
+
       <!-- Text Pane Right side -->
-      <div class="container">
-        <h2>Project Takeaways</h2>
+      <div class="paper-drop col-lg-5 section-spacer">
+        <h2 class="center-small">Project Takeaways</h2>
         <p>This project offered an exciting set of challenges, and I enjoyed designing solutions to these complex
           problems. Some key moments and decisions throughout this project included:</p>
-        <ul class="section-spacer">
+        <ul class="">
           <li>Deciding on an automated withdrawal system to simplify users’ experience.</li>
           <li>Addressing the issues of trust and security that arise from that choice.</li>
           <li>Using user interviews to refine what they want to see from the product.</li>
@@ -703,9 +848,10 @@
 
     <!-- FINAL IMAGE -->
     <div class="">
-      <picture>
+      <picture class="full-bleed-image">
         <source srcset="img/otto/otto_all_screens.png" media="(max-width:767px)">
-        <img src="img/otto/otto_all_screens@2x.png" alt="final screens mockup otto">
+        <img class="full-bleed-image white-slip-remover" src="img/otto/otto_all_screens@2x.png"
+          alt="final screens mockup otto">
       </picture>
     </div>
 
@@ -753,7 +899,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/gareth-hobbs/" target="_blank">
+            <a href="https://github.com/garetron" target="_blank">
               <i class="fa-brands fa-github fa-xl"></i>
             </a>
           </li>
