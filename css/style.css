@@ -971,6 +971,9 @@ nav ul li {
     width: 100%;
 }  */
 
+#work .row .col-lg-7 {
+  padding-left: 0;
+}
 
 
 
