@@ -35,7 +35,7 @@ if (viewportWidth >= 640) {
 }
 
 
-// Hide or show header on scrolling 
+// Hide or show header on scrolling - animation duration set in header CSS
 
 var prev = 0;
 var $window = $(window);
