@@ -34,21 +34,25 @@
 <body>
   <header>
     <div class="wrapper container">
-      <div class="">
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="" id="">
 
-        <a href="index.html" class="logo">
-          <!-- <img src="https://via.placeholder.com/250x80" alt="Gareth Hobbs Logo"> -->
-          <h2>Gareth Hobbs</h2>
-        </a>
+          <a href="index.html" class="logo">
+            <!-- <img src="https://via.placeholder.com/250x80" alt="Gareth Hobbs Logo"> -->
+            <h2>Gareth Hobbs</h2>
+          </a>
 
-      </div class="wrapper">
-      <nav class="borderXwidth">
-        <ul class="">
-          <li class=""><a href="index.html">Work</a></li>
-          <li><a class="" href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        </div class="wrapper">
+        <nav class="borderXwidth">
+          <div>
+            <ul class="navlist">
+              <li class=""><a href="index.html">Work</a></li>
+              <li><a class="" href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+      </div>
     </div>
 
   </header>
@@ -423,7 +427,8 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

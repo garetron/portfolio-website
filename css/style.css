@@ -122,6 +122,13 @@ nav li a {
   padding: 15px 10px;
 }
 
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
 a:active {
   /* selected link */
   color: var(--primary);
@@ -474,6 +481,7 @@ header {
   box-shadow: 0px 4px 8px 0px #00000026;
   position: fixed;
   width: 100%;
+  height: 65px;
 }
 
 
@@ -481,7 +489,7 @@ header {
 .logo {
   color: var(--default-gray);
   /* max-width: 250px; */
-  text-align: center;
+  /* text-align: center; */
   padding: 0;
   width: 100%;
   display: inline-block;
@@ -489,6 +497,14 @@ header {
   height: 8px;
   transition: 0.5s color;
 }
+
+.logo h2 {
+  margin: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
 
 .c h2 {
   margin: 0;
@@ -502,20 +518,20 @@ header {
 }
 
 nav {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
   margin: auto 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-  display: inline-block;
-}
+
 
 nav ul li a {
   padding: 15px 15px;
@@ -976,6 +992,16 @@ nav ul li {
   padding-left: 0;
 }
 
+#hero {
+  margin-top: 65px;
+  padding-top: 40px;
+}
+
+#project-hero {
+  margin-top: 65px;
+  padding-top: 32px;
+}
+
 
 
 
@@ -984,6 +1010,22 @@ nav ul li {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
 
   .brand-box {
     width: 83%;
@@ -1039,17 +1081,25 @@ Medium devices (640px and larger)
 
   header {
     text-align: unset;
+    height: auto;
   }
 
   header .wrapper {
     height: 79px;
   }
 
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+
   nav {
     height: 100%;
     margin: 0;
     z-index: 1;
   }
+
+
 
   nav ul {
     height: 100%;
@@ -1067,6 +1117,10 @@ Medium devices (640px and larger)
     float: left;
     width: auto;
     height: 100%;
+  }
+
+  .logo h2 {
+    padding-top: 21px;
   }
 
   nav {
