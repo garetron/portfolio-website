@@ -38,6 +38,7 @@
   --yellow3: #FEBC4C;
   --yellow4: #E69E24;
   --header: rgba(249, 249, 249, 0.95);
+  --header-solid: rgba(249, 249, 249, 1);
   --primary: rgba(14, 113, 127, 1);
 }
 
@@ -128,6 +129,8 @@ nav li a {
   top: 2px;
   font-size: 20px;
 }
+
+
 
 a:active {
   /* selected link */
@@ -523,6 +526,33 @@ nav {
 
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive {
+  margin: 18px 0 0;
+  background-color: var(--header-solid);
+  box-shadow: 0px 4px 8px 0px #00000026;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navtoggle.responsive li:not(:last-child) {
+  border-top: 1px solid var(--divider-gray);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 nav ul {
@@ -1006,10 +1036,17 @@ nav ul li {
 
 
 
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  #myNavtoggle {
+    width: auto;
+    margin-left: 16px;
+  }
 
   nav > ul {
     margin: 1em 0;
