@@ -47,6 +47,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -270,28 +274,28 @@ a:active {
     fill: #E8C3A2;
   }
   100% {
-    fill: #ADDAE3;
+    fill: #cae8ed;
   }
 }
 
 #sky-1 {
-  animation: 15s sky-color infinite alternate linear;
+  animation: 22s sky-color infinite alternate linear;
 }
 
 #building-1 {
-  animation: 15s building-1-color infinite alternate linear;
+  animation: 22s building-1-color infinite alternate linear;
 }
 
 #building-2 {
-  animation: 15s building-2-color infinite alternate linear;
+  animation: 22s building-2-color infinite alternate linear;
 }
 
 #statue [id*="Vector"] {
-  animation: 15s statue-color infinite alternate linear
+  animation: 22s statue-color infinite alternate linear
 }
 
 #wall {
-  animation: 15s wall-color infinite alternate linear;
+  animation: 22s wall-color infinite alternate linear;
 }
 
 
