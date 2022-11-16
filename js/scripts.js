@@ -1,6 +1,7 @@
 console.log("Thanks for checking out my code! - Gareth Hobbs")
 
 
+// Toggle the hamburger menu as visible or not
 
 function menuToggle() {
     var x = document.getElementById('myNavtoggle');
@@ -20,6 +21,9 @@ var responsiveTog = document.getElementsByClassName('navtogg');
 console.log("The viewport is " + String(viewportWidth) + "px")
 
 
+// Set the navigation dropdown to screen width below 640px for Hamburger menu
+// Strip style tags above 640
+
 if (viewportWidth >= 640) {
     navTog.style.width = null;
     navTog.style.marginLeft = null;
@@ -30,6 +34,8 @@ if (viewportWidth >= 640) {
     console.log("set max width for nav");
 }
 
+
+// Hide or show header on scrolling 
 
 var prev = 0;
 var $window = $(window);
