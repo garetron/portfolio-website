@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script src="https://kit.fontawesome.com/a8c857e106.js" crossorigin="anonymous"></script>
 
@@ -84,7 +85,7 @@
         <!-- Row for project -->
         <div class="row">
           <!-- Column 1 for image -->
-          <div class="col-md-6 col-lg-7">
+          <div data-aos="fade-right" class="col-md-6 col-lg-7">
             <a href="otto.html">
               <picture>
                 <source srcset="img/otto/otto_cover.png" media="(max-width:767px)">
@@ -93,7 +94,7 @@
             </a>
           </div>
           <!-- Column 2 for info -->
-          <div class="col-md-6 col-lg-5">
+          <div data-aos="fade-left" class="col-md-6 col-lg-5">
             <h3>Otto</h3>
             <p>Otto is a native mobile app designed to help users save money for upcoming expenses. I created UI/UX
               designs in addition to developing a brand identity and guidelines.</p>
@@ -105,14 +106,14 @@
         <!-- Row for project -->
         <div class="row">
           <!-- Column 1 for image -->
-          <div class="col-md-6 col-lg-7">
+          <div data-aos="fade-right" class="col-md-6 col-lg-7">
             <picture>
               <source srcset="img/wine_match/winematch_cover.png" media="(max-width:767px)">
               <img src="img/wine_match/winematch_cover@2x.png" alt="Wine Match cover image">
             </picture>
           </div>
           <!-- Column 2 for info -->
-          <div class="col-md-6 col-lg-5">
+          <div data-aos="fade-left" class="col-md-6 col-lg-5">
             <h3>Wine Match</h3>
             <p>Wine Match is a shopping, recommendation, and learning app that helps users discover new wines.</p>
             <a href="https://www.behance.net/gallery/153473191/Wine-Match-A-wine-recommendation-app" class="button"
@@ -124,14 +125,14 @@
         <!-- Row for project -->
         <div class="row">
           <!-- Column 1 for image -->
-          <div class="col-md-6 col-lg-7">
+          <div data-aos="fade-right" class="col-md-6 col-lg-7">
             <picture>
               <source srcset="img/wild_camp/wildcamp_cover.png" media="(max-width:767px)">
               <img src="img/wild_camp/wildcamp_cover@2x.png" alt="Wild Camp cover image">
             </picture>
           </div>
           <!-- Column 2 for info -->
-          <div class="col-md-6 col-lg-5">
+          <div data-aos="fade-left" class="col-md-6 col-lg-5">
             <h3>Wild Camp</h3>
             <p>Wild Camp is a responsive web app that helps users find location-based campground suggestions. I led a
               complete UX process in designing this app.</p>
@@ -144,14 +145,14 @@
         <!-- Row for project -->
         <div class="row">
           <!-- Column 1 for image -->
-          <div class="col-md-6 col-lg-7">
+          <div data-aos="fade-right" class="col-md-6 col-lg-7">
             <picture>
               <source srcset="img/task_it/taskit_cover.png" media="(max-width:767px)">
               <img src="img/task_it/taskit_cover@2x.png" alt="Task-It cover image">
             </picture>
           </div>
           <!-- Column 2 for info -->
-          <div class="col-md-6 col-lg-5">
+          <div data-aos="fade-left" class="col-md-6 col-lg-5">
             <h3>Task-It</h3>
             <p>Task-It is a to-do app with unique social and collaborative functionality.</p>
             <a href="https://www.behance.net/gallery/153631941/Task-It-A-productivity-app" class="button"
@@ -163,7 +164,7 @@
         <!-- Row for project -->
         <div class="row">
           <!-- Column 1 for image -->
-          <div class="col-md-6 col-lg-7">
+          <div data-aos="fade-right" class="col-md-6 col-lg-7">
 
             <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="nyc-illustration" height="auto"
               viewBox="0 0 500 500" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -367,7 +368,7 @@
 
           </div>
           <!-- Column 2 for info -->
-          <div class="col-md-6 col-lg-5">
+          <div data-aos="fade-left" class="col-md-6 col-lg-5">
             <h3>Front End Development</h3>
             <p>In addition to my design work, I specialize in front-end development. I coded this portfolio website from
               scratch using HTML, CSS, and Javascript.</p>
@@ -384,7 +385,7 @@
   <!-- FOOTER SECTION -->
 
   <!-- Container -->
-  <footer id="contact">
+  <footer data-aos="zoom-in" id="contact">
     <!-- wrapper -->
     <div class="container">
       <h2>Get in Touch</h2>
@@ -430,6 +431,10 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
