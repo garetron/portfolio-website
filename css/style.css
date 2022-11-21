@@ -127,6 +127,8 @@ nav li a {
   padding: 15px 10px;
 }
 
+
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -342,7 +344,7 @@ a:active {
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  color: var(--default-gray);
+  color: var(--primary);
   font-weight: 500;
   padding-left: 32px;
   padding-right: 32px;
@@ -511,8 +513,13 @@ header.hidden {
 
 .logo h2 {
   margin: 0px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
+}
+
+.navbar {
+  max-width: 1732px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -538,6 +545,8 @@ nav {
 
 .navtoggle.responsive li {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .navtoggle.responsive {
@@ -549,6 +558,13 @@ nav {
   text-align: center;
 }
 
+.navtoggle.navtoggle a:last-child {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-top: 5px;
+  height: 48px;
+}
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
@@ -557,6 +573,7 @@ nav {
 
 .navtoggle.responsive li:not(:last-child) {
   border-top: 1px solid var(--divider-gray);
+  margin-top: -1px;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -1040,9 +1057,16 @@ nav ul li {
   padding-top: 32px;
 }
 
+.headshot {
+  width: 100%;
+  text-align: center;
 
-
-
+}
+  
+.headshot img {
+    max-width: 500px;
+    margin: auto;
+  }
 
 
 
@@ -1050,6 +1074,15 @@ nav ul li {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  .navtoggle.navtoggle a:last-child {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: auto;
+    height: auto;
+  }
 
   #myNavtoggle {
     width: auto;
@@ -1415,6 +1448,9 @@ Large devices (1024px or larger)
     padding-left: 0px;
     padding-right: 0px;
   }
+
+
+
 
   .contact-wrap {
     margin-top: 32px;
