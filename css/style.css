@@ -1069,6 +1069,11 @@ nav ul li {
   }
 
 
+header {
+  box-sizing: initial;
+}
+
+
 
 /* ==============================
 Medium devices (640px and larger)
