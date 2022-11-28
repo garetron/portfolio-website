@@ -22,5 +22,5 @@ var nav = $("header");
 $window.on("scroll", function () {
   var scrollTop = $window.scrollTop();
   nav.toggleClass("hidden", scrollTop > prev);
-  prev = scrollTop;
+  prev = scrollTop + 1;
 });
