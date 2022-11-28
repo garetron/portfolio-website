@@ -21,6 +21,9 @@ var nav = $("header");
 
 $window.on("scroll", function () {
   var scrollTop = $window.scrollTop();
-  nav.toggleClass("hidden", scrollTop > prev);
-  prev = scrollTop + 1;
+  if (scrollTop === 0) {
+  } else if (scrollTop > 11) {
+    nav.toggleClass("hidden", scrollTop > prev);
+    prev = scrollTop;
+  }
 });
