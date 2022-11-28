@@ -8,7 +8,7 @@ function menuToggle() {
   var x = document.getElementById("myNavtoggle");
   if (x.className === "navtoggle" && viewportWidth < 640) {
     x.className += " responsive"; //add class name with space "_" to seperate addition
-  } else {{
+  } else {
     x.className = "navtoggle";
   }
 }
