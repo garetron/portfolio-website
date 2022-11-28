@@ -1041,6 +1041,10 @@ nav ul li a {
   margin: auto;
 }
 
+li i {
+  color: var(--primary);
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
