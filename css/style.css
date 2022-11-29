@@ -24,7 +24,8 @@
 */
 /* Set up custom color variables */
 :root {
-  --default-gray: #4a4a4a;
+  /* --default-gray: #4a4a4a; */
+  --default-gray: #313131;
   --divider-gray: #c3bfbf;
   --caption-gray: #737373;
   --teal0: #4fbdab;
@@ -39,7 +40,14 @@
   --yellow4: #e69e24;
   --header: rgba(249, 249, 249, 0.95);
   --header-solid: rgba(249, 249, 249, 1);
-  --primary: rgba(14, 113, 127, 1);
+  /* --primary: rgba(14, 113, 127, 1); */
+  /* --primary: rgba(24, 163, 163, 1); */
+  --primary: rgba(20, 130, 130, 1);
+  --primary-light: rgba(24, 163, 163, 0.6);
+  --beige: rgba(238, 230, 214, 1);
+  --light-cyan: rgba(244, 255, 255, 1);
+
+  /* --primary: rgba(57, 65, 126, 1); */
 }
 
 /* Make percentages add up to 100% of screen including padding etc */
@@ -111,12 +119,12 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--primary);
+  color: var(--primary-light);
   text-decoration: none;
 }
 
 nav li a:hover {
-  background-color: var(--primary);
+  background-color: var(--primary-light);
   color: white;
 }
 
@@ -349,11 +357,12 @@ a:active {
 }
 
 .button-contact {
-  background-color: transparent;
-  color: var(--primary);
   /* color: #4a4a4a; */
   text-transform: uppercase;
-  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: var(--primary);
+  color: #ffffff;
+  /* border: 2px solid var(--primary); */
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
@@ -365,9 +374,9 @@ a:active {
 
 .button-contact:hover,
 .button-contact:focus {
-  background-color: var(--primary);
-  border: 2px solid rgba(0, 0, 0, 0);
-  color: #ffffff;
+  background-color: var(--primary-light);
+  /* color: var(--default-gray); */
+  color: white;
   text-decoration: none;
 }
 
@@ -649,6 +658,14 @@ nav ul li a {
   text-align: center;
   display: block;
   margin: 0 auto;
+}
+
+.light-cyan {
+  background: var(--light-cyan);
+}
+
+.beige {
+  background: var(--beige);
 }
 
 .otto-light {
@@ -1043,12 +1060,64 @@ nav ul li a {
 
 li i {
   color: var(--primary);
+  transition: all 0.2s;
+}
+
+li i:hover {
+  color: var(--primary-light);
+}
+
+audio {
+  width: 100%;
+}
+
+#sound #project-hero {
+  padding: 48px;
+}
+
+.color-block h2,
+.color-block-light h2 {
+  margin: 0;
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+
+.color-block,
+.color-block-light {
+  padding-bottom: 64px;
+}
+
+.color-block {
+  color: white;
+}
+
+.white-block h2 {
+  margin: 32px;
+}
+
+.white-block {
+  margin-bottom: 32px;
+}
+
+#contact h2 {
+  margin-top: 48px;
+}
+
+hr {
+  background-color: var(--divider-gray);
+  height: 1px;
+  border: none;
+  margin-top: 48px;
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  #sound #project-hero {
+    padding: 80px;
+  }
+
   .navtoggle.navtoggle a:last-child {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1060,7 +1129,7 @@ Medium devices (640px and larger)
 
   #myNavtoggle {
     width: auto;
-    margin-left: 16px;
+    margin-left: 8px;
   }
 
   nav > ul {
@@ -1306,6 +1375,13 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .player {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+  }
+
   .container {
     padding-left: 32px;
     padding-right: 32px;
