@@ -40,6 +40,7 @@
   --header: rgba(249, 249, 249, 0.95);
   --header-solid: rgba(249, 249, 249, 1);
   --primary: rgba(14, 113, 127, 1);
+  /* --primary: rgba(57, 65, 126, 1); */
 }
 
 /* Make percentages add up to 100% of screen including padding etc */
@@ -1055,12 +1056,13 @@ audio {
 
 .color-block h2 {
   margin: 0;
-  padding: 32px;
+  padding-top: 32px;
+  margin-bottom: 32px;
 }
 
 .color-block {
   color: white;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
 }
 
 .white-block h2 {
@@ -1071,10 +1073,18 @@ audio {
   margin-bottom: 32px;
 }
 
+#contact h2 {
+  margin-top: 32px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  #sound #project-hero {
+    padding: 80px;
+  }
+
   .navtoggle.navtoggle a:last-child {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1086,7 +1096,7 @@ Medium devices (640px and larger)
 
   #myNavtoggle {
     width: auto;
-    margin-left: 16px;
+    margin-left: 8px;
   }
 
   nav > ul {
