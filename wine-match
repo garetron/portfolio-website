@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>About Gareth Hobbs - Product Designer - About</title>
+    <title>Gareth Hobbs - Product Designer - Wine Match</title>
 
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,7 +15,6 @@
       rel="stylesheet"
     />
 
-    <!-- CSS -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -23,7 +22,7 @@
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <!-- AOS -->
+    <!-- AOS Stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script
@@ -74,13 +73,12 @@
     gtag("config", "G-4428RGEE7C", { anonymize_ip: true });
   </script>
 
-  <body id="about-page">
+  <body>
     <header>
       <div class="wrapper navbar">
         <div class="">
           <div class="">
             <a href="index.html" class="logo">
-              <!-- <img src="https://via.placeholder.com/250x80" alt="Gareth Hobbs Logo"> -->
               <h2>Gareth Hobbs</h2>
             </a>
 
@@ -111,113 +109,7 @@
       </div>
     </header>
 
-    <main>
-      <!-- h1 section -->
-      <div class="" id="hero">
-        <!-- wrapper -->
-        <div class="center">
-          <h1>About</h1>
-        </div>
-      </div>
-
-      <!-- main content section -->
-      <div class="">
-        <!-- wrapper picture and info -->
-        <div data-aos="fade-right" class="container">
-          <div class="">
-            <picture class="col-lg-5 headshot">
-              <source
-                srcset="img/about/gh_headshot.jpg"
-                media="(max-width:745px)"
-              />
-              <img
-                src="img/about/gh_headshot@2x.jpg"
-                alt="Gareth Hobbs headshot"
-              />
-            </picture>
-          </div>
-
-          <!-- row wrapper for story / skills and tools -->
-          <div class="">
-            <!-- My Story Column -->
-            <div data-aos="fade-left" class="col-lg-7" id="my-story">
-              <h2>My Story</h2>
-              <p>
-                Hi, I'm Gareth. I'm a product designer with a background in
-                sound design. I've always loved puzzling my way through tricky
-                problems, and that, combined with my experience in design, led
-                me to pursue a career in UX. My past work in sound design for
-                theater allows me to look at user experience through the lens of
-                narrative storytelling and what makes things engaging and
-                understandable. I have been a part of many design projects where
-                I have contributed to creating something from the ground up. I'm
-                excited to continue doing this on UX projects where I can have a
-                personal impact and build something that betters people's lives.
-              </p>
-              <p>
-                When I'm not designing, I love to travel to new places or tick
-                another backpacking trip off my bucket list. 
-              </p>
-              <p>
-                Send me a message with any work opportunities, design ideas, or
-                to connect!
-              </p>
-              <div class="cv-button">
-                <a
-                  href="files/Gareth_Hobbs_Product_Designer.pdf"
-                  target="_blank"
-                  class="button"
-                  >Download my Resume</a
-                >
-              </div>
-            </div>
-
-            <!-- Skills and Tools Column -->
-            <div class="" id="skills-and-tools">
-              <h2>Skills and Tools</h2>
-              <!-- row for skills and tools sections -->
-              <div data-aos="fade-up" class="row col-md-12 col-lg-8">
-                <!-- Left column "relevant skills" -->
-                <div class="col-md-6 col-lg-6">
-                  <h3>Relevant Skills:</h3>
-                  <ul>
-                    <li>Lean UX / Design thinking / UCD</li>
-                    <li>UI and visual design</li>
-                    <li>Frontend development (HTML, CSS, Javascript)</li>
-                    <li>Affinity mapping</li>
-                    <li>2x2 strategy workshopping</li>
-                    <li>Analytic problem-solving</li>
-                    <li>Competitive analysis</li>
-                    <li>User research</li>
-                    <li>User personas</li>
-                    <li>User flows</li>
-                    <li>Usability testing</li>
-                    <li>Prototyping animation</li>
-                    <li>Wireframing / Prototyping</li>
-                    <li>Design systems</li>
-                    <li>Sound design</li>
-                  </ul>
-                </div>
-                <!-- Right Column "tools" -->
-                <div id="tools" class="col-md-6 col-lg-6">
-                  <h3>Tools Used:</h3>
-                  <ul>
-                    <li>Figma</li>
-                    <li>Sketch</li>
-                    <li>Miro</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Balsamiq</li>
-                    <li>Invision</li>
-                    <li>Atom</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+    <main></main>
 
     <!-- FOOTER SECTION -->
 
@@ -257,10 +149,10 @@
               </a>
             </li>
             <!-- <li>
-            <a href="TWITTER_URL" target="blank">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li> -->
+                  <a href="TWITTER_URL" target="blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  </li> -->
           </ul>
         </div>
         <p class="center">Copyright Gareth Hobbs 2022</p>
