@@ -719,6 +719,10 @@ nav ul li a {
   background: var(--wine-light);
 }
 
+.wine-dark {
+  background: var(--wine-dark);
+}
+
 #wine-match .overview path {
   fill: var(--wine-dark);
 }
@@ -1143,6 +1147,10 @@ hr {
   width: 100%;
   justify-content: center;
   gap: 8px;
+}
+
+#wine-match #native .row-lg {
+  gap: 48px;
 }
 
 /* ==============================

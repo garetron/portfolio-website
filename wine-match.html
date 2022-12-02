@@ -436,7 +436,6 @@
             materials and curated content, which helps set Wine Match apart from
             the competition.
           </p>
-          <!-- User goal paper slips wrapper -->
         </div>
       </div>
 
@@ -494,6 +493,71 @@
                 alt="low fidelity wireframes"
               />
             </picture>
+          </div>
+        </div>
+      </div>
+
+      <!-- Native Designs Section -->
+
+      <!-- Top Section -->
+      <div class="section-spacer">
+        <!-- wrapper -->
+        <div class="container" data-aos="fade-up" data-aos-offset="150">
+          <h2 class="block-header-black otto-headers-whitebg">
+            Native Designs
+          </h2>
+          <p>
+            I then developed <strong>mid-fidelity wireframes</strong> and began
+            incorporating different native design patterns for iOS and Android.
+            The designs included some stylistic differences, but the most
+            dramatic distinction was
+            <strong
+              >collapsing the tab navigation in the iOS app into a side drawer
+              navigation in Android.</strong
+            >
+            While the visibility of the navigation system was better in the iOS
+            tab format, the hamburger menu in Android allowed for the addition
+            of more navigation items to speed up particular user flows, which
+            will be especially useful as new features are added.
+          </p>
+          <p>
+            The camera button remained onscreen on Android as a floating action
+            button, allowing users to access this function as soon as they open
+            the app when they want to scan a bottle, such as when a waiter is
+            holding up the bottle for them, for instance.
+          </p>
+        </div>
+      </div>
+
+      <!-- BOTTOM SECTION LOW FIDELITY WIREFRAMES -->
+
+      <!-- Section -->
+      <div class="wine-dark color-block" id="native">
+        <!-- wrapper -->
+        <div class="container lo-fid-wrap row-lg">
+          <!-- column -->
+          <div class="padding-top">
+            <picture>
+              <img
+                class=""
+                src="img/wine_match/native-1.png"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+            <p class="center">
+              Navigation pattern changes: tab vs. side drawer.
+            </p>
+          </div>
+          <!-- column 2 -->
+          <div class="padding-top">
+            <picture>
+              <img
+                class=""
+                src="img/wine_match/native-2.png"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+            <p class="center">Stylistic changes: Full bleed photos</p>
           </div>
         </div>
       </div>
@@ -555,7 +619,9 @@
     <script src="js/scripts.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
   </body>
 </html>
