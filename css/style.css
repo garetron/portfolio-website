@@ -100,7 +100,7 @@ h4 {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 img {
@@ -723,6 +723,16 @@ nav ul li a {
   fill: var(--wine-dark);
 }
 
+.wm-texture {
+  background: linear-gradient(
+    59.55deg,
+    #f9f3ef 0%,
+    #fef7f2 32.81%,
+    #fffaf6 69.56%,
+    #fffcfa 100%
+  );
+}
+
 .black-radial {
   background: radial-gradient(50% 50% at 50% 50%, #4b4c4e 0%, #25282b 100%);
 }
@@ -1127,10 +1137,25 @@ hr {
   margin-top: 48px;
 }
 
+.flex-row {
+  display: flex;
+  padding-top: 0;
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  #competitive .col-md-6 .section-spacer {
+    margin-bottom: 0;
+  }
+
+  #wine-match #competitive .row-lg {
+    display: flex;
+  }
   #sound #project-hero {
     padding: 80px;
   }
@@ -1426,6 +1451,10 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;
+  }
+
+  #wine-match .row-lg {
+    gap: 8px;
   }
 
   .lo-fid-wrap {
