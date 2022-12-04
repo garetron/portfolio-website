@@ -1176,6 +1176,10 @@ hr {
   margin-top: 48px;
 }
 
+.responsive-padding-top {
+  padding-top: 48px;
+}
+
 .gif img {
   max-width: 320px;
   margin-top: 32px;
@@ -1190,6 +1194,16 @@ hr {
   margin-bottom: 48px;
 }
 
+.figma-div {
+  max-width: 390px;
+  margin: auto;
+  text-align: center;
+}
+
+.drop-image-full {
+  padding: 0 0;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -1197,9 +1211,6 @@ Medium devices (640px and larger)
   .center-caption {
     width: 75%;
     margin: auto;
-  }
-  .responsive-margin-top {
-    margin-top: 48px;
   }
 
   #competitive .col-md-6 .section-spacer {
@@ -1380,6 +1391,10 @@ Medium devices (640px and larger)
     padding-right: 10px;
   }
 
+  .drop-image-full {
+    padding: 0;
+  }
+
   [class*="col-"] h3 {
     margin-top: 0;
   }
@@ -1464,6 +1479,13 @@ Medium devices (640px and larger)
     width: 66%;
     float: none;
   }
+  .responsive-margin-top {
+    margin-top: 48px;
+  }
+
+  .responsive-padding-top {
+    padding-top: 48px;
+  }
 }
 
 /* ==============================
@@ -1473,10 +1495,6 @@ Large devices (1024px or larger)
   .center-caption {
     width: 66%;
     margin: auto;
-  }
-
-  .responsive-margin-top {
-    margin-top: 72px;
   }
 
   nav {
@@ -1872,6 +1890,14 @@ Large devices (1024px or larger)
 
   #hero {
     padding-top: 48px;
+  }
+
+  .responsive-margin-top {
+    margin-top: 72px;
+  }
+
+  .responsive-padding-top {
+    padding-top: 72px;
   }
 
   /* ==============================
