@@ -454,10 +454,18 @@ a:active {
   margin-top: 105px;
 }
 
-#otto #project-hero,
+#project-hero h3 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+#otto #project-hero {
+  height: 600px;
+}
+
 .project-page #project-hero {
   display: static;
-  height: 600px;
+  height: 100%;
 }
 
 #otto #project-hero img,
@@ -648,6 +656,10 @@ nav ul li a {
 
 #wine-match .intro-header {
   color: var(--wine-dark);
+}
+
+.caption {
+  color: var(--caption-gray);
 }
 
 /* 
@@ -1168,7 +1180,6 @@ hr {
 #ab-right p {
   width: 75%;
   margin: auto;
-  margin-bottom: 48px;
   margin-top: 16px;
 }
 
@@ -1208,6 +1219,9 @@ hr {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .project-page #project-hero {
+    height: 600px;
+  }
   .center-caption {
     width: 75%;
     margin: auto;
@@ -1672,7 +1686,7 @@ Large devices (1024px or larger)
     padding-top: 0;
   }
 
-  .paper-drop h2 {
+  #otto .paper-drop h2 {
     margin-top: 0px;
     padding-top: 32px;
   }
