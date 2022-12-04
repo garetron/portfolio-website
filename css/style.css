@@ -1215,6 +1215,14 @@ hr {
   padding: 0 0;
 }
 
+.context-column ul {
+  list-style: circle;
+}
+
+.padding-sm-md {
+  padding-bottom: 32px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -1506,6 +1514,10 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .padding-sm-md {
+    padding-bottom: 0;
+  }
+
   .center-caption {
     width: 66%;
     margin: auto;
