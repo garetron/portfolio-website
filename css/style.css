@@ -47,6 +47,9 @@
   --beige: rgba(238, 230, 214, 1);
   --light-cyan: rgba(244, 255, 255, 1);
 
+  --wine-light: #deddff;
+  --wine-dark: #4a4a7b;
+
   /* --primary: rgba(57, 65, 126, 1); */
 }
 
@@ -97,7 +100,7 @@ h4 {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 img {
@@ -451,12 +454,22 @@ a:active {
   margin-top: 105px;
 }
 
+#project-hero h3 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
 #otto #project-hero {
-  display: static;
   height: 600px;
 }
 
-#otto #project-hero img {
+.project-page #project-hero {
+  display: static;
+  height: 100%;
+}
+
+#otto #project-hero img,
+.project-page #project-hero img {
   max-width: 900px;
   margin: 0 auto;
 }
@@ -632,13 +645,21 @@ nav ul li a {
   list-style: circle;
 }
 
-#tools-label {
+.tools-label {
   padding-left: 25px;
 }
 
 .intro-header {
   text-align: center;
   color: #4365b1;
+}
+
+#wine-match .intro-header {
+  color: var(--wine-dark);
+}
+
+.caption {
+  color: var(--caption-gray);
 }
 
 /* 
@@ -704,6 +725,28 @@ nav ul li a {
       rgba(168, 100, 255, 0.2) 100%
     ),
     linear-gradient(59.53deg, #00172d 3.79%, #75b4f2 100%);
+}
+
+.wine-purple-light {
+  background: var(--wine-light);
+}
+
+.wine-dark {
+  background: var(--wine-dark);
+}
+
+#wine-match .overview path {
+  fill: var(--wine-dark);
+}
+
+.wm-texture {
+  background: linear-gradient(
+    59.55deg,
+    #f9f3ef 0%,
+    #fef7f2 32.81%,
+    #fffaf6 69.56%,
+    #fffcfa 100%
+  );
 }
 
 .black-radial {
@@ -1110,10 +1153,95 @@ hr {
   margin-top: 48px;
 }
 
+.flex-row {
+  display: flex;
+  padding-top: 0;
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+}
+
+.centered-row {
+  width: 75%;
+  gap: 10%;
+  margin: auto;
+  margin-top: 48px;
+}
+
+#wine-match #native .row-lg {
+  gap: 48px;
+}
+
+#ab-right {
+  width: 100%;
+  height: 100%;
+}
+
+#ab-right p {
+  width: 75%;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.responsive-margin-top {
+  margin-top: 48px;
+}
+
+.responsive-padding-top {
+  padding-top: 48px;
+}
+
+.gif img {
+  max-width: 320px;
+  margin-top: 32px;
+}
+.gif {
+  text-align: center;
+}
+
+.center-caption {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+.figma-div {
+  max-width: 390px;
+  margin: auto;
+  text-align: center;
+}
+
+.drop-image-full {
+  padding: 0 0;
+}
+
+.context-column ul {
+  list-style: circle;
+}
+
+.padding-sm-md {
+  padding-bottom: 32px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .project-page #project-hero {
+    height: 600px;
+  }
+  .center-caption {
+    width: 75%;
+    margin: auto;
+  }
+
+  #competitive .col-md-6 .section-spacer {
+    margin-bottom: 0;
+  }
+
+  #wine-match #competitive .row-lg {
+    display: flex;
+  }
   #sound #project-hero {
     padding: 80px;
   }
@@ -1285,6 +1413,10 @@ Medium devices (640px and larger)
     padding-right: 10px;
   }
 
+  .drop-image-full {
+    padding: 0;
+  }
+
   [class*="col-"] h3 {
     margin-top: 0;
   }
@@ -1369,12 +1501,28 @@ Medium devices (640px and larger)
     width: 66%;
     float: none;
   }
+  .responsive-margin-top {
+    margin-top: 48px;
+  }
+
+  .responsive-padding-top {
+    padding-top: 48px;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .padding-sm-md {
+    padding-bottom: 0;
+  }
+
+  .center-caption {
+    width: 66%;
+    margin: auto;
+  }
+
   nav {
     margin-right: 16px;
   }
@@ -1409,6 +1557,11 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;
+  }
+
+  #wine-match .row-lg {
+    gap: 8px;
+    margin-top: 0;
   }
 
   .lo-fid-wrap {
@@ -1545,7 +1698,7 @@ Large devices (1024px or larger)
     padding-top: 0;
   }
 
-  .paper-drop h2 {
+  #otto .paper-drop h2 {
     margin-top: 0px;
     padding-top: 32px;
   }
@@ -1584,7 +1737,8 @@ Large devices (1024px or larger)
     margin-bottom: 0;
   }
 
-  #otto #project-hero {
+  #otto #project-hero,
+  .project-page #project-hero {
     display: static;
     height: 850px;
   }
@@ -1762,6 +1916,14 @@ Large devices (1024px or larger)
 
   #hero {
     padding-top: 48px;
+  }
+
+  .responsive-margin-top {
+    margin-top: 72px;
+  }
+
+  .responsive-padding-top {
+    padding-top: 72px;
   }
 
   /* ==============================

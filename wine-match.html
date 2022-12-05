@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gareth Hobbs - Product Designer - Wine Match</title>
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- AOS Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a8c857e106.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- favicon links -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/fav/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/fav/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-4428RGEE7C"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-4428RGEE7C", { anonymize_ip: true });
+  </script>
+
+  <body>
+    <header>
+      <div class="wrapper navbar">
+        <div class="">
+          <div class="">
+            <a href="index.html" class="logo">
+              <h2>Gareth Hobbs</h2>
+            </a>
+
+            <div class="wrapper">
+              <nav class="borderXwidth">
+                <div class="navtoggle" id="myNavtoggle">
+                  <ul class="navlist">
+                    <li class=""><a href="index.html">Work</a></li>
+                    <li><a class="" href="sound.html">Sound</a></li>
+                    <li><a class="" href="about.html">About</a></li>
+                    <li>
+                      <a href="#contact" onclick="menuToggle()">Contact</a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0);"
+                        class="icon"
+                        onclick="menuToggle()"
+                        ><i class="fas fa-bars"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="project-page" id="wine-match">
+      <!-- HERO SECTION -->
+      <!-- section -->
+      <div class="wine-purple-light" id="project-hero">
+        <!-- wrapper -->
+        <div class="container">
+          <h1 class="center">Wine Match</h1>
+          <h3>
+            Wine Match is a shopping, recommendation, and learning app that
+            helps users discover new wines.
+          </h3>
+          <!-- <img src="https://via.placeholder.com/608x536" alt="Otto hero Image"> -->
+          <div class="hero-box">
+            <picture>
+              <source
+                srcset="img/wine_match/wm_2_up.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                class=""
+                src="img/wine_match/wm_2_up@2x.jpg"
+                alt="Otto cover image"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <!-- stat section -->
+      <div class="container section-spacer">
+        <!-- stat row -->
+        <div class="new-stat-row">
+          <div class="stat-columns-center">
+            <!-- column 1 -->
+            <div class="new-stat-col context-column">
+              <p class="tools-label"><strong>Context</strong></p>
+              <ul class="">
+                <li>Case study</li>
+                <li>My Role: UI/UX Designer</li>
+              </ul>
+            </div>
+
+            <!-- column 2 -->
+            <div class="new-stat-col">
+              <p class="tools-label"><strong>Tools and skills used</strong></p>
+              <ul>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Competitive Analysis</li>
+                <li>Native Design Patters</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>Animation</li>
+                <li>User Testing</li>
+                <li>A/B Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OVERVIEW SECTION -->
+      <!-- Overview Section -->
+      <div
+        data-aos="fade-up"
+        data-aos-duration="10000"
+        class="overview responsive-margin-top"
+      >
+        <!-- wrapper -->
+        <div class="container col-lg-8 col-md-8">
+          <!-- overview row -->
+          <div class="row-lg">
+            <!-- icon column -->
+            <div class="intro-icon">
+              <svg
+                width="64"
+                height="58"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_118_741)">
+                  <path
+                    d="M0.100098 46.8367H29.0627L19.6713 55.4808L21.8205 57.7813L31.9256 48.5024L41.9514 57.7836L44.1006 55.4831L34.7903 46.8367H63.7505V0.0393066H0.102604L0.100098 46.8367ZM3.2819 3.21116H60.5686V43.6624H3.2819V3.21116Z"
+                    fill="#4365B1"
+                  />
+                  <path
+                    d="M12.3516 21.8521H51.4987V25.0239H12.3516V21.8521Z"
+                    fill="#4365B1"
+                  />
+                  <path
+                    d="M19.5127 14.0795H51.499V17.2513H19.5127V14.0795Z"
+                    fill="#4365B1"
+                  />
+                  <path
+                    d="M12.3516 29.5461H44.3378V32.718H12.3516V29.5461Z"
+                    fill="#4365B1"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_118_741">
+                    <rect width="64" height="58" fill="white" />
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <!-- Text Column -->
+            <div class="intro-text-col">
+              <div class="intro-header">
+                <h4 class="margin16">Overview</h4>
+              </div>
+              <div class="center intro-sentence">
+                <h3 class="margin16">
+                  An app to help users find and buy new wines.
+                </h3>
+              </div>
+              <p class="section-spacer intro-p">
+                I developed an MVP prototype for a new wine recommendation app
+                for this project. The project brief required developing iOS and
+                Android versions of a native app that demonstrated how it would
+                provide users with customized wine suggestions and resources.
+              </p>
+            </div>
+          </div>
+
+          <!-- The Problem Row -->
+          <div class="row-lg">
+            <!-- icon column -->
+            <div class="intro-icon">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_118_751)">
+                  <path
+                    d="M43.2552 20.5016C43.4514 25.7134 39.9374 30.4457 34.8973 31.7448C34.1901 31.9286 33.6948 32.561 33.6948 33.2869V35.29C33.6948 36.1716 32.9814 36.885 32.0998 36.885C31.2182 36.885 30.5048 36.1716 30.5048 35.29V33.2869C30.5048 31.1093 31.9845 29.2059 34.1029 28.6576C37.701 27.7292 40.212 24.3492 40.0686 20.6235C39.916 16.5549 36.4799 13.122 32.4113 12.9662C30.2088 12.8821 28.1433 13.6733 26.5702 15.1905C24.9938 16.7076 24.1247 18.7481 24.1247 20.935C24.1247 21.8167 23.4113 22.53 22.5297 22.53C21.6481 22.53 20.9347 21.8166 20.9347 20.935C20.9347 17.8728 22.1496 15.016 24.3553 12.8914C26.5609 10.7667 29.4456 9.66392 32.5329 9.77924C38.3273 9.99731 43.0377 14.7076 43.2554 20.5017L43.2552 20.5016ZM32.0996 40.0748C31.218 40.0748 30.5046 40.7882 30.5046 41.6698C30.5046 42.5514 31.218 43.2648 32.0996 43.2648C32.9812 43.2648 33.6946 42.5514 33.6946 41.6698C33.6946 40.7882 32.9812 40.0748 32.0996 40.0748ZM63.9999 11.3645V41.6698C63.9999 47.8256 58.9906 52.8349 52.8348 52.8349H33.5575L22.8597 63.5327C22.5544 63.838 22.1463 64 21.7319 64C21.5263 64 21.3176 63.9595 21.1214 63.8785C20.5263 63.6324 20.1369 63.0498 20.1369 62.4049V52.8349H11.3643C5.20852 52.8349 0.199219 47.8255 0.199219 41.6697V11.3645C0.199219 5.20865 5.20852 0.199341 11.3643 0.199341H52.8347C58.9905 0.199341 63.9998 5.20865 63.9998 11.3645L63.9999 11.3645ZM60.8099 11.3645C60.8099 6.9658 57.2336 3.38945 52.8348 3.38945H11.3644C6.96569 3.38945 3.38935 6.9658 3.38935 11.3645V41.6698C3.38935 46.0686 6.96569 49.6449 11.3644 49.6449H21.732C22.6137 49.6449 23.327 50.3583 23.327 51.2399V58.5546L31.7695 50.1122C32.0685 49.8131 32.4735 49.6449 32.8972 49.6449H52.8349C57.2336 49.6449 60.81 46.0685 60.81 41.6698L60.8099 11.3645Z"
+                    fill="#4365B1"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_118_751">
+                    <rect width="64" height="64" fill="white" />
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <!-- Text Column -->
+            <div class="intro-text-col">
+              <div class="intro-header">
+                <h4 class="margin16">The Problem</h4>
+              </div>
+              <div class="center intro-sentence">
+                <h3 class="margin16">
+                  How to inform and empower wine drinkers.
+                </h3>
+              </div>
+              <p class="section-spacer">
+                Many people who drink wine are
+                <strong>overwhelmed by the options</strong> whenever they buy
+                wine at the store or order it off a menu. As a result, people
+                may stick to what they know, even if they want to try new or
+                exciting wines. They may also enjoy certain wines more than
+                others but
+                <strong
+                  >are not able to articulate their personal
+                  preferences.</strong
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Hypothesis Row -->
+          <div class="row-lg">
+            <!-- icon column -->
+            <div class="intro-icon">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_118_747)">
+                  <path
+                    d="M51.4544 36.3975H41.7091C41.2166 36.3975 40.769 36.6875 40.5665 37.1374C40.3665 37.5874 40.449 38.1149 40.7765 38.4824C41.189 38.9424 41.4165 39.5374 41.4165 40.1575C41.4165 41.545 40.2891 42.6725 38.9015 42.6725C37.514 42.6725 36.3865 41.545 36.3865 40.1575C36.3865 39.5375 36.614 38.9425 37.0265 38.4824C37.3565 38.1149 37.439 37.59 37.2365 37.1374C37.0365 36.6874 36.589 36.3975 36.094 36.3975H27.5993V27.9027C27.5993 26.8478 26.3342 26.2377 25.5143 26.9728C25.0543 27.3853 24.4593 27.6128 23.8393 27.6128C22.4518 27.6128 21.3243 26.4853 21.3243 25.0977C21.3243 23.7102 22.4518 22.5827 23.8393 22.5827C24.4593 22.5827 25.0542 22.8102 25.5143 23.2227C26.3068 23.9352 27.5993 23.3802 27.5993 22.2928V12.5475C27.5993 11.8575 27.0393 11.2975 26.3493 11.2975H1.24657C0.556582 11.2975 -0.00341797 11.8575 -0.00341797 12.5475V62.7523C-0.00341797 63.4423 0.556582 64.0023 1.24657 64.0023H51.4514C52.1414 64.0023 52.7014 63.4423 52.7014 62.7523V37.6496C52.7014 36.9596 52.1414 36.3996 51.4514 36.3996L51.4544 36.3975ZM2.49947 13.7952H25.1017V20.2426C21.9042 19.4126 18.8267 21.8451 18.8267 25.0951C18.8267 28.3525 21.9117 30.7776 25.1017 29.9475V36.3949H16.607C16.1145 36.3949 15.667 36.6849 15.4645 37.1349C15.2645 37.5849 15.347 38.1123 15.6745 38.4799C16.087 38.9399 16.3145 39.5349 16.3145 40.1549C16.3145 41.5424 15.187 42.6699 13.7995 42.6699C12.4119 42.6699 11.2844 41.5424 11.2844 40.1549C11.2844 39.5349 11.5119 38.9399 11.9244 38.4799C12.2545 38.1124 12.3369 37.5874 12.1345 37.1349C11.9345 36.6849 11.487 36.3949 10.9919 36.3949H2.4972V13.7927L2.49947 13.7952ZM2.49947 38.8979H8.94427C8.11924 42.0805 10.5343 45.1729 13.7992 45.1729C17.0618 45.1729 19.4792 42.083 18.6542 38.8979H25.099V45.3427C21.9165 44.5177 18.824 46.9328 18.824 50.1977C18.824 53.4602 21.914 55.8777 25.099 55.0527V61.4975H2.49678L2.49947 38.8979ZM50.2044 61.5002H27.6022V53.0055C27.6022 52.513 27.3122 52.0654 26.8622 51.8629C26.4122 51.6629 25.8848 51.7454 25.5172 52.0729C25.0572 52.4854 24.4622 52.7129 23.8422 52.7129C22.4547 52.7129 21.3272 51.5854 21.3272 50.1979C21.3272 48.8104 22.4547 47.6829 23.8422 47.6829C24.4622 47.6829 25.0572 47.9104 25.5172 48.3229C25.8847 48.6529 26.4122 48.7354 26.8622 48.5329C27.3122 48.3329 27.6022 47.8854 27.6022 47.3904V38.8957H34.047C33.222 42.0706 35.6295 45.1707 38.902 45.1707C42.1645 45.1707 44.582 42.0807 43.7569 38.8957H50.2017V61.4979L50.2044 61.5002Z"
+                    fill="#4365B1"
+                  />
+                  <path
+                    d="M60.2398 11.2851C60.8598 11.2851 61.4547 11.5126 61.9148 11.9251C62.2823 12.2551 62.8097 12.3376 63.2598 12.1351C63.7098 11.9351 63.9998 11.4876 63.9998 10.9926V1.2473C63.9998 0.557314 63.4398 -0.00268555 62.7498 -0.00268555H53.0045C52.512 -0.00268555 52.0645 0.287318 51.862 0.737346C51.662 1.18734 51.7445 1.71482 52.072 2.08237C52.4845 2.54237 52.712 3.13735 52.712 3.75738C52.712 5.1449 51.5845 6.27239 50.197 6.27239C48.8094 6.27239 47.6819 5.1449 47.6819 3.75738C47.6819 3.13738 47.9094 2.5424 48.3219 2.08237C48.6519 1.71487 48.7344 1.18739 48.5319 0.737346C48.3319 0.28735 47.8845 -0.00268555 47.3894 -0.00268555H37.6441C36.9541 -0.00268555 36.3942 0.557314 36.3942 1.2473V8.94202C33.2116 8.11699 30.1191 10.532 30.1191 13.797C30.1191 17.0595 33.2091 19.477 36.3942 18.652V26.3467C36.3942 27.0367 36.9541 27.5967 37.6441 27.5967H45.3389C44.5138 30.7792 46.9289 33.8717 50.1938 33.8717C53.4564 33.8717 55.8738 30.7817 55.0488 27.5967H62.7461C63.4361 27.5967 63.9961 27.0367 63.9961 26.3467V16.6014C63.9961 16.1089 63.7061 15.6614 63.2561 15.4589C62.8061 15.2589 62.2786 15.3414 61.9111 15.6689C61.4511 16.0814 60.8561 16.3089 60.2361 16.3089C58.8486 16.3089 57.7211 15.1814 57.7211 13.7939C57.7211 12.4064 58.8486 11.2789 60.2361 11.2789L60.2398 11.2851ZM61.4998 18.6553V25.1001H53.0051C52.5126 25.1001 52.065 25.3901 51.8625 25.8401C51.6625 26.2901 51.745 26.8176 52.0725 27.1851C52.485 27.6451 52.7125 28.2401 52.7125 28.8601C52.7125 30.2477 51.5851 31.3752 50.1975 31.3752C48.81 31.3752 47.6825 30.2477 47.6825 28.8601C47.6825 28.2401 47.91 27.6452 48.3225 27.1851C48.6525 26.8176 48.735 26.2902 48.5325 25.8401C48.3325 25.3901 47.885 25.1001 47.39 25.1001H38.8953V16.6054C38.8953 16.1129 38.6053 15.6654 38.1553 15.4629C37.7053 15.2629 37.1778 15.3454 36.8103 15.6729C36.3503 16.0854 35.7553 16.3129 35.1353 16.3129C33.7477 16.3129 32.6203 15.1854 32.6203 13.7979C32.6203 12.4104 33.7477 11.2829 35.1353 11.2829C35.7553 11.2829 36.3502 11.5104 36.8103 11.9229C37.1778 12.2529 37.7028 12.3354 38.1553 12.1329C38.6053 11.9329 38.8953 11.4854 38.8953 10.9903V2.49563H45.3401C44.515 5.67815 46.9301 8.77063 50.195 8.77063C53.4576 8.77063 55.875 5.68065 55.05 2.49563H61.4948V8.94043C58.3123 8.1154 55.2198 10.5304 55.2198 13.7954C55.2198 17.0579 58.3098 19.4754 61.4948 18.6504L61.4998 18.6553Z"
+                    fill="#4365B1"
+                  />
+                </g>
+                <defs>
+                  <clippath id="clip0_118_747">
+                    <rect width="64" height="64" fill="white" />
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <!-- Text Column -->
+            <div class="intro-text-col">
+              <div class="intro-header">
+                <h4 class="margin16">Hypothesis</h4>
+              </div>
+              <div class="center intro-sentence">
+                <h3 class="margin16">
+                  If people know their personal preferences, an app that matches
+                  them with wines would be a valuable resource.
+                </h3>
+              </div>
+              <p>
+                I aimed to design an app that helped users pinpoint what they
+                enjoy in wines and then offer suggested wines that match their
+                profile. Due to the variety of wines, even within a single
+                varietal or region, this service could be a helpful time-saver
+                for users.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <hr class="solid"> -->
+      </div>
+
+      <!-- Competitive Analysis Section -->
+      <div
+        data-aos="fade-up"
+        data-aos-offset="150"
+        class="responsive-margin-top"
+        id="competitive"
+      >
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg">Competitive Analysis</h2>
+            <p>
+              I turned to some of my competitor&rsquo;s apps to investigate what
+              design solutions they had used to solve similar problems and see
+              what I could learn from them or what I wanted to avoid.
+            </p>
+
+            <p>
+              Many apps in this field suffer from a
+              <strong>bloated and unattractive UI,</strong>
+              and a central goal of Wine Match was to make discovering wine feel
+              more accessible and easy. The overload of information and heavy
+              visual design in other apps didn&rsquo;t help.
+            </p>
+
+            <p class="section-spacer">
+              However, other apps did have some good navigation and input UI
+              patterns that I thought I could implement in my designs.
+            </p>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="wm-texture responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <img
+                  class="img-800-max"
+                  src="img/wine_match/wm-ca-1@2x.png"
+                  alt="user flow image"
+                />
+              </picture>
+              <p class="caption section-spacer">
+                A graphic and intuitive search tool for recommendations is a
+                very effective pattern on Wine Searcher’s search page. Filter
+                options are offered on the results page, which keeps the initial
+                search clean and easy to use.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <img
+                  class="img-800-max"
+                  src="img/wine_match/wm-ca-2@2x.png"
+                  alt="user flow digram"
+                />
+              </picture>
+              <p class="caption">
+                Tab navigation is highly functional on the wine page, where
+                there is a lot of information to navigate, but the presentation
+                of this information is bloated and unwieldy. Fewer navigation
+                tabs and more expandable information bins could help alleviate
+                this.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Low Fidelity Wireframes Section -->
+
+      <!-- Top Section -->
+      <div class="section-spacer">
+        <!-- wrapper -->
+        <div class="container" data-aos="fade-up" data-aos-offset="150">
+          <h2 class="block-header-black otto-headers-whitebg">
+            Low Fidelity Wireframes
+          </h2>
+          <p>
+            I began creating user flows and low-fidelity wireframes to sketch
+            out how this app could:
+          </p>
+          <ul>
+            <li>
+              Offer users <strong>personalized recommendations</strong> for new
+              wines to try.
+            </li>
+            <li>
+              Allow users to <strong>quickly document wines</strong> that they
+              try when out at a restaurant or bar.
+            </li>
+            <li>
+              Offer users <strong>editorial and news content</strong> that makes
+              them feel more knowledgeable about wine.
+            </li>
+          </ul>
+          <p>
+            To achieve this, I
+            <strong
+              >designed a quiz that allows the app to learn a user&rsquo;s
+              tastes</strong
+            >
+            and offer suggestions based on the results. Users can also scan a
+            bottle label or wine menu with their phone&rsquo;s camera and find
+            that wine in the app so that it can be saved or rated.
+          </p>
+          <p>
+            Finally, a <strong>separate “Learn” section</strong> offers learning
+            materials and curated content, which helps set Wine Match apart from
+            the competition.
+          </p>
+        </div>
+      </div>
+
+      <!-- BOTTOM SECTION LOW FIDELITY WIREFRAMES -->
+
+      <!-- Section -->
+      <div class="wine-purple-light" id="low-fid-img">
+        <!-- wrapper -->
+        <div class="container lo-fid-wrap row-lg responsive-padding-top">
+          <!-- 2 row -->
+          <div class="flex-row padding-top">
+            <picture>
+              <img
+                class=""
+                src="img/wine_match/wm-lofid-1.jpg"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+            <picture>
+              <img
+                src="img/wine_match/wm-lofid-2.jpg"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+          </div>
+          <!-- 2 row -->
+          <div class="flex-row">
+            <picture>
+              <img
+                src="img/wine_match/wm-lofid-3.jpg"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+            <picture class="">
+              <img
+                class=""
+                src="img/wine_match/wm-lofid-4.jpg"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+          </div>
+          <!-- 2 row -->
+          <div class="flex-row padding-sm-md">
+            <picture class="">
+              <img
+                class=""
+                src="img/wine_match/wm-lofid-5.jpg"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+            <picture class="">
+              <img
+                class=""
+                src="img/wine_match/wm-lofid-6.jpg"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <!-- Native Designs Section -->
+
+      <!-- Top Section -->
+      <div class="section-spacer">
+        <!-- wrapper -->
+        <div class="container" data-aos="fade-up" data-aos-offset="150">
+          <h2 class="block-header-black otto-headers-whitebg">
+            Native Designs
+          </h2>
+          <p>
+            I then developed <strong>mid-fidelity wireframes</strong> and began
+            incorporating different native design patterns for iOS and Android.
+            The designs included some stylistic differences, but the most
+            dramatic distinction was
+            <strong
+              >collapsing the tab navigation in the iOS app into a side drawer
+              navigation in Android.</strong
+            >
+            While the visibility of the navigation system was better in the iOS
+            tab format, the hamburger menu in Android allowed for the addition
+            of more navigation items to speed up particular user flows, which
+            will be especially useful as new features are added.
+          </p>
+          <p>
+            The camera button remained onscreen on Android as a floating action
+            button, allowing users to access this function as soon as they open
+            the app when they want to scan a bottle, such as when a waiter is
+            holding up the bottle for them, for instance.
+          </p>
+        </div>
+      </div>
+
+      <!-- BOTTOM SECTION LOW FIDELITY WIREFRAMES -->
+
+      <!-- Section -->
+      <div class="wine-dark color-block" id="native">
+        <!-- wrapper -->
+        <div class="container lo-fid-wrap row-lg">
+          <!-- column -->
+          <div class="padding-top">
+            <picture>
+              <img
+                class=""
+                src="img/wine_match/native-1.png"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+            <p class="center">
+              Navigation pattern changes: tab vs. side drawer.
+            </p>
+          </div>
+          <!-- column 2 -->
+          <div class="padding-top">
+            <picture>
+              <img
+                class=""
+                src="img/wine_match/native-2.png"
+                alt="low fidelity wireframes"
+              />
+            </picture>
+            <p class="center">Stylistic changes: Full bleed photos</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AB Testing -->
+      <div class="row-lg white-bg" id="ab">
+        <!-- left side -->
+        <div class="paper-drop col-lg-5 container">
+          <div class="">
+            <h2 class="center-small responsive-margin-top">
+              Developing the Design
+            </h2>
+            <p>
+              I began to finalize the screen design to make the app feel light,
+              accessible, and straightforward. One feature I wanted to offer
+              users was to give them a personalized score for a wine based on
+              their tastes and also allow them to see the average rating from
+              other users. I initially placed these two metrics on the screen
+              with equal hierarchy, but the layout was unintuitive. I eventually
+              decided to emphasize the personalized rating since this is one of
+              the app's primary functions. The user rating metric is still
+              visible above the fold but became a smaller item located lower
+              down on the screen.
+            </p>
+          </div>
+        </div>
+        <!-- right Section -->
+        <div class="wm-texture color-block-light" id="ab-right">
+          <!-- wrapper -->
+          <div>
+            <!-- row for images -->
+            <div class="flex-row centered-row responsive-padding-top">
+              <picture>
+                <img
+                  class=""
+                  src="img/wine_match/wine-page-before.png"
+                  alt="low fidelity wireframes"
+                />
+              </picture>
+              <picture>
+                <img
+                  class=""
+                  src="img/wine_match/wine-page-after.png"
+                  alt="low fidelity wireframes"
+                />
+              </picture>
+            </div>
+            <!-- wrapper row for caption -->
+            <div>
+              <p>
+                I decided to further differentiate these two metrics by creating
+                two rating systems: 0-3 thumbs up for the "match score" and a
+                more conventional 5-star rating system for the "user score." The
+                "match score" also utilizes the extra space to explain why a
+                wine is a good match through information tags.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animation Section -->
+      <div class="animations">
+        <!-- Wrapper -->
+        <div
+          class="container responsive-margin-top"
+          data-aos="fade-up"
+          data-aos-offset="150"
+        >
+          <h2 class="center">Animation / Interaction Design</h2>
+          <p>
+            When building the final prototype, I created animations for several
+            micro-interactions throughout the app.
+          </p>
+          <!-- gif Item -->
+          <div>
+            <!-- gif -->
+            <div class="gif">
+              <img src="/img/wine_match/gif/login.gif" alt="login animation" />
+            </div>
+            <!-- Caption -->
+            <div class="center-caption">
+              <p class="caption">
+                The transition from the login screen to the homepage displays a
+                subtle logo animation. This movement provides a small moment of
+                delight and highlights successful entry into the app. This
+                interaction got many positive responses in user testing.
+              </p>
+            </div>
+          </div>
+          <!-- gif Item -->
+          <div>
+            <!-- gif -->
+            <div class="gif">
+              <img
+                src="/img/wine_match/gif/wine-card.gif"
+                alt="wine card animation"
+              />
+            </div>
+            <!-- Caption -->
+            <div class="center-caption">
+              <p class="caption">
+                Wine cards allow users to expand the detailed description and
+                access more information quickly without leaving the search
+                screen.
+              </p>
+            </div>
+          </div>
+          <!-- gif Item -->
+          <div>
+            <!-- gif -->
+            <div class="gif">
+              <img src="/img/wine_match/gif/quiz.gif" alt="quiz animation" />
+            </div>
+            <!-- Caption -->
+            <div class="center-caption">
+              <p class="caption">
+                The quiz section uses animated breadcrumbs to inform users of
+                their progress through the questions. Tapping on the selectable
+                buttons provides satisfying feedback highlighting a state
+                change.
+              </p>
+            </div>
+          </div>
+          <!-- gif Item -->
+          <div>
+            <!-- gif -->
+            <div class="gif">
+              <img
+                src="/img/wine_match/gif/camera-expand.gif"
+                alt="camera animation"
+              />
+            </div>
+            <!-- Caption -->
+            <div class="center-caption">
+              <p class="caption">
+                Many subtle transitions help orient users when switching between
+                screens with common elements. The camera button moves and
+                changes color, so it is easy to locate when changing screens.
+              </p>
+            </div>
+          </div>
+          <!-- gif Item -->
+          <div>
+            <!-- gif -->
+            <div class="gif">
+              <img
+                src="/img/wine_match/gif/search-bar.gif"
+                alt="search bar animation"
+              />
+            </div>
+            <!-- Caption -->
+            <div class="center-caption">
+              <p class="caption section-spacer">
+                The search bar screen also uses animation to redirect focus and
+                highlight scren changes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prototype Section -->
+      <div class="color-block black-radial">
+        <!-- wrapper -->
+        <div class="container">
+          <h2 class="center responsive-margin-top">Final Prototype</h2>
+          <p>
+            With the screens finalized, I used an interactive prototype to
+            complete user testing and collect feedback. This technique gave me
+            valuable insights into what was working on the app and what could be
+            improved. Testers found that some of the screens still felt
+            cluttered and dense, and I used this feedback to add white space to
+            some screens, especially the &quot;Learn&quot; page. Feedback also
+            highlighted some usability issues, such as the readability of text
+            or spacing of icons.
+          </p>
+
+          <p>
+            An interactive prototype of the final iOS design is accessible
+            below.
+          </p>
+
+          <div class="figma-div">
+            <iframe
+              class="responsive-margin-top"
+              style="border: 1px solid rgba(0, 0, 0, 0.1)"
+              width="100%"
+              height="800"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfffsZlIW4jcAMIrTzeQRlP%2FWineMatch-iOS%3Fpage-id%3D19%253A2%26node-id%3D19%253A12506%26viewport%3D1278%252C217%252C0.5%26scaling%3Dcontain%26starting-point-node-id%3D19%253A12506"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAKEAWAYS SECTION -->
+      <div class="row-lg white-bg" id="takeaways">
+        <!-- left side -->
+        <div class="col-lg-6 drop-image-full">
+          <!-- wrapper -->
+          <div class="">
+            <picture>
+              <source
+                srcset="img/wine_match/takeaways-twoup.png"
+                media="(max-width:767px)"
+              />
+              <img
+                class=""
+                src="img/wine_match/takeaways-twoup@2x.png"
+                alt="wine match final ui"
+              />
+            </picture>
+          </div>
+        </div>
+        <!-- Right Side -->
+        <div class="paper-drop col-lg-6 container">
+          <div class="">
+            <h2 class="center-small responsive-margin-top">
+              Final Designs / Project Takeaways
+            </h2>
+            <p>
+              The final designs and prototypes for Wine Match show how users can
+              use this app in several ways to identify new wines they enjoy and
+              boost their knowledge and confidence when discussing wine.
+            </p>
+
+            <p>
+              Future improvements I would be interested in exploring include
+              using a unique typeface for the brand. In this MVP product, I
+              adhered to the design brief and stuck closely to Material's and
+              Apple's design guidelines, primarily using their native typefaces.
+            </p>
+
+            <p class="section-spacer">
+              Additionally, the addition of cellar-tracker tools in a future
+              iteration and location-based event suggestions could enrich the
+              product's offerings.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FINAL IMAGE -->
+      <div class="">
+        <picture class="full-bleed-image">
+          <source
+            srcset="img/wine_match/wm-all-screens.png"
+            media="(max-width:767px)"
+          />
+          <img
+            class="full-bleed-image white-slip-remover"
+            src="img/wine_match/wm-all-screens@2x.png"
+            alt="final screens mockup wine match"
+          />
+        </picture>
+      </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+
+    <!-- Container -->
+    <footer data-aos="zoom-in" id="contact">
+      <!-- wrapper -->
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p class="spacer-24">
+          Want to discuss my work or oppurtunities? Please get in touch.
+        </p>
+        <!-- email -->
+        <div class="contact-wrap">
+          <a href="mailto:garethhobbs01@gmail.com" class="button-contact"
+            >Send Email</a
+          >
+        </div>
+        <!-- Social Links -->
+        <div class="">
+          <ul>
+            <li>
+              <a href="https://www.behance.net/garethhobbs" target="_blank">
+                <i class="fa-brands fa-square-behance fa-xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/gareth-hobbs/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/garetron" target="_blank">
+                <i class="fa-brands fa-github fa-xl"></i>
+              </a>
+            </li>
+            <!-- <li>
+                  <a href="TWITTER_URL" target="blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  </li> -->
+          </ul>
+        </div>
+        <p class="center">Copyright Gareth Hobbs 2022</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
