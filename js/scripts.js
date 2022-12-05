@@ -19,6 +19,18 @@ var prev = 0;
 var $window = $(window);
 var nav = $("header");
 
+$(".fun-heading").hover(
+  function () {
+    $(".logo").addClass("fun-heading-always");
+    $(".fun-heading").addClass("fun-heading-always");
+    var allfun = document.getElementsByClassName("fun-heading");
+  },
+  function () {
+    $(".logo").removeClass("fun-heading-always");
+    $(".fun-heading").removeClass("fun-heading-always");
+  }
+);
+
 $window.on("scroll", function () {
   var scrollTop = $window.scrollTop();
   if (scrollTop === 0) {

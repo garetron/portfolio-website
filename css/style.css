@@ -283,6 +283,29 @@ a:active {
   }
 }
 
+@keyframes heading-color {
+  0% {
+    color: #9165cc;
+  }
+  33% {
+    color: #1ad4c5;
+  }
+  66% {
+    color: #fd4c22;
+  }
+  100% {
+    color: #3cb4e7;
+  }
+}
+
+.fun-heading:hover {
+  animation: 6s heading-color infinite alternate linear;
+}
+
+.fun-heading-always {
+  animation: 6s heading-color infinite alternate linear;
+}
+
 #sky-1 {
   animation: 22s sky-color infinite alternate linear;
 }
