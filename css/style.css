@@ -464,7 +464,6 @@ a:active {
 }
 
 .project-page #project-hero {
-  display: static;
   height: 100%;
 }
 
@@ -886,7 +885,6 @@ nav ul li a {
 .headers {
   display: inline-block;
   width: 100%;
-  margin-bottom: none;
 }
 
 .headers h4 {
@@ -961,7 +959,8 @@ nav ul li a {
 }
 
 .paper-drop {
-  padding: 32px, 16;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: white;
 }
 
@@ -1221,6 +1220,19 @@ hr {
 
 .padding-sm-md {
   padding-bottom: 32px;
+}
+
+.figma-div iframe {
+  width: 100%;
+}
+
+.spotify-embed {
+  width: 100%;
+  border: 0;
+}
+
+.video-embed {
+  border: 0;
 }
 
 /* ==============================
@@ -1739,7 +1751,6 @@ Large devices (1024px or larger)
 
   #otto #project-hero,
   .project-page #project-hero {
-    display: static;
     height: 850px;
   }
 
