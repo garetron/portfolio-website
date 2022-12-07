@@ -47,6 +47,8 @@
   --beige: rgba(238, 230, 214, 1);
   --light-cyan: rgba(244, 255, 255, 1);
 
+  --shadow500: 0px 5px 15px rgba(33, 33, 36, 0.1);
+
   /* --primary: rgba(57, 65, 126, 1); */
 }
 
@@ -285,25 +287,44 @@ a:active {
 
 @keyframes heading-color {
   0% {
-    color: #9165cc;
+    color: #6328b1;
   }
   33% {
-    color: #1ad4c5;
+    color: #06aed5;
   }
   66% {
-    color: #fd4c22;
+    color: #138282;
   }
   100% {
-    color: #3cb4e7;
+    color: #c5036d;
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: #f3eaff;
+  }
+  33% {
+    background-color: #dcf6fc;
+  }
+  66% {
+    background-color: #e2ffff;
+  }
+  100% {
+    background-color: #f2deff;
   }
 }
 
 .fun-heading:hover {
-  animation: 6s heading-color infinite alternate linear;
+  animation: 10s heading-color infinite alternate ease-in-out;
 }
 
 .fun-heading-always {
-  animation: 6s heading-color infinite alternate linear;
+  animation: 10s heading-color infinite alternate ease-in-out;
+}
+
+.fun-bg-always {
+  animation: 10s bg-color infinite alternate ease-in-out;
 }
 
 #sky-1 {
@@ -364,9 +385,10 @@ a:active {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 3px;
-  box-shadow: 19px 35px 16px rgba(0, 0, 0, 0.01),
+  /* box-shadow: 19px 35px 16px rgba(0, 0, 0, 0.01),
     11px 20px 13px rgba(0, 0, 0, 0.05), 5px 9px 10px rgba(0, 0, 0, 0.09),
-    1px 2px 5px rgba(0, 0, 0, 0.1);
+    1px 2px 5px rgba(0, 0, 0, 0.1); */
+  box-shadow: var(--shadow500);
   transition: 0.5s color;
   transition: 0.5s background-color;
 }
@@ -1398,6 +1420,10 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  #index #hero p {
+    margin-bottom: 0;
+    padding-bottom: 48px;
+  }
   nav {
     margin-right: 16px;
   }

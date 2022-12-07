@@ -24,10 +24,12 @@ $(".fun-heading").hover(
     $(".logo").addClass("fun-heading-always");
     $(".fun-heading").addClass("fun-heading-always");
     var allfun = document.getElementsByClassName("fun-heading");
+    $("#hero").addClass("fun-bg-always");
   },
   function () {
     $(".logo").removeClass("fun-heading-always");
     $(".fun-heading").removeClass("fun-heading-always");
+    $("#hero").removeClass("fun-bg-always");
   }
 );
 
