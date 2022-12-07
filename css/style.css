@@ -439,8 +439,7 @@ a:active {
 }
 
 #hero {
-  background-color: white;
-  padding-top: 40px;
+  padding-top: 48px;
   margin-top: 105px;
   display: inline-block;
   width: 100%;
@@ -1082,7 +1081,7 @@ nav ul li a {
 
 #hero {
   margin-top: 65px;
-  padding-top: 40px;
+  padding-top: 48px;
 }
 
 #project-hero {
@@ -1235,10 +1234,24 @@ hr {
   border: 0;
 }
 
+#index #hero p {
+  margin-bottom: 0;
+  padding-bottom: 48px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  #hero {
+    margin-top: 79px;
+    padding-top: 80px;
+  }
+
+  #index #hero p {
+    padding-bottom: 80px;
+  }
+
   .project-page #project-hero {
     height: 600px;
   }
@@ -1380,11 +1393,6 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-  }
-
-  #hero {
-    margin-top: 79px;
-    padding-top: 40px;
   }
 
   #project-hero {
@@ -1923,10 +1931,6 @@ Large devices (1024px or larger)
 
   #final-otto-image-large .white-text-lg {
     padding-top: 130px;
-  }
-
-  #hero {
-    padding-top: 48px;
   }
 
   .responsive-margin-top {
