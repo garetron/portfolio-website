@@ -1002,6 +1002,10 @@ nav ul li a {
   max-width: 800px;
 }
 
+.img-1000-max {
+  max-width: 1000px;
+}
+
 .paper-drop {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -1164,8 +1168,8 @@ audio {
 .color-block h2,
 .color-block-light h2 {
   margin: 0;
-  padding-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 48px;
+  padding-bottom: 32px;
 }
 
 .color-block,
@@ -1236,7 +1240,7 @@ hr {
 
 .responsive-margin-top-and-bottom {
   margin-top: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .responsive-padding-top-and-bottom {
@@ -1335,10 +1339,17 @@ hr {
   margin: 0;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  #takeaways-text {
+    float: none;
+  }
   #ab-right .flex-row {
     padding-left: 64px;
     padding-right: 64px;
@@ -1632,12 +1643,30 @@ Medium devices (640px and larger)
   .responsive-padding-top {
     padding-top: 48px;
   }
+  .color-block h2,
+  .color-block-light h2 {
+    margin: 0;
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .color-block h2,
+  .color-block-light h2 {
+    margin: 0;
+    padding-top: 72px;
+    padding-bottom: 32px;
+  }
+
+  .responsive-padding-top-and-bottom-lg {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
   .moodboards .row-lg {
     justify-content: center;
   }
@@ -2066,7 +2095,7 @@ Large devices (1024px or larger)
 
   .responsive-margin-top-and-bottom {
     margin-top: 72px;
-    margin-bottom: 72px;
+    margin-bottom: 40px;
   }
 
   .responsive-padding-top-and-bottom {
