@@ -285,7 +285,7 @@ a:active {
   }
 }
 
-@keyframes heading-color {
+/* @keyframes heading-color {
   0% {
     color: #6328b1;
   }
@@ -302,29 +302,78 @@ a:active {
 
 @keyframes bg-color {
   0% {
-    background-color: #f3eaff;
+    background-color: #0aa957;
   }
   33% {
     background-color: #dcf6fc;
   }
   66% {
-    background-color: #e2ffff;
+    background-color: #ab232d;
   }
   100% {
-    background-color: #f2deff;
+    background-color: #333333;
+  }
+} */
+
+@keyframes heading-color {
+  0% {
+    color: #e961ff;
+  }
+  33% {
+    color: #fb6376;
+  }
+  66% {
+    color: #f8606b;
+  }
+  100% {
+    color: #00b0ab;
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: #444169;
+  }
+  33% {
+    background-color: #fff9ec;
+  }
+  66% {
+    background-color: #1d3557;
+  }
+  100% {
+    background-color: #e1ffe8;
+  }
+}
+
+@keyframes b-or-w {
+  0% {
+    color: #eae7df;
+  }
+  33% {
+    color: #5d2a42;
+  }
+  66% {
+    color: #f1faee;
+  }
+  100% {
+    color: #505050;
   }
 }
 
 .fun-heading:hover {
-  animation: 10s heading-color infinite alternate ease-in-out;
+  animation: 20s heading-color infinite alternate ease-in-out;
 }
 
 .fun-heading-always {
-  animation: 10s heading-color infinite alternate ease-in-out;
+  animation: 20s heading-color infinite alternate ease-in-out;
 }
 
 .fun-bg-always {
-  animation: 10s bg-color infinite alternate ease-in-out;
+  animation: 20s bg-color infinite alternate ease-in-out;
+}
+
+.b-or-w-always {
+  animation: 20s b-or-w infinite alternate ease-in-out;
 }
 
 #sky-1 {
