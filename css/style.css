@@ -1239,6 +1239,20 @@ hr {
   padding-bottom: 48px;
 }
 
+.music-caption {
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #484848;
+}
+
+.music-sub-caption {
+  margin-top: 0;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 0.8em;
+  color: #646464;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
