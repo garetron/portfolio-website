@@ -50,6 +50,12 @@
   --wine-light: #deddff;
   --wine-dark: #4a4a7b;
 
+  --wc-teal-grad: linear-gradient(80.55deg, #244457 14.27%, #285069 69.11%);
+  --wc-dark-teal: #1a313f;
+  --wc-med-teal: #285069;
+
+  --wc-lavender: #a6abc8;
+
   /* --primary: rgba(57, 65, 126, 1); */
 }
 
@@ -657,6 +663,10 @@ nav ul li a {
   color: var(--wine-dark);
 }
 
+#wild-camp .intro-header {
+  color: var(--wc-med-teal);
+}
+
 .caption {
   color: var(--caption-gray);
 }
@@ -694,6 +704,10 @@ nav ul li a {
 
 .otto-blue {
   background: #4365b1;
+}
+
+.wc-lavender {
+  background: var(--wc-lavender);
 }
 
 .otto-dark {
@@ -738,6 +752,10 @@ nav ul li a {
   fill: var(--wine-dark);
 }
 
+#wild-camp .overview path {
+  fill: var(--wc-med-teal);
+}
+
 .wm-texture {
   background: linear-gradient(
     59.55deg,
@@ -746,6 +764,32 @@ nav ul li a {
     #fffaf6 69.56%,
     #fffcfa 100%
   );
+}
+
+.wc-teal-grad {
+  background: var(--wc-teal-grad);
+}
+
+.wc-light-teal-grad {
+  background: linear-gradient(80.55deg, #244457 14.27%, #285069 69.11%);
+}
+
+.wc-dark-teal {
+  color: var(--wc-dark-teal);
+}
+
+.wc-dark-purple {
+  background: linear-gradient(
+      171.42deg,
+      rgba(169, 43, 134, 0.05) 0%,
+      rgba(174, 44, 138, 0.00130208) 208.24%
+    ),
+    linear-gradient(
+      188.74deg,
+      rgba(167, 105, 212, 0.16) 0.72%,
+      rgba(139, 105, 212, 0) 159.63%
+    ),
+    radial-gradient(50% 50% at 50% 50%, #1a313f 0%, #1b303d 100%);
 }
 
 .black-radial {
@@ -1190,6 +1234,16 @@ hr {
   padding-top: 48px;
 }
 
+.responsive-margin-top-and-bottom {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.responsive-padding-top-and-bottom {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 .gif img {
   max-width: 320px;
   margin-top: 32px;
@@ -1235,10 +1289,68 @@ hr {
   border: 0;
 }
 
+.shadow-default {
+  box-shadow: 0px 4px 16px 0px #00000040;
+}
+
+#final-ui-side-by-side {
+  display: inline-block;
+  width: 100%;
+}
+
+#final-ui p {
+  margin-top: 0;
+}
+
+.white-slip-remover-no-l {
+  margin-top: -10px;
+}
+
+#ab .paper-drop {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.margin-top-white-remover {
+  margin-top: -10px;
+}
+
+#finalized-designs .paper-drop {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#finalized-designs {
+  margin-top: 0;
+}
+
+.cutoff {
+  position: relative;
+  height: 21px;
+  background: white;
+  margin-top: -20px;
+}
+
+.strip-margin {
+  margin: 0;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  #ab-right .flex-row {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .flex-row-md {
+    display: flex;
+    padding-top: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+
   .project-page #project-hero {
     height: 600px;
   }
@@ -1526,6 +1638,13 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .moodboards .row-lg {
+    justify-content: center;
+  }
+  .mb-2 {
+    margin-left: -100px;
+    margin-top: 100px;
+  }
   .padding-sm-md {
     padding-bottom: 0;
   }
@@ -1606,6 +1725,10 @@ Large devices (1024px or larger)
     width: 20%;
   }
 
+  .col-lg-4 {
+    width: 33%;
+  }
+
   .col-lg-5 {
     width: 40%;
   }
@@ -1623,6 +1746,10 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
     float: none;
+  }
+
+  .col-lg-8-2 {
+    width: 66%;
   }
 
   .col-lg-12 {
@@ -1935,6 +2062,20 @@ Large devices (1024px or larger)
 
   .responsive-padding-top {
     padding-top: 72px;
+  }
+
+  .responsive-margin-top-and-bottom {
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
+
+  .responsive-padding-top-and-bottom {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .moodboards .row-lg {
+    max-width: 1600px;
   }
 
   /* ==============================
