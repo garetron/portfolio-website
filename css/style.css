@@ -1309,6 +1309,7 @@ hr {
   text-transform: capitalize;
   font-size: 0.8em;
   color: #646464;
+}
 
 .shadow-default {
   box-shadow: 0px 4px 16px 0px #00000040;
@@ -1364,14 +1365,14 @@ hr {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-#hero {
-  margin-top: 79px;
-  padding-top: 80px;
-}
+  #hero {
+    margin-top: 79px;
+    padding-top: 80px;
+  }
 
-#index #hero p {
-  padding-bottom: 80px;
-}
+  #index #hero p {
+    padding-bottom: 80px;
+  }
   #takeaways-text {
     float: none;
   }
