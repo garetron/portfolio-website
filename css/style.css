@@ -1581,10 +1581,6 @@ Large devices (1024px or larger)
     margin-top: -0;
   }
 
-  h2 {
-    font-weight: 600;
-  }
-
   .row-lg {
     display: flex;
     max-width: 1300px;
