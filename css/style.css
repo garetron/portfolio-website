@@ -320,13 +320,13 @@ a:active {
     color: #e961ff;
   }
   33% {
-    color: #fb6376;
+    color: #4fe2c1;
   }
   66% {
     color: #f8606b;
   }
   100% {
-    color: #00b0ab;
+    color: #e4258e;
   }
 }
 
@@ -335,13 +335,13 @@ a:active {
     background-color: #444169;
   }
   33% {
-    background-color: #fff9ec;
+    background-color: #353972;
   }
   66% {
     background-color: #1d3557;
   }
   100% {
-    background-color: #e1ffe8;
+    background-color: #402451;
   }
 }
 
@@ -350,13 +350,13 @@ a:active {
     color: #eae7df;
   }
   33% {
-    color: #5d2a42;
+    color: #d9dfff;
   }
   66% {
     color: #f1faee;
   }
   100% {
-    color: #505050;
+    color: #f2ddff;
   }
 }
 
@@ -365,29 +365,29 @@ a:active {
     transform: translate(0px, 0px);
   }
   100% {
-    transform: translate(0px, -10px);
+    transform: translate(0px, -5px);
   }
 }
 
 .fun-heading:hover {
-  animation: 20s heading-color infinite alternate ease-in-out;
+  animation: 8s heading-color infinite alternate ease-in-out;
 }
 
 .fun-heading-always {
-  animation: 20s heading-color infinite alternate ease-in-out;
+  animation: 8s heading-color infinite alternate ease-in-out;
 }
 
 .fun-bg-always {
-  animation: 20s bg-color infinite alternate ease-in-out;
+  animation: 8s bg-color infinite alternate ease-in-out;
 }
 
 .b-or-w-always {
-  animation: 20s b-or-w infinite alternate ease-in-out;
+  animation: 8s b-or-w infinite alternate ease-in-out;
 }
 
 .raise-up {
   animation: 1s raise-up normal ease-in-out;
-  transform: translate(0px, -10px);
+  transform: translate(0px, -5px);
 }
 
 .lower {
