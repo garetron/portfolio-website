@@ -23,6 +23,7 @@ $(".fun-heading").hover(
   function () {
     // $(".logo").addClass("fun-heading-always");
     $(".fun-heading").addClass("fun-heading-always");
+    // $("h1").addClass("raise-up");
     var allfun = document.getElementsByClassName("fun-heading");
     $("#hero").addClass("fun-bg-always");
     $(".b-or-w").addClass("b-or-w-always");
@@ -30,6 +31,7 @@ $(".fun-heading").hover(
   function () {
     // $(".logo").removeClass("fun-heading-always");
     $(".fun-heading").removeClass("fun-heading-always");
+    // $("h1").removeClass("raise-up");
     $("#hero").removeClass("fun-bg-always");
     $(".b-or-w").removeClass("b-or-w-always");
   }

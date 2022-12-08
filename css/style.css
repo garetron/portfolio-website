@@ -360,6 +360,15 @@ a:active {
   }
 }
 
+@keyframes raise-up {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -10px);
+  }
+}
+
 .fun-heading:hover {
   animation: 20s heading-color infinite alternate ease-in-out;
 }
@@ -374,6 +383,16 @@ a:active {
 
 .b-or-w-always {
   animation: 20s b-or-w infinite alternate ease-in-out;
+}
+
+.raise-up {
+  animation: 1s raise-up normal ease-in-out;
+  transform: translate(0px, -10px);
+}
+
+.lower {
+  animation: 1s raise-up reverse ease-in-out;
+  transform: translate(0px, 0px);
 }
 
 #sky-1 {
