@@ -84,17 +84,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.5em;
+  font-size: 1.9em;
   font-weight: 500;
 }
 
+h3 {
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
 h4 {
-  font-size: 1.25em;
+  font-size: 1.3em;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -439,8 +439,7 @@ a:active {
 }
 
 #hero {
-  background-color: white;
-  padding-top: 40px;
+  padding-top: 48px;
   margin-top: 105px;
   display: inline-block;
   width: 100%;
@@ -1082,7 +1081,7 @@ nav ul li a {
 
 #hero {
   margin-top: 65px;
-  padding-top: 40px;
+  padding-top: 48px;
 }
 
 #project-hero {
@@ -1235,10 +1234,38 @@ hr {
   border: 0;
 }
 
+#index #hero p {
+  margin-bottom: 0;
+  padding-bottom: 48px;
+}
+
+.music-caption {
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #484848;
+}
+
+.music-sub-caption {
+  margin-top: 0;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 0.8em;
+  color: #646464;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  #hero {
+    margin-top: 79px;
+    padding-top: 80px;
+  }
+
+  #index #hero p {
+    padding-bottom: 80px;
+  }
+
   .project-page #project-hero {
     height: 600px;
   }
@@ -1380,11 +1407,6 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-  }
-
-  #hero {
-    margin-top: 79px;
-    padding-top: 40px;
   }
 
   #project-hero {
@@ -1557,10 +1579,6 @@ Large devices (1024px or larger)
 
   .white-slip-remover-no-l {
     margin-top: -0;
-  }
-
-  h2 {
-    font-weight: 600;
   }
 
   .row-lg {
@@ -1923,10 +1941,6 @@ Large devices (1024px or larger)
 
   #final-otto-image-large .white-text-lg {
     padding-top: 130px;
-  }
-
-  #hero {
-    padding-top: 48px;
   }
 
   .responsive-margin-top {
