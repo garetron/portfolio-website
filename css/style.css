@@ -1223,6 +1223,15 @@ hr {
   margin-top: 48px;
 }
 
+.circle {
+  width: 150px;
+  height: 150px;
+  background: #1ad4c5;
+  border-radius: 50%;
+  position: absolute;
+  mix-blend-mode: difference;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
