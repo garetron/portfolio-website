@@ -19,31 +19,27 @@ var prev = 0;
 var $window = $(window);
 var nav = $("header");
 
-$(".fun-heading").hover(
-  function () {
-    // $(".logo").addClass("fun-heading-always");
+$("#hero-clicker").click(function () {
+  if ($(".fun-heading").hasClass("fun-heading-always") === true) {
+    $(".fun-heading").removeClass("fun-heading-always");
+    $("#hero").removeClass("fun-bg-always");
+    $(".b-or-w").removeClass("b-or-w-always");
+    console.log("if has called");
+  } else {
     $(".fun-heading").addClass("fun-heading-always");
-    // $(".going-to-raise").addClass("raise-up");
-    var allfun = document.getElementsByClassName("fun-heading");
     $("#hero").addClass("fun-bg-always");
     $(".b-or-w").addClass("b-or-w-always");
-  },
-  function () {
-    // $(".logo").removeClass("fun-heading-always");
-    // $(".fun-heading").removeClass("fun-heading-always");
-    // $(".going-to-raise").removeClass("raise-up");
-    // $("#hero").removeClass("fun-bg-always");
-    // $(".b-or-w").removeClass("b-or-w-always");
+    console.log("else has called");
   }
-);
-
-$("#hero").click(function () {
-  // $(".logo").removeClass("fun-heading-always");
-  $(".fun-heading").removeClass("fun-heading-always");
-  // $(".going-to-raise").removeClass("raise-up");
-  $("#hero").removeClass("fun-bg-always");
-  $(".b-or-w").removeClass("b-or-w-always");
 });
+
+// $("#hero").click(function () {
+//   // $(".logo").removeClass("fun-heading-always");
+//   $(".fun-heading").removeClass("fun-heading-always");
+//   // $(".going-to-raise").removeClass("raise-up");
+//   $("#hero").removeClass("fun-bg-always");
+//   $(".b-or-w").removeClass("b-or-w-always");
+// });
 
 $window.on("scroll", function () {
   var scrollTop = $window.scrollTop();

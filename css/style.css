@@ -385,6 +385,15 @@ a:active {
   animation: 8s b-or-w infinite alternate ease-in-out;
 }
 
+#hero-clicker {
+  cursor: url("/img/icons/rainbow-cursor.png"), pointer;
+}
+
+#hero-clicker:focus,
+#hero-clicker:hover {
+  color: var(--default-gray);
+}
+
 .raise-up {
   animation: 1s raise-up normal ease-in-out;
   transform: translate(0px, -5px);
