@@ -379,6 +379,7 @@ a:active {
 
 .fun-bg-always {
   animation: 8s bg-color infinite alternate ease-in-out;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .b-or-w-always {
