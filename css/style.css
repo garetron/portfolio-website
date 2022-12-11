@@ -381,10 +381,20 @@ a:active {
 
 .fun-bg-always {
   animation: 8s bg-color infinite alternate ease-in-out;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .b-or-w-always {
   animation: 8s b-or-w infinite alternate ease-in-out;
+}
+
+#hero-clicker {
+  cursor: url("/img/icons/rainbow-cursor.png"), pointer;
+}
+
+#hero-clicker:focus,
+#hero-clicker:hover {
+  color: var(--default-gray);
 }
 
 .raise-up {
