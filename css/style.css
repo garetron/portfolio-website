@@ -61,6 +61,14 @@
   /* --primary: rgba(57, 65, 126, 1); */
 }
 
+@font-face {
+  font-family: "pp_neuebitbold";
+  src: url("../fonts/webfontkit/ppneuebit-bold-webfont.woff2") format("woff2"),
+    url("../fonts/webfontkit/ppneuebit-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Make percentages add up to 100% of screen including padding etc */
 * {
   box-sizing: border-box;
