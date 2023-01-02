@@ -124,18 +124,18 @@ a {
   /* color: var(--teal3); */
   color: var(--default-gray);
   text-decoration: none;
-  transition: 0.4s color;
-  transition: 0.4s background-color;
+  transition: 0.2s color;
+  transition: 0.2s background-color;
 }
 
 a:hover,
 a:focus {
-  color: var(--primary-light);
-  text-decoration: none;
+  /* color: var(--primary);
+  text-decoration: none; */
 }
 
 nav li a:hover {
-  background-color: var(--primary-light);
+  background-color: var(--primary);
   color: white;
 }
 
@@ -365,8 +365,8 @@ a:active {
     11px 20px 13px rgba(0, 0, 0, 0.05), 5px 9px 10px rgba(0, 0, 0, 0.09),
     1px 2px 5px rgba(0, 0, 0, 0.1); */
   box-shadow: var(--shadow-500);
-  transition: 0.3s color;
-  transition: 0.3s background-color;
+  transition: 0.2s color;
+  transition: 0.2s background-color;
 }
 
 .button:hover,
@@ -452,6 +452,11 @@ a:active {
   margin: 0 0 0.6em 0;
 }
 
+#index #hero {
+  /* background-image: url(/img/global/gradient-5-50-grad.jpg); */
+  background-size: cover;
+}
+
 #hero p,
 #project-hero h3 {
   text-align: center;
@@ -526,9 +531,28 @@ header.hidden {
   transition: 0.5s color;
 }
 
-.logo h2 {
+.header-logo h2 {
   margin: 0px;
-  padding: 16px;
+  padding: 0 8px;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  float: left;
+  height: 65px;
+}
+
+.header-logo:hover {
+  color: var(--caption-gray);
+}
+
+.header-logo img {
+  height: 36px;
+  width: auto;
 }
 
 .navbar {
@@ -601,7 +625,7 @@ nav ul {
 
 nav ul li a {
   padding: 15px 15px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
 }
 
@@ -1166,7 +1190,7 @@ li i {
 }
 
 li i:hover {
-  color: var(--primary-light);
+  color: var(--primary);
 }
 
 audio {
@@ -1382,6 +1406,10 @@ hr {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .header-logo {
+    height: 79px;
+  }
+
   #hero {
     margin-top: 79px;
     padding-top: 80px;
