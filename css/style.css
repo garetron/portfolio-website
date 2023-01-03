@@ -134,12 +134,12 @@ a:focus {
   text-decoration: none; */
 }
 
-nav li a:hover :not(.icon i) {
+nav li a:hover {
   background-color: var(--primary);
   color: white;
 }
 
-nav li a:focus :not(.icon) {
+nav li a:focus {
   color: var(--primary);
 }
 
