@@ -8,14 +8,17 @@ function menuToggle() {
   var x = document.getElementById("myNavtoggle");
   if (x.className === "navtoggle" && viewportWidth < 640) {
     x.className += " responsive"; //add class name with space "_" to seperate addition
+    $(".header-logo").css("float", "none");
   } else {
     x.className = "navtoggle";
+    $(".header-logo").css("float", "left");
   }
 }
 
 function closeMenuToggle() {
   var x = document.getElementById("myNavtoggle");
   x.className = "navtoggle";
+  $(".header-logo").css("float", "left");
 }
 
 // Hide or show header on scrolling - animation duration set in header CSS

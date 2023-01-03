@@ -542,7 +542,7 @@ header.hidden {
   display: flex;
   align-items: center;
   padding-left: 16px;
-  /* float: left; */
+  float: left;
   height: 65px;
 }
 
@@ -1400,6 +1400,10 @@ hr {
 
 .player p {
   margin-top: 0;
+}
+
+.logo-no-float {
+  float: none;
 }
 
 /* ==============================
