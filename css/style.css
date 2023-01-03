@@ -289,13 +289,13 @@ a:active {
   }
   33% {
     /* fill: #bd8c85; */
-    fill: #d7b8b3;
+    fill: #e3ceca;
   }
   66% {
     fill: #e7d1be;
   }
   100% {
-    fill: #cae8ed;
+    fill: #fff0e1;
   }
 }
 
@@ -305,30 +305,30 @@ a:active {
   }
   33% {
     /* background-color: #bd8c85; */
-    background-color: #d7b8b3;
+    background-color: #e3ceca;
   }
   66% {
     background-color: #e7d1be;
   }
   100% {
-    background-color: #cae8ed;
+    background-color: #fff0e1;
   }
 }
 
 #sky-1 {
-  animation: 22s sky-color infinite alternate linear;
+  animation: 30s sky-color infinite alternate linear;
 }
 
 #building-1 {
-  animation: 22s building-1-color infinite alternate linear;
+  animation: 30s building-1-color infinite alternate linear;
 }
 
 #building-2 {
-  animation: 22s building-2-color infinite alternate linear;
+  animation: 30s building-2-color infinite alternate linear;
 }
 
 #statue [id*="Vector"] {
-  animation: 22s statue-color infinite alternate linear;
+  animation: 30s statue-color infinite alternate linear;
 }
 
 #wall {
