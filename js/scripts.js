@@ -13,6 +13,11 @@ function menuToggle() {
   }
 }
 
+function closeMenuToggle() {
+  var x = document.getElementById("myNavtoggle");
+  x.className = "navtoggle";
+}
+
 // Hide or show header on scrolling - animation duration set in header CSS
 
 var prev = 0;
