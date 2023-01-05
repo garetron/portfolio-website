@@ -315,27 +315,33 @@ a:active {
   }
 }
 
-#sky-1 {
+#sky-1,
+.sky-1 {
   animation: 30s sky-color infinite alternate linear;
 }
 
-#building-1 {
+#building-1,
+.building-1 {
   animation: 30s building-1-color infinite alternate linear;
 }
 
-#building-2 {
+#building-2,
+.building-2 {
   animation: 30s building-2-color infinite alternate linear;
 }
 
-#statue [id*="Vector"] {
+#statue,
+.statue [id*="Vector"] {
   animation: 30s statue-color infinite alternate linear;
 }
 
-#wall {
+#wall,
+.wall {
   animation: 22s wall-color infinite alternate linear;
 }
 
-#cloud-1 {
+#cloud-1,
+.cloud-1 {
   animation-duration: 15s;
   animation-name: cloud-1-move;
   animation-iteration-count: infinite;
@@ -345,19 +351,25 @@ a:active {
 
 #cloud-2,
 #cloud-1,
-#cloud-3 {
+#cloud-3,
+.cloud-1,
+.cloud-2,
+.cloud-3 {
   animation: 10s cloud-move-reverse infinite alternate linear;
 }
 
-#star-r {
+#star-r,
+.star-r {
   animation: 9s glimmer infinite alternate ease-in-out;
 }
 
-#star-ml {
+#star-ml,
+.star-ml {
   animation: 8s glimmer infinite alternate-reverse ease-in-out;
 }
 
-#star-bl {
+#star-bl,
+.star-bl {
   animation: 10s glimmer infinite alternate ease-in-out;
 }
 
@@ -468,28 +480,25 @@ a:active {
 }
 
 #hero h1,
-#project-hero h1,
-.hero h1 {
+#project-hero h1 {
   text-align: center;
   margin: 0 0 0.6em 0;
 }
 
-#index #hero,
-#index .hero {
+#index #hero {
   /* background-image: url(/img/global/gradient-5-50-grad.jpg); */
   background-size: cover;
 }
 
 #hero p,
-.hero p,
 #project-hero h3 {
   text-align: center;
 }
 
-#hero,
-.hero {
-  padding-top: 0px;
-  margin-top: 55px;
+#hero {
+  margin-top: 65px;
+  padding-top: 48px;
+  padding-bottom: 16px;
   display: inline-block;
   width: 100%;
   /* border-bottom: 1px solid var(--divider-gray) */
@@ -1185,8 +1194,7 @@ nav ul li a {
   padding-left: 0;
 }
 
-#hero,
-.hero {
+#hero {
   margin-top: 65px;
   /* padding-top: 48px; */
 }
@@ -1351,8 +1359,7 @@ hr {
   border: 0;
 }
 
-#index #hero p,
-#index .hero p {
+#index #hero p {
   margin-bottom: 0;
   padding-bottom: 32px;
 }
@@ -1425,8 +1432,7 @@ hr {
   margin-top: 0;
 }
 
-#hero .row,
-.hero .row {
+#hero .row {
   display: block;
 }
 
@@ -1480,8 +1486,7 @@ Medium devices (640px and larger)
     height: var(--hero-height-lg);
   }
 
-  #hero .row,
-  .hero .row {
+  #hero .row {
     margin: 25px auto;
   }
 
@@ -1489,14 +1494,13 @@ Medium devices (640px and larger)
     height: 79px;
   }
 
-  #hero,
-  .hero {
-    margin-top: 55px;
-    padding-top: 0;
+  #hero {
+    margin-top: 79px;
+    padding-top: 80px;
+    padding-bottom: 48px;
   }
 
-  #index #hero p,
-  #index .hero p {
+  #index #hero p {
     padding-bottom: 32px;
   }
   #takeaways-text {
@@ -2260,6 +2264,11 @@ X-large devices (1234px or larger)
 
     #index .small-hero-section {
       display: none;
+    }
+
+    #hero {
+      margin-top: 53px;
+      padding: 0;
     }
   }
 }
