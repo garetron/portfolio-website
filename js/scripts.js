@@ -49,3 +49,13 @@ $window.on("scroll", function () {
     prev = scrollTop;
   }
 });
+
+$(".header-logo").hover(
+  function () {
+    console.log("yeah its working");
+    $(".header-logo img").attr("src", "img/global/gh-logo-color-brighter.png");
+  },
+  function () {
+    $(".header-logo img").attr("src", "img/global/gh-logo-color.png");
+  }
+);

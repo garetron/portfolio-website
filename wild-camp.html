@@ -116,28 +116,30 @@
       </div>
     </header>
 
-    <main class="project-page" id="wine-match">
+    <main class="project-page" id="wild-camp">
       <!-- HERO SECTION -->
       <!-- section -->
-      <div class="wine-purple-light" id="project-hero">
+      <div class="wc-teal-grad white-text" id="project-hero">
         <!-- wrapper -->
         <div class="container">
-          <h1 class="center">Wine Match</h1>
-          <h3>
-            Wine Match is a shopping, recommendation, and learning app that
-            helps users discover new wines.
+          <h1 class="center">Wild Camp</h1>
+          <h3 class="">
+            Wild Camp is a responsive web app that I created to help users find
+            location-based campground suggestions. I implemented an end-to-end
+            design process from the early conceptual stages to the final
+            product.
           </h3>
           <!-- <img src="https://via.placeholder.com/608x536" alt="Otto hero Image"> -->
           <div class="hero-box">
             <picture>
               <source
-                srcset="img/wine_match/wm_2_up.jpg"
+                srcset="img/wild_camp/wildcamp-cover-v2.jpg"
                 media="(max-width:767px)"
               />
               <img
                 class=""
-                src="img/wine_match/wm_2_up@2x.jpg"
-                alt="Otto cover image"
+                src="img/wild_camp/wildcamp-cover-v2@2x.jpg"
+                alt="Wild Camp cover image"
               />
             </picture>
           </div>
@@ -154,7 +156,7 @@
               <p class="tools-label"><strong>Context</strong></p>
               <ul class="">
                 <li>Case study</li>
-                <li>My Role: UI/UX Designer</li>
+                <li>My Role: UX Designer</li>
               </ul>
             </div>
 
@@ -163,14 +165,15 @@
               <p class="tools-label"><strong>Tools and skills used</strong></p>
               <ul>
                 <li>Figma</li>
-                <li>Photoshop</li>
                 <li>Competitive Analysis</li>
-                <li>Native Design Patters</li>
+                <li>User Research</li>
+                <li>Affinity Mapping</li>
                 <li>Wireframing</li>
-                <li>Prototyping</li>
-                <li>Animation</li>
-                <li>User Testing</li>
                 <li>A/B Testing</li>
+                <li>Prototyping</li>
+                <li>Style Guide</li>
+                <li>Icon Design</li>
+                <li>Responsive Breakpoint Design</li>
               </ul>
             </div>
           </div>
@@ -178,7 +181,6 @@
       </div>
 
       <!-- OVERVIEW SECTION -->
-      <!-- Overview Section -->
       <div
         data-aos="fade-up"
         data-aos-duration="10000"
@@ -228,14 +230,17 @@
               </div>
               <div class="center intro-sentence">
                 <h3 class="margin16">
-                  An app to help users find and buy new wines.
+                  Building a web app to help users find and book campsites.
                 </h3>
               </div>
               <p class="section-spacer intro-p">
-                I developed an MVP prototype for a new wine recommendation app
-                for this project. The project brief required developing iOS and
-                Android versions of a native app that demonstrated how it would
-                provide users with customized wine suggestions and resources.
+                My brief for this project was to create a location-based
+                responsive web app to aid users in finding and booking campsites
+                online. I began by exploring the problem space, conducting user
+                interviews to pinpoint the challenges that users face, and
+                developing iterative wireframes and prototypes. I arrived at a
+                final polished design after designing the brand, the icons, and
+                the overall user experience of this app.
               </p>
             </div>
           </div>
@@ -271,20 +276,13 @@
               </div>
               <div class="center intro-sentence">
                 <h3 class="margin16">
-                  How to inform and empower wine drinkers.
+                  Finding and booking campsites online is challenging.
                 </h3>
               </div>
               <p class="section-spacer">
-                Many people who drink wine are
-                <strong>overwhelmed by the options</strong> whenever they buy
-                wine at the store or order it off a menu. As a result, people
-                may stick to what they know, even if they want to try new or
-                exciting wines. They may also enjoy certain wines more than
-                others but
-                <strong
-                  >are not able to articulate their personal
-                  preferences.</strong
-                >
+                Users have to hop between different websites depending on
+                whether they want to see private, commercial, or government
+                campsites, and information about them is often thin.
               </p>
             </div>
           </div>
@@ -324,16 +322,14 @@
               </div>
               <div class="center intro-sentence">
                 <h3 class="margin16">
-                  If people know their personal preferences, an app that matches
-                  them with wines would be a valuable resource.
+                  Users want a streamlined search process.
                 </h3>
               </div>
               <p>
-                I aimed to design an app that helped users pinpoint what they
-                enjoy in wines and then offer suggested wines that match their
-                profile. Due to the variety of wines, even within a single
-                varietal or region, this service could be a helpful time-saver
-                for users.
+                I had experienced how time-consuming the current process of
+                finding campgrounds could be. I guessed that users would highly
+                value a product that simplified this process and saved them
+                time.
               </p>
             </div>
           </div>
@@ -341,497 +337,594 @@
         <!-- <hr class="solid"> -->
       </div>
 
+      <!-- BEGINNING PHASE UX -->
       <!-- Competitive Analysis Section -->
-      <div
-        data-aos="fade-up"
-        data-aos-offset="150"
-        class="responsive-margin-top"
-        id="competitive"
-      >
+      <div data-aos="fade-up" data-aos-offset="150" class="" id="ux">
         <!-- Top Section -->
         <div class="container">
           <!-- wrapper -->
           <div class="">
-            <h2 class="otto-headers-whitebg">Competitive Analysis</h2>
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              UX Phase
+            </h2>
             <p>
-              I turned to some of my competitor&rsquo;s apps to investigate what
-              design solutions they had used to solve similar problems and see
-              what I could learn from them or what I wanted to avoid.
+              This project began with a complete UX process where I figured out
+              what shape this app would take and what problems it needed to
+              address.
             </p>
-
             <p>
-              Many apps in this field suffer from a
-              <strong>bloated and unattractive UI,</strong>
-              and a central goal of Wine Match was to make discovering wine feel
-              more accessible and easy. The overload of information and heavy
-              visual design in other apps didn&rsquo;t help.
+              While other apps on the market offer similar services, finding
+              campsites is still far from streamlined. I conducted
+              <strong>a competitive analysis</strong> in the beginning stages of
+              this process using the following methods:
             </p>
-
-            <p class="section-spacer">
-              However, other apps did have some good navigation and input UI
-              patterns that I thought I could implement in my designs.
+            <ul>
+              <li><strong>Competitor overview</strong></li>
+              <li><strong>Marketing profile</strong></li>
+              <li><strong>SWOT analysis</strong></li>
+              <li><strong>UX Analysis</strong></li>
+            </ul>
+            <p>
+              I conducted these on two top competitors: The Dyrt and
+              Roadtrippers. This analysis revealed weaknesses in opponents (such
+              as low SEO performance) and UX shortcomings with opportunities for
+              improvement (such as users being unable to create custom
+              shortlists).
             </p>
           </div>
         </div>
         <!-- Bottom Image section -->
-        <div class="wm-texture responsive-padding-top">
+        <div class="wc-lavender responsive-padding-top">
           <!-- wrapper -->
-          <div class="container center row-lg padding-spacer-32">
+          <div class="container center row-lg flex-row-md padding-spacer-32">
             <div class="col-md-6">
               <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
                 <img
                   class="img-800-max"
-                  src="img/wine_match/wm-ca-1@2x.png"
-                  alt="user flow image"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
                 />
               </picture>
-              <p class="caption section-spacer">
-                A graphic and intuitive search tool for recommendations is a
-                very effective pattern on Wine Searcher’s search page. Filter
-                options are offered on the results page, which keeps the initial
-                search clean and easy to use.
-              </p>
             </div>
             <div class="col-md-6">
               <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
                 <img
                   class="img-800-max"
-                  src="img/wine_match/wm-ca-2@2x.png"
-                  alt="user flow digram"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
                 />
               </picture>
-              <p class="caption">
-                Tab navigation is highly functional on the wine page, where
-                there is a lot of information to navigate, but the presentation
-                of this information is bloated and unwieldy. Fewer navigation
-                tabs and more expandable information bins could help alleviate
-                this.
-              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Low Fidelity Wireframes Section -->
-
-      <!-- Top Section -->
-      <div class="section-spacer">
-        <!-- wrapper -->
-        <div class="container" data-aos="fade-up" data-aos-offset="150">
-          <h2 class="block-header-black otto-headers-whitebg">
-            Low Fidelity Wireframes
-          </h2>
+      <!-- USER RESEARCH SECTION -->
+      <div
+        data-aos="fade-up"
+        data-aos-offset="150"
+        class="color-block wc-dark-purple"
+        id="research"
+      >
+        <div class="container">
+          <h2 class="center">User Research and Affinity Mapping</h2>
           <p>
-            I began creating user flows and low-fidelity wireframes to sketch
-            out how this app could:
+            While I perceived areas for improvement in my competitive analysis,
+            the most important question was what the desires and frustrations of
+            actual campers were. I conducted user interviews to determine what
+            those were, digging into how users searched for campgrounds and
+            planned trips and their desires and frustrations.
           </p>
+          <p>
+            <strong
+              >I collected the data points from my interviews and conducted an
+              affinity mapping exercise,</strong
+            >
+            allowing me to identify many common themes.
+          </p>
+          <p>
+            One unexpected insight from these interviews was that all
+            interviewees desired to search for campsites based on nearby
+            activity or natural features, a function not prominently offered on
+            competitor&rsquo;s sites.
+          </p>
+          <!-- Image section -->
+          <div class="responsive-margin-top flex-row">
+            <picture>
+              <source
+                srcset="img/wild_camp/affinity.png"
+                media="(max-width:767px)"
+              />
+              <img
+                class="img-1000-max"
+                src="img/wild_camp/affinity@2x.png"
+                alt="affinity map"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!-- PERSONAS SECTION -->
+      <div class="responsive-margin-top-and-bottom">
+        <div class="container">
+          <h2 class="center responsive-margin-top-and-bottom">User Personas</h2>
+          <p>
+            Using
+            <strong>synthesized insights from my user interviews,&nbsp;</strong
+            >I went on to create user personas to guide the rest of the
+            development process.
+          </p>
+          <p>
+            Campers are a diverse group of people with sometimes contradictory
+            goals, which I represented using the following personas:
+          </p>
+
           <ul>
             <li>
-              Offer users <strong>personalized recommendations</strong> for new
-              wines to try.
+              <strong>Doug</strong> will almost always opt for an isolated
+              backcountry experience.
             </li>
             <li>
-              Allow users to <strong>quickly document wines</strong> that they
-              try when out at a restaurant or bar.
+              <strong>Mariah</strong> typically books a weekend glamping
+              getaway.
             </li>
             <li>
-              Offer users <strong>editorial and news content</strong> that makes
-              them feel more knowledgeable about wine.
+              <strong>Sarah</strong> wants a safe and accessible city escape,
+              without any noisy crowds.
             </li>
           </ul>
           <p>
-            To achieve this, I
-            <strong
-              >designed a quiz that allows the app to learn a user&rsquo;s
-              tastes</strong
-            >
-            and offer suggestions based on the results. Users can also scan a
-            bottle label or wine menu with their phone&rsquo;s camera and find
-            that wine in the app so that it can be saved or rated.
+            These personas allowed me to highlight campers&rsquo; differences
+            but also demonstrate what they had in common in their underlying
+            motivations.
           </p>
-          <p>
-            Finally, a <strong>separate “Learn” section</strong> offers learning
-            materials and curated content, which helps set Wine Match apart from
-            the competition.
-          </p>
-        </div>
-      </div>
 
-      <!-- BOTTOM SECTION LOW FIDELITY WIREFRAMES -->
-
-      <!-- Section -->
-      <div class="wine-purple-light" id="low-fid-img">
-        <!-- wrapper -->
-        <div class="container lo-fid-wrap row-lg responsive-padding-top">
-          <!-- 2 row -->
-          <div class="flex-row padding-top">
+          <!-- Image section -->
+          <div class="responsive-margin-top flex-row">
             <picture>
+              <source
+                srcset="img/wild_camp/personas.png"
+                media="(max-width:767px)"
+              />
               <img
                 class=""
-                src="img/wine_match/wm-lofid-1.jpg"
-                alt="low fidelity wireframes"
-              />
-            </picture>
-            <picture>
-              <img
-                src="img/wine_match/wm-lofid-2.jpg"
-                alt="low fidelity wireframes"
-              />
-            </picture>
-          </div>
-          <!-- 2 row -->
-          <div class="flex-row">
-            <picture>
-              <img
-                src="img/wine_match/wm-lofid-3.jpg"
-                alt="low fidelity wireframes"
-              />
-            </picture>
-            <picture class="">
-              <img
-                class=""
-                src="img/wine_match/wm-lofid-4.jpg"
-                alt="low fidelity wireframes"
-              />
-            </picture>
-          </div>
-          <!-- 2 row -->
-          <div class="flex-row padding-sm-md">
-            <picture class="">
-              <img
-                class=""
-                src="img/wine_match/wm-lofid-5.jpg"
-                alt="low fidelity wireframes"
-              />
-            </picture>
-            <picture class="">
-              <img
-                class=""
-                src="img/wine_match/wm-lofid-6.jpg"
-                alt="low fidelity wireframes"
+                src="img/wild_camp/personas@2x.png"
+                alt="affinity map"
               />
             </picture>
           </div>
         </div>
       </div>
-
-      <!-- Native Designs Section -->
-
-      <!-- Top Section -->
-      <div class="section-spacer">
-        <!-- wrapper -->
-        <div class="container" data-aos="fade-up" data-aos-offset="150">
-          <h2 class="block-header-black otto-headers-whitebg">
-            Native Designs
+      <!-- USER FLOWS SECTION -->
+      <div
+        data-aos="fade-up"
+        data-aos-offset="150"
+        class="wc-dark-purple"
+        id="flows"
+      >
+        <div class="container color-block">
+          <h2 class="center">User Flows</h2>
+          <p class="strip-margin">
+            With my <strong>user personas to guide me,</strong> I started
+            tackling the problems that these users faced and the journey they
+            could take through my app to reach solutions as efficiently as
+            possible. I broke these down using a
+            <strong>Jobs To Be Done framework</strong> and created user flows
+            for each. I compiled these into a User Flow Diagram which I included
+            in the <strong>MVP document</strong> for Wild Camp.
+          </p>
+          <!-- Image section -->
+          <div class="responsive-margin-top flex-row">
+            <picture>
+              <source
+                srcset="img/wild_camp/user-flows.png"
+                media="(max-width:767px)"
+              />
+              <img
+                class=""
+                src="img/wild_camp/user-flows@2x.png"
+                alt="user flows"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!-- RAPID PROTOTYPING SECTION -->
+      <div class="responsive-margin-top">
+        <div class="container">
+          <h2 class="center responsive-margin-top-and-bottom">
+            Rapid Prototyping / Medium Fidelity Wireframes
           </h2>
           <p>
-            I then developed <strong>mid-fidelity wireframes</strong> and began
-            incorporating different native design patterns for iOS and Android.
-            The designs included some stylistic differences, but the most
-            dramatic distinction was
-            <strong
-              >collapsing the tab navigation in the iOS app into a side drawer
-              navigation in Android.</strong
+            Having created Jobs To Be Done, I conducted a<strong
+              >&nbsp;design sprint</strong
             >
-            While the visibility of the navigation system was better in the iOS
-            tab format, the hamburger menu in Android allowed for the addition
-            of more navigation items to speed up particular user flows, which
-            will be especially useful as new features are added.
+            exercise to rapidly prototype screens central to these user
+            journeys. I used <strong>the Crazy 8&rsquo;s method&nbsp;</strong>as
+            a framework for making these sketches so that I could brainstorm and
+            validate various ideas quickly.
           </p>
           <p>
-            The camera button remained onscreen on Android as a floating action
-            button, allowing users to access this function as soon as they open
-            the app when they want to scan a bottle, such as when a waiter is
-            holding up the bottle for them, for instance.
+            These sketches were ultimately<strong>&nbsp;dot-voted</strong> and
+            led to the development of medium-fidelity digital wireframes. The
+            progression from low to mid to high fidelity wireframes is shown
+            below.
+          </p>
+
+          <!-- Image section -->
+          <div class="responsive-margin-top flex-row">
+            <picture>
+              <source
+                srcset="img/wild_camp/lo-fid-cover.png"
+                media="(max-width:767px)"
+              />
+              <img
+                class="img-800-max"
+                src="img/wild_camp/lo-fid-cover@2x.png"
+                alt="low fidelity sketches"
+              />
+            </picture>
+          </div>
+          <p class="caption section-spacer">
+            I also used these sketches to create an
+            <strong>interactive paper prototype</strong> to conduct preliminary
+            user testing and get early user feedback.
           </p>
         </div>
       </div>
-
-      <!-- BOTTOM SECTION LOW FIDELITY WIREFRAMES -->
-
-      <!-- Section -->
-      <div class="wine-dark color-block" id="native">
-        <!-- wrapper -->
-        <div class="container lo-fid-wrap row-lg">
-          <!-- column -->
-          <div class="padding-top">
+      <!-- LO MID HIGH PROGRESSION SECTION -->
+      <div class="responsive-padding-top-and-bottom wc-teal-grad">
+        <div class="container">
+          <p class="white-text"><strong>Home Page</strong></p>
+          <div class="flex-row">
             <picture>
+              <source
+                srcset="img/wild_camp/lo-to-mid-1.png"
+                media="(max-width:767px)"
+              />
               <img
-                class=""
-                src="img/wine_match/native-1.png"
-                alt="low fidelity wireframes"
+                class="img-1000-max"
+                src="img/wild_camp/lo-to-mid-1@2x.png"
+                alt="low fidelity sketches"
               />
             </picture>
-            <p class="center">
-              Navigation pattern changes: tab vs. side drawer.
-            </p>
           </div>
-          <!-- column 2 -->
-          <div class="padding-top">
+          <p class="white-text"><strong> Search Results (map view)</strong></p>
+          <div class="flex-row">
             <picture>
+              <source
+                srcset="img/wild_camp/lo-to-mid-2.png"
+                media="(max-width:767px)"
+              />
               <img
-                class=""
-                src="img/wine_match/native-2.png"
-                alt="low fidelity wireframes"
+                class="img-1000-max"
+                src="img/wild_camp/lo-to-mid-2@2x.png"
+                alt="low fidelity sketches"
               />
             </picture>
-            <p class="center">Stylistic changes: Full bleed photos</p>
+          </div>
+          <p class="white-text"><strong>Campground info screen</strong></p>
+          <div class="flex-row">
+            <picture>
+              <source
+                srcset="img/wild_camp/lo-to-mid-3.png"
+                media="(max-width:767px)"
+              />
+              <img
+                class="img-1000-max"
+                src="img/wild_camp/lo-to-mid-3@2x.png"
+                alt="low fidelity sketches"
+              />
+            </picture>
           </div>
         </div>
       </div>
 
+      <!-- MOOD BOARD SECTION -->
+      <div class="responsive-margin-top section-spacer">
+        <div class="container">
+          <h2 class="center responsive-margin-top-and-bottom">Mood Boards</h2>
+          <p>
+            Once I had completed the medium-fidelity wireframes, I began
+            defining the product&apos;s
+            <strong>visual and brand identity</strong>. I created two mood
+            boards during this process, offering two alternate visual
+            aesthetics. One mood board provided a more
+            <strong>tranquil and fun</strong> direction, while the other had a
+            more vintage aesthetic that appealed to a user&apos;s
+            <strong>sense of adventure</strong>.
+          </p>
+        </div>
+      </div>
+      <!-- IMAGES FOR MOOD BOARD -->
+      <div class="moodboards">
+        <div class="">
+          <div class="row-lg">
+            <div class="mb-1 col-lg-6">
+              <img
+                class=""
+                src="img/wild_camp/moodboard-1.png"
+                alt="moodboard-1"
+              />
+            </div>
+            <div class="mb-2 col-lg-6">
+              <img
+                class=""
+                src="img/wild_camp/moodboard-2.png"
+                alt="moodboard 2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- AB Testing -->
       <div class="row-lg white-bg" id="ab">
         <!-- left side -->
-        <div class="paper-drop col-lg-5 container">
+        <div class="paper-drop col-lg-6 container">
           <div class="">
-            <h2 class="center-small responsive-margin-top">
-              Developing the Design
+            <h2 class="center-small responsive-margin-top-and-bottom">
+              A/B Testing
             </h2>
             <p>
-              I began to finalize the screen design to make the app feel light,
-              accessible, and straightforward. One feature I wanted to offer
-              users was to give them a personalized score for a wine based on
-              their tastes and also allow them to see the average rating from
-              other users. I initially placed these two metrics on the screen
-              with equal hierarchy, but the layout was unintuitive. I eventually
-              decided to emphasize the personalized rating since this is one of
-              the app's primary functions. The user rating metric is still
-              visible above the fold but became a smaller item located lower
-              down on the screen.
+              I used the moodboards&rsquo; competing visions to design two
+              screens that represented these two visual approaches. I then
+              conducted an online
+              <strong>preference test using Usability Hub.</strong>
             </p>
+            <p><strong>Users were split:</strong></p>
+            <ul>
+              <li>
+                The results slightly favored Screen B, though only at
+                <strong>54%.</strong>
+              </li>
+              <li>
+                However, collecting user comments about their choices also
+                yielded <strong>qualitative data</strong> to guide my decision.
+              </li>
+              <li>
+                Many users that chose Screen A said they did so because of
+                better text contrast, while many that chose Screen B preferred
+                the teal color.
+              </li>
+              <li>
+                In the end, I went with <strong>screen B</strong> but changed
+                the “Find Campgrounds” text to white to improve contrast,
+                addressing <strong>feedback from both groups</strong>.
+              </li>
+            </ul>
           </div>
         </div>
         <!-- right Section -->
-        <div class="wm-texture color-block-light" id="ab-right">
+        <div class="color-block wc-teal-grad" id="ab-right">
           <!-- wrapper -->
           <div>
             <!-- row for images -->
-            <div class="flex-row centered-row responsive-padding-top">
+            <div class="flex-row container responsive-padding-top">
               <picture>
                 <img
                   class=""
-                  src="img/wine_match/wine-page-before.png"
-                  alt="low fidelity wireframes"
+                  src="img/wild_camp/ab-yellow.png"
+                  alt="preference test yellow"
                 />
               </picture>
               <picture>
                 <img
                   class=""
-                  src="img/wine_match/wine-page-after.png"
-                  alt="low fidelity wireframes"
+                  src="img/wild_camp/ab-teal.png"
+                  alt="preference test teal"
                 />
               </picture>
             </div>
             <!-- wrapper row for caption -->
             <div>
-              <p>
-                I decided to further differentiate these two metrics by creating
-                two rating systems: 0-3 thumbs up for the "match score" and a
-                more conventional 5-star rating system for the "user score." The
-                "match score" also utilizes the extra space to explain why a
-                wine is a good match through information tags.
+              <p class="center">
+                <strong>"Screen A"</strong> (yellow) and
+                <strong>"Screen B"</strong> (teal) that were used to conduct
+                this preference test.
               </p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Animation Section -->
-      <div class="animations">
-        <!-- Wrapper -->
-        <div
-          class="container responsive-margin-top"
-          data-aos="fade-up"
-          data-aos-offset="150"
-        >
-          <h2 class="center">Animation / Interaction Design</h2>
-          <p>
-            When building the final prototype, I created animations for several
-            micro-interactions throughout the app.
-          </p>
-          <!-- gif Item -->
-          <div>
-            <!-- gif -->
-            <div class="gif">
-              <img src="/img/wine_match/gif/login.gif" alt="login animation" />
-            </div>
-            <!-- Caption -->
-            <div class="center-caption">
-              <p class="caption">
-                The transition from the login screen to the homepage displays a
-                subtle logo animation. This movement provides a small moment of
-                delight and highlights successful entry into the app. This
-                interaction got many positive responses in user testing.
-              </p>
-            </div>
-          </div>
-          <!-- gif Item -->
-          <div>
-            <!-- gif -->
-            <div class="gif">
-              <img
-                src="/img/wine_match/gif/wine-card.gif"
-                alt="wine card animation"
-              />
-            </div>
-            <!-- Caption -->
-            <div class="center-caption">
-              <p class="caption">
-                Wine cards allow users to expand the detailed description and
-                access more information quickly without leaving the search
-                screen.
-              </p>
-            </div>
-          </div>
-          <!-- gif Item -->
-          <div>
-            <!-- gif -->
-            <div class="gif">
-              <img src="/img/wine_match/gif/quiz.gif" alt="quiz animation" />
-            </div>
-            <!-- Caption -->
-            <div class="center-caption">
-              <p class="caption">
-                The quiz section uses animated breadcrumbs to inform users of
-                their progress through the questions. Tapping on the selectable
-                buttons provides satisfying feedback highlighting a state
-                change.
-              </p>
-            </div>
-          </div>
-          <!-- gif Item -->
-          <div>
-            <!-- gif -->
-            <div class="gif">
-              <img
-                src="/img/wine_match/gif/camera-expand.gif"
-                alt="camera animation"
-              />
-            </div>
-            <!-- Caption -->
-            <div class="center-caption">
-              <p class="caption">
-                Many subtle transitions help orient users when switching between
-                screens with common elements. The camera button moves and
-                changes color, so it is easy to locate when changing screens.
-              </p>
-            </div>
-          </div>
-          <!-- gif Item -->
-          <div>
-            <!-- gif -->
-            <div class="gif">
-              <img
-                src="/img/wine_match/gif/search-bar.gif"
-                alt="search bar animation"
-              />
-            </div>
-            <!-- Caption -->
-            <div class="center-caption">
-              <p class="caption section-spacer">
-                The search bar screen also uses animation to redirect focus and
-                highlight scren changes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Prototype Section -->
-      <div class="color-block black-radial">
-        <!-- wrapper -->
+      <!-- STYLE GUIDE  -->
+      <div class="section-spacer">
         <div class="container">
-          <h2 class="center responsive-margin-top">Final Prototype</h2>
+          <h2 class="responsive-margin-top-and-bottom center">
+            Style Guide and Icon Design
+          </h2>
           <p>
-            With the screens finalized, I used an interactive prototype to
-            complete user testing and collect feedback. This technique gave me
-            valuable insights into what was working on the app and what could be
-            improved. Testers found that some of the screens still felt
-            cluttered and dense, and I used this feedback to add white space to
-            some screens, especially the &quot;Learn&quot; page. Feedback also
-            highlighted some usability issues, such as the readability of text
-            or spacing of icons.
+            With a visual direction defined, I created a comprehensive style
+            guide. I designed a custom icon set that aimed to be accessible and
+            friendly in keeping with the visual identity I had defined. The
+            complete guide covers typography, buttons, copy guidelines, and
+            more.
           </p>
-
-          <p>
-            An interactive prototype of the final iOS design is accessible
-            below.
-          </p>
-
-          <div class="figma-div">
-            <iframe
-              class="responsive-margin-top"
-              style="border: 1px solid rgba(0, 0, 0, 0.1)"
-              height="800"
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfffsZlIW4jcAMIrTzeQRlP%2FWineMatch-iOS%3Fpage-id%3D19%253A2%26node-id%3D19%253A12506%26viewport%3D1278%252C217%252C0.5%26scaling%3Dcontain%26starting-point-node-id%3D19%253A12506"
-              allowfullscreen
-            ></iframe>
+        </div>
+      </div>
+      <!-- IMAGES FOR MOOD BOARD -->
+      <div class="">
+        <div class="container">
+          <div class="row-lg">
+            <div class="col-lg-6">
+              <img
+                class="shadow-default"
+                src="img/wild_camp/style-guide-1.png"
+                alt="moodboard-1"
+              />
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="shadow-default"
+                src="img/wild_camp/style-guide-2.png"
+                alt="moodboard 2"
+              />
+            </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Breakpoint Design -->
+      <div
+        id="final-ui-side-by-side"
+        class="color-block black-radial responsive-margin-top"
+        data-attr=""
+      >
+        <div class="row-lg responsive-padding-top-and-bottom-lg">
+          <!-- Wrapper -->
+          <div class="container col-lg-4">
+            <h2 class="center strip-margin">Breakpoint Design</h2>
+            <p>
+              As a final step, I identified breakpoints for the screens and
+              created an <strong>adaptive design</strong> that would look good
+              across all devices. I employed
+              <strong>progressive enhancement</strong> and adjusted layout
+              patterns as screen size grew. On large screen sizes for the search
+              results page, I arranged the list and map view to sit side by side
+              to <strong>allow users the benefits of both</strong>.
+            </p>
+          </div>
+          <picture class="col-lg-8-2 col-md-12">
+            <source
+              srcset="img/wild_camp/wc-multi-dev.png"
+              media="(max-width:800px)"
+            />
+            <img
+              class=""
+              src="img/wild_camp/wc-multi-dev@2x.png"
+              alt="wild camp responsive UI image"
+            />
+          </picture>
+        </div>
+      </div>
+      <!-- FINAL UI 2 -->
+      <div
+        class="color-block wc-light-teal-grad margin-top-white-remover"
+        id="final-ui"
+      >
+        <div class="container">
+          <p class="responsive-padding-top section-spacer">
+            When designing the homepage across breakpoints, I ensured that the
+            <strong
+              >&quot;Inspiration&quot; section appeared above the fold.</strong
+            >
+            Offering curated lists of destinations to users is a unique product
+            offering, and I wanted to make sure people were aware of it on their
+            first visit.
+          </p>
+          <picture class="">
+            <source
+              srcset="img/wild_camp/wc-finalui-2.png"
+              media="(max-width:800px)"
+            />
+            <img
+              class=""
+              src="img/wild_camp/wc-finalui-2@2x.png"
+              alt="wild camp responsive UI image"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <!-- Finalized Desings SECTION -->
+
+      <div class="row-lg white-bg" id="finalized-designs">
+        <!-- left side -->
+        <div class="paper-drop col-lg-5 container">
+          <div class="">
+            <h2 class="center-small responsive-margin-top">
+              Finalized Designs
+            </h2>
+            <p>
+              The final designs for Wild Camp demonstrated that the UI is
+              consistent and cohesive across the product. These screens
+              highlight how users can interact with the app to achieve their
+              goals and serve as the basis for developing a successful first
+              iteration of a live app.
+            </p>
+          </div>
+        </div>
+        <!-- right image side -->
+        <div class="">
+          <picture>
+            <source
+              srcset="img/wild_camp/final-all-screens.png"
+              media="(max-width:767px)"
+            />
+            <img
+              src="img/wild_camp/final-all-screens@2x.png"
+              alt="wild camp mobile all screens"
+            />
+          </picture>
         </div>
       </div>
 
       <!-- TAKEAWAYS SECTION -->
-      <div class="row-lg white-bg" id="takeaways">
+      <div class="row-lg white-bg white-slip-remover" id="takeaways">
         <!-- left side -->
         <div class="col-lg-6 drop-image-full">
           <!-- wrapper -->
           <div class="">
             <picture>
               <source
-                srcset="img/wine_match/takeaways-twoup.png"
-                media="(max-width:767px)"
+                srcset="img/wild_camp/wc-hand.jpg"
+                media="(max-width:605px)"
               />
               <img
                 class=""
-                src="img/wine_match/takeaways-twoup@2x.png"
+                src="img/wild_camp/wc-hand@2x.jpg"
                 alt="wine match final ui"
               />
             </picture>
           </div>
         </div>
         <!-- Right Side -->
-        <div class="paper-drop col-lg-6 container">
-          <div class="">
-            <h2 class="center-small responsive-margin-top">
-              Final Designs / Project Takeaways
-            </h2>
+        <div
+          class="paper-drop color-block wc-light-teal-grad col-lg-6 container"
+          id="takeaways-text"
+        >
+          <div class="inline-block">
+            <h2 class="center-small">Project Takeaways</h2>
             <p>
-              The final designs and prototypes for Wine Match show how users can
-              use this app in several ways to identify new wines they enjoy and
-              boost their knowledge and confidence when discussing wine.
+              I know from personal experience that researching and booking a
+              campsite online can be arduous, and it was interesting to address
+              this problem during this project. Some highlights from this
+              project were:
             </p>
-
-            <p>
-              Future improvements I would be interested in exploring include
-              using a unique typeface for the brand. In this MVP product, I
-              adhered to the design brief and stuck closely to Material's and
-              Apple's design guidelines, primarily using their native typefaces.
-            </p>
-
-            <p class="section-spacer">
-              Additionally, the addition of cellar-tracker tools in a future
-              iteration and location-based event suggestions could enrich the
-              product's offerings.
-            </p>
+            <ul>
+              <li>Project encompassed a complete UX / UI process.</li>
+              <li>
+                I identified how current products on the market were failing
+                users.
+              </li>
+              <li>
+                Users expressed a desire to filter results based on interest or
+                activities, and I featured this functionality prominently in the
+                final design.
+              </li>
+              <li>
+                Interviews revealed less experienced campers had low confidence
+                but a high motivation to engage in more advanced trips. I
+                designed a backcountry guide to aid these users.
+              </li>
+              <li>
+                I created an inspiration section on the homepage, which offers a
+                quick solution for users with a particular type of trip in mind,
+                and helps cut through the overwhelming amount of choice.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <!-- FINAL IMAGE -->
-      <div class="">
-        <picture class="full-bleed-image">
-          <source
-            srcset="img/wine_match/wm-all-screens.png"
-            media="(max-width:767px)"
-          />
-          <img
-            class="full-bleed-image white-slip-remover"
-            src="img/wine_match/wm-all-screens@2x.png"
-            alt="final screens mockup wine match"
-          />
-        </picture>
-      </div>
+      <!-- cutoff -->
+      <div class="cutoff"></div>
     </main>
 
     <!-- FOOTER SECTION -->
