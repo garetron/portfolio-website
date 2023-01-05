@@ -2270,5 +2270,9 @@ X-large devices (1234px or larger)
       margin-top: 53px;
       padding: 0;
     }
+
+    .hide-xl {
+      display: none;
+    }
   }
 }
