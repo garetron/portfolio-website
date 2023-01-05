@@ -58,6 +58,10 @@
 
   --shadow-500: 0px 4px 16px 0px #00000040;
 
+  --hero-height-lg: 382px;
+
+  --header-margin-sm: 382px;
+
   /* --primary: rgba(57, 65, 126, 1); */
 }
 
@@ -284,37 +288,60 @@ a:active {
     fill: #f4e0e5;
   }
   33% {
-    fill: #bd8c85;
+    /* fill: #bd8c85; */
+    fill: #e3ceca;
   }
   66% {
-    fill: #e8c3a2;
+    fill: #e7d1be;
   }
   100% {
-    fill: #cae8ed;
+    fill: #fff0e1;
   }
 }
 
-#sky-1 {
-  animation: 22s sky-color infinite alternate linear;
+@keyframes hero-wall-color {
+  0% {
+    background-color: #f4e0e5;
+  }
+  33% {
+    /* background-color: #bd8c85; */
+    background-color: #e3ceca;
+  }
+  66% {
+    background-color: #e7d1be;
+  }
+  100% {
+    background-color: #fff0e1;
+  }
 }
 
-#building-1 {
-  animation: 22s building-1-color infinite alternate linear;
+#sky-1,
+.sky-1 {
+  animation: 30s sky-color infinite alternate ease-out;
 }
 
-#building-2 {
-  animation: 22s building-2-color infinite alternate linear;
+#building-1,
+.building-1 {
+  animation: 30s building-1-color infinite alternate linear;
 }
 
-#statue [id*="Vector"] {
-  animation: 22s statue-color infinite alternate linear;
+#building-2,
+.building-2 {
+  animation: 30s building-2-color infinite alternate linear;
 }
 
-#wall {
-  animation: 22s wall-color infinite alternate linear;
+#statue [id*="Vector"],
+.statue path {
+  animation: 30s statue-color infinite alternate linear;
 }
 
-#cloud-1 {
+#wall,
+.wall {
+  animation: 22s wall-color infinite alternate ease-out;
+}
+
+#cloud-1,
+.cloud-1 {
   animation-duration: 15s;
   animation-name: cloud-1-move;
   animation-iteration-count: infinite;
@@ -324,19 +351,25 @@ a:active {
 
 #cloud-2,
 #cloud-1,
-#cloud-3 {
+#cloud-3,
+.cloud-1,
+.cloud-2,
+.cloud-3 {
   animation: 10s cloud-move-reverse infinite alternate linear;
 }
 
-#star-r {
+#star-r,
+.star-r {
   animation: 9s glimmer infinite alternate ease-in-out;
 }
 
-#star-ml {
+#star-ml,
+.star-ml {
   animation: 8s glimmer infinite alternate-reverse ease-in-out;
 }
 
-#star-bl {
+#star-bl,
+.star-bl {
   animation: 10s glimmer infinite alternate ease-in-out;
 }
 
@@ -463,11 +496,20 @@ a:active {
 }
 
 #hero {
+  margin-top: 65px;
   padding-top: 48px;
-  margin-top: 105px;
+  padding-bottom: 16px;
   display: inline-block;
   width: 100%;
   /* border-bottom: 1px solid var(--divider-gray) */
+}
+
+#about-hero {
+  margin-top: 65px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: inline-block;
+  width: 100%;
 }
 
 #project-hero {
@@ -1070,10 +1112,6 @@ nav ul li a {
   margin-right: auto;
 } */
 
-.hide-image-small {
-  display: none;
-}
-
 .center-image {
   margin-left: auto;
   margin-right: auto;
@@ -1166,7 +1204,7 @@ nav ul li a {
 
 #hero {
   margin-top: 65px;
-  padding-top: 48px;
+  /* padding-top: 48px; */
 }
 
 #project-hero {
@@ -1331,7 +1369,7 @@ hr {
 
 #index #hero p {
   margin-bottom: 0;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
 }
 
 .music-caption {
@@ -1402,6 +1440,38 @@ hr {
   margin-top: 0;
 }
 
+#hero .row {
+  display: block;
+}
+
+.hero-statue {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  padding-top: 32px;
+}
+
+.hide-image-small {
+  display: none;
+}
+
+.show-md {
+  display: none;
+}
+
+.enhanced-hero-section {
+  display: none;
+}
+
+.small-hero-section {
+  display: contents;
+}
+
 .logo-no-float {
   float: none;
 }
@@ -1410,6 +1480,28 @@ hr {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .hide-md {
+    display: none;
+  }
+  .show-md {
+    display: contents;
+  }
+  .hero-text {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--hero-height-lg);
+  }
+
+  .hero-bg {
+    height: var(--hero-height-lg);
+  }
+
+  #hero .row {
+    margin: 25px auto;
+  }
+
   .header-logo {
     height: 79px;
   }
@@ -1417,10 +1509,17 @@ Medium devices (640px and larger)
   #hero {
     margin-top: 79px;
     padding-top: 80px;
+    padding-bottom: 48px;
+  }
+
+  #about-hero {
+    margin-top: 79px;
+    padding-top: 32px;
+    padding-bottom: 0px;
   }
 
   #index #hero p {
-    padding-bottom: 80px;
+    padding-bottom: 32px;
   }
   #takeaways-text {
     float: none;
@@ -1595,7 +1694,7 @@ Medium devices (640px and larger)
   }
 
   .col-md-4 {
-    width: 33.3%;
+    width: 33%;
   }
 
   .col-md-6 {
@@ -1603,7 +1702,7 @@ Medium devices (640px and larger)
   }
 
   .col-md-8 {
-    width: 67%;
+    width: 66%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1725,6 +1824,10 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .hero-bg {
+    animation: 22s hero-wall-color infinite alternate ease-out;
+  }
+
   .color-block h2,
   .color-block-light h2 {
     margin: 0;
@@ -2170,8 +2273,24 @@ Large devices (1024px or larger)
   }
 
   /* ==============================
-X-large devices (1440px or larger)
+X-large devices (1234px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1234px) {
+    .enhanced-hero-section {
+      display: contents;
+    }
+
+    #index .small-hero-section {
+      display: none;
+    }
+
+    #hero {
+      margin-top: 53px;
+      padding: 0;
+    }
+
+    .hide-xl {
+      display: none;
+    }
   }
 }
