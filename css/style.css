@@ -317,7 +317,7 @@ a:active {
 
 #sky-1,
 .sky-1 {
-  animation: 30s sky-color infinite alternate linear;
+  animation: 30s sky-color infinite alternate ease-out;
 }
 
 #building-1,
@@ -330,14 +330,14 @@ a:active {
   animation: 30s building-2-color infinite alternate linear;
 }
 
-#statue,
-.statue [id*="Vector"] {
+#statue [id*="Vector"],
+.statue path {
   animation: 30s statue-color infinite alternate linear;
 }
 
 #wall,
 .wall {
-  animation: 22s wall-color infinite alternate linear;
+  animation: 22s wall-color infinite alternate ease-out;
 }
 
 #cloud-1,
@@ -502,6 +502,14 @@ a:active {
   display: inline-block;
   width: 100%;
   /* border-bottom: 1px solid var(--divider-gray) */
+}
+
+#about-hero {
+  margin-top: 65px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: inline-block;
+  width: 100%;
 }
 
 #project-hero {
@@ -1500,6 +1508,12 @@ Medium devices (640px and larger)
     padding-bottom: 48px;
   }
 
+  #about-hero {
+    margin-top: 79px;
+    padding-top: 32px;
+    padding-bottom: 0px;
+  }
+
   #index #hero p {
     padding-bottom: 32px;
   }
@@ -1807,7 +1821,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .hero-bg {
-    animation: 22s hero-wall-color infinite alternate linear;
+    animation: 22s hero-wall-color infinite alternate ease-out;
   }
 
   .color-block h2,
