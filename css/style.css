@@ -2288,5 +2288,10 @@ X-large devices (1234px or larger)
     .hide-xl {
       display: none;
     }
+
+    .index-nav {
+      animation: 22s hero-wall-color infinite alternate ease-out;
+      box-shadow: none;
+    }
   }
 }
