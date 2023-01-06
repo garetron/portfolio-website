@@ -36,6 +36,15 @@ $window.on("scroll", function () {
   }
 });
 
+//HEADER TRANSPARANT
+
+$window.on("scroll", function () {
+  var scrollTop = $window.scrollTop();
+  if (scrollTop > 100 && viewportWidth >= 1234) {
+    $(".index-nav").toggleClass("scrolled", scrollTop > 201);
+  }
+});
+
 $(".header-logo").hover(
   function () {
     console.log("yeah its working");
