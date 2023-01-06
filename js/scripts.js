@@ -36,6 +36,13 @@ $window.on("scroll", function () {
   }
 });
 
+$window.on("scroll", function () {
+  var scrollTop = $window.scrollTop();
+  if (scrollTop > 100 && viewportWidth > 1234) {
+    ($("header").toggleClass += "scrolled"), scrollTop > 101;
+  }
+});
+
 $(".header-logo").hover(
   function () {
     console.log("yeah its working");
