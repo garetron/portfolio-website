@@ -62,6 +62,8 @@
 
   --header-margin-sm: 382px;
 
+  --er-blue: #536285;
+
   /* --primary: rgba(57, 65, 126, 1); */
 }
 
@@ -745,6 +747,10 @@ nav ul li a {
   color: var(--wc-med-teal);
 }
 
+#event-render .intro-header {
+  color: var(--er-blue);
+}
+
 .caption {
   color: var(--caption-gray);
 }
@@ -834,6 +840,14 @@ nav ul li a {
   fill: var(--wc-med-teal);
 }
 
+#event-render .overview path {
+  fill: var(--er-blue);
+}
+
+#event-render #usability h4 {
+  color: var(--er-blue);
+}
+
 .wm-texture {
   background: linear-gradient(
     59.55deg,
@@ -854,6 +868,10 @@ nav ul li a {
 
 .wc-dark-teal {
   color: var(--wc-dark-teal);
+}
+
+.er-blue {
+  background: var(--er-blue);
 }
 
 .wc-dark-purple {

@@ -119,21 +119,25 @@
     <main class="project-page" id="event-render">
       <!-- HERO SECTION -->
       <!-- section -->
-      <div class="wc-teal-grad white-text" id="project-hero">
+      <div class="er-blue white-text" id="project-hero">
         <!-- wrapper -->
         <div class="container">
           <h1 class="center">Event Render</h1>
-          <h3 class="">Event Render Text.</h3>
+          <h3 class="">
+            Redesigning of the UI and information architecture of the web
+            application Event Render.
+          </h3>
           <!-- <img src="https://via.placeholder.com/608x536" alt="Otto hero Image"> -->
           <div class="hero-box">
             <picture>
               <source
-                srcset="img/wild_camp/wildcamp-cover-v2.jpg"
+                srcset="img/event_render/er-cover
+                .jpg"
                 media="(max-width:767px)"
               />
               <img
                 class=""
-                src="img/wild_camp/wildcamp-cover-v2@2x.jpg"
+                src="img/event_render/er-cover@2x.jpg"
                 alt="Wild Camp cover image"
               />
             </picture>
@@ -151,7 +155,13 @@
               <p class="tools-label"><strong>Context</strong></p>
               <ul class="">
                 <li>Case study</li>
-                <li>My Role: UX Designer</li>
+                <li>My Role: Product Designer</li>
+                <li>Timeframe: 2 months</li>
+                <li>Team:</li>
+                <ul>
+                  <li>Eric Westendorf - Founder</li>
+                  <li>Jeffrey Campbell - Developer</li>
+                </ul>
               </ul>
             </div>
 
@@ -160,15 +170,14 @@
               <p class="tools-label"><strong>Tools and skills used</strong></p>
               <ul>
                 <li>Figma</li>
-                <li>Competitive Analysis</li>
+                <li>Card Sorting</li>
                 <li>User Research</li>
-                <li>Affinity Mapping</li>
+                <li>Information Architecture</li>
                 <li>Wireframing</li>
                 <li>A/B Testing</li>
-                <li>Prototyping</li>
+                <li>Rapid Prototyping</li>
                 <li>Style Guide</li>
                 <li>Icon Design</li>
-                <li>Responsive Breakpoint Design</li>
               </ul>
             </div>
           </div>
@@ -225,17 +234,19 @@
               </div>
               <div class="center intro-sentence">
                 <h3 class="margin16">
-                  Building a web app to help users find and book campsites.
+                  A tool to create 3D renderings of live events.
                 </h3>
               </div>
               <p class="section-spacer intro-p">
-                My brief for this project was to create a location-based
-                responsive web app to aid users in finding and booking campsites
-                online. I began by exploring the problem space, conducting user
-                interviews to pinpoint the challenges that users face, and
-                developing iterative wireframes and prototypes. I arrived at a
-                final polished design after designing the brand, the icons, and
-                the overall user experience of this app.
+                Event Render is a 3D scene builder web application built in
+                Unreal Engine. Event companies use this application to create
+                renderings of the setup of future live events such as
+                conferences or performances. In the past this task would
+                typically be outsourced to an expert, often with a high price
+                tag, who would create professional renderings. Event Render
+                allows a client's in-house team to create renderings quickly and
+                easily. When I joined the project, Event Render was already live
+                with an active subscriber base.
               </p>
             </div>
           </div>
@@ -270,14 +281,15 @@
                 <h4 class="margin16">The Problem</h4>
               </div>
               <div class="center intro-sentence">
-                <h3 class="margin16">
-                  Finding and booking campsites online is challenging.
-                </h3>
+                <h3 class="margin16">A high learning curve.</h3>
               </div>
               <p class="section-spacer">
-                Users have to hop between different websites depending on
-                whether they want to see private, commercial, or government
-                campsites, and information about them is often thin.
+                Research and user interviews indicate that Event Render&apos;s
+                unique service is valuable to users. However, the development
+                process up to this point had focused on adding features, and
+                usability had taken a back seat. As a result, the software had a
+                high learning curve and required in-person tutorials and
+                in-depth video walkthroughs to understand how to use it.
               </p>
             </div>
           </div>
@@ -317,20 +329,591 @@
               </div>
               <div class="center intro-sentence">
                 <h3 class="margin16">
-                  Users want a streamlined search process.
+                  A more intuitive app = increased engagement.
                 </h3>
               </div>
               <p>
-                I had experienced how time-consuming the current process of
-                finding campgrounds could be. I guessed that users would highly
-                value a product that simplified this process and saved them
-                time.
+                Creating a more intuitive, learnable, and aesthetically pleasing
+                user interface would significantly improve the experience for
+                both current and new users. Our success metrics for this
+                included the following:
               </p>
+              <ul>
+                <li>Increase in new subscriptions.</li>
+                <li>
+                  Increased engagement with the app from current subscribers.
+                </li>
+                <li>A decreased necessity for one-on-one tutorials.</li>
+              </ul>
             </div>
           </div>
         </div>
         <!-- <hr class="solid"> -->
       </div>
+
+      <!-- SECTION START -->
+      <div data-aos="fade-up" data-aos-offset="150" class="" id="usability">
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              Usability Analysis
+            </h2>
+            <p>
+              I began by assessing the current state of the user interface of
+              Event Render. It was clear from the outset that employing
+              usability principles and Gestalt laws of grouping could
+              significantly improve how intuitive the app was.&nbsp;
+            </p>
+            <p>
+              The tools menu was a prime example, with all tools appearing next
+              to eachother without separation by group or function. Furthermore,
+              buttons used &quot;system&quot; or &quot;insider&quot; language,
+              which made their operations challenging to parse. Lastly, the
+              inconsistent use of icons and font size increased cognitive load
+              and visual clutter.&nbsp;
+            </p>
+            <h4 class="center strong">Recognition Rather Than Recall</h4>
+            <p>
+              I saw another clear opportunity for improvement with what I came
+              to call &quot;selection controls.&quot; These functions would
+              appear once a user had selected an object in their scene, allowing
+              them to toggle between sizes, group items, change the color, etc.
+              But as it stood all controls would appear when ANY object was
+              selected, regardless of whether they applied to the current
+              selection. Making the selection controls sensitive to context
+              would be a massive usability improvement since users could
+              immediately see and understand the relevant tools available to
+              their current selection.&nbsp;
+            </p>
+            <h4 class="center">Accessibility</h4>
+            <p>
+              Lastly, some images and text were too small to be able to see or
+              read clearly. Ensuring these were an accessible size would be an
+              essential consideration during the redesign. This presented a
+              challenge because the app was rendered at a fixed resolution on
+              the server and then streamed to the user&apos;s computer. I
+              decided to ensure components were easily viewable at 15&quot;
+              screen size and up, based on data from current users.
+            </p>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg flex-row-md padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION END -->
+
+      <!-- SECTION START -->
+      <div data-aos="fade-up" data-aos-offset="150" class="" id="ux">
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              Information Architecture / Navigation
+            </h2>
+            <p>
+              I began to rethink all the menus to incorporate more navigation
+              structure and grouping principles. I conducted a&nbsp;<strong
+                >card-sorting exercise&nbsp;</strong
+              >to evaluate how to group different tools. I used this as a
+              starting point for conversations with the team, where we started
+              redefining the platform&apos;s navigation structure.&nbsp;
+            </p>
+
+            <p>We arrived at 5 distinct navigation groups.</p>
+            <p>The first contains utilities:</p>
+            <ul>
+              <li>Render</li>
+              <li>Save</li>
+              <li>Undo</li>
+              <li>Shortcuts</li>
+              <li>Help</li>
+            </ul>
+            <p>
+              The &quot;tools menu&quot; encompasses all preferences and tools
+              not tied to a current selection.
+            </p>
+            <ul>
+              <li>View Controls</li>
+              <li>Selection Preferences</li>
+              <li>Measure / Markup</li>
+              <li>Visual Preferences</li>
+            </ul>
+            <p>
+              The &quot;Selection Controls&quot; menu presents all functions
+              relevant to the current selection.&nbsp;
+            </p>
+            <ul>
+              <li>Screen size / truss size</li>
+              <li>Group / Ungroup items</li>
+              <li>Set dimensions L x W x H</li>
+              <li>Image settings Move / Stretch / Scale</li>
+              <li>Movement snap settings</li>
+            </ul>
+            <p>
+              The &quot;Lighting Controls&quot; menu presents all controls and
+              functions for adjusting stage lights and screens.&nbsp;
+            </p>
+            <ul>
+              <li>Light brightness / Screen brightness</li>
+              <li>Color</li>
+              <li>Cone Angle</li>
+              <li>Venue Lights / Uplights / Selected Light</li>
+            </ul>
+            <p>
+              Finally, the &quot;Build&quot; menu encompassed the tools that
+              allow users to add objects to their scene, and manipulate the
+              space.&nbsp;
+            </p>
+            <ul>
+              <li>Add Object</li>
+              <li>Add Image</li>
+              <li>Templates</li>
+              <li>Build Tool (Room size, Quick-Start)</li>
+            </ul>
+
+            <p>
+              We sorted the tools menu into a tab navigation format, which made
+              the scope of available options much more apparent, as well as
+              where to find them. Similarly, for selection controls, we decided
+              which tools should be available for each kind of item that a user
+              selects. For instance, if a user selects a truss, the
+              &quot;size&quot; button appears to cycle through preset lengths.
+              If multiple items are selected, the &quot;group items&quot; button
+              appears, and so on.
+            </p>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg flex-row-md padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION END -->
+
+      <!-- SECTION START -->
+      <div data-aos="fade-up" data-aos-offset="150" class="" id="ux">
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              Drawing Inspiration / Design Patterns
+            </h2>
+            <p>
+              I looked at design patterns used in various other room-builder
+              software to draw inspiration and ensure that the format would feel
+              familiar to new users of Event Render. We took a page out of the
+              UI design of several video games and decided to explore putting
+              the addable objects at the bottom of the screen instead of on the
+              left edge. Doing this would leave more horizontal space clear,
+              which research has shown was more valuable than vertical space
+              when using the software.
+            </p>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg flex-row-md padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION END -->
+
+      <!-- SECTION START -->
+      <div data-aos="fade-up" data-aos-offset="150" class="">
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              Rapid Prototyping
+            </h2>
+            <p>
+              I then led a design sprint with the team, where we quickly mocked
+              up various layouts for the new user interface. I completed this in
+              medium-fidelity since it was essential to convey to stakeholders
+              that the new designs would improve the current design format. We
+              discussed what was working and not working and refined these
+              options into a shortlist, which were then dot-voted.
+            </p>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg flex-row-md padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION END -->
+
+      <!-- SECTION START -->
+      <div data-aos="fade-up" data-aos-offset="150" class="">
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              Interactive Prototype / User Testing
+            </h2>
+            <p>
+              I created an interactive prototype in Figma to conduct tests with
+              current app users. The testing exposed no major usability issues,
+              but it was valuable for validating design choices. Users
+              appreciated the new navigation structure, how controls appeared
+              based on context, and the overall aesthetic.
+            </p>
+            <p>
+              Even in the limited scope of the test, users discovered tools they
+              had yet to realize existed, even though the functionality was not
+              new. This was excellent validation that the redesign would allow
+              the software to be more learnable and intuitive.
+            </p>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg flex-row-md padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION END -->
+
+      <!-- SECTION START -->
+      <div data-aos="fade-up" data-aos-offset="150" class="">
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              Final Designs
+            </h2>
+            <p>
+              The final designs for a new iteration of Event Render incorporated
+              findings from the usability analysis, card sorting, prototyping,
+              and user testing.
+            </p>
+            <p>
+              I grouped tools and menus onto separate panels to indicate their
+              different functionalities. We decided to implement floating,
+              minimal panels that would obscure the viewable area of the scene
+              as little as possible. I also created the UI in dark mode to avoid
+              drawing focus too much from the scene.
+            </p>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg flex-row-md padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION END -->
+
+      <!-- SECTION START -->
+      <div data-aos="fade-up" data-aos-offset="150" class="">
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              Style Guidelines
+            </h2>
+            <p>
+              I created a comprehensive style guidelines document for the
+              development team. In addition to implementing icons, color,
+              typography, and shadows, I detailed best practices for all menus
+              and how and when to use different variants.
+            </p>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg flex-row-md padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION END -->
+
+      <!-- SECTION START -->
+      <div data-aos="fade-up" data-aos-offset="150" class="">
+        <!-- Top Section -->
+        <div class="container">
+          <!-- wrapper -->
+          <div class="">
+            <h2 class="otto-headers-whitebg responsive-margin-top-and-bottom">
+              Project Takeaways
+            </h2>
+            <p>
+              Redesigning Event Render allowed me to take a product already
+              offering value to its users and significantly improve the user
+              experience. I found this very rewarding, and I enjoyed the
+              challenges of working on a complex application with deep and
+              complicated features. The development team is implementing the new
+              design, and I look forward to evaluating success metrics after it
+              launches.&nbsp;
+            </p>
+            <p>Highlights from this project included:</p>
+            <ul>
+              <li>
+                Working closely with the founder and development team throughout
+                the process.&nbsp;
+              </li>
+              <li>
+                Evaluating the usability of a live application with a deep
+                feature set.&nbsp;
+              </li>
+              <li>
+                Rethinking the navigation structure from the ground up.&nbsp;
+              </li>
+              <li>
+                Identifying and simplifying &quot;insider&quot; or
+                &quot;system&quot; language and concepts.
+              </li>
+              <li>
+                Designing a new interface that is sleek, minimal, and easy to
+                use.&nbsp;
+              </li>
+              <li>
+                Applying a consistent style set of icons, typography, and
+                color.&nbsp;
+              </li>
+              <li>
+                Articulating a new design system for using color, with different
+                levels of gray, green, and blue used only in certain instances.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bottom Image section -->
+        <div class="responsive-padding-top">
+          <!-- wrapper -->
+          <div class="container center row-lg flex-row-md padding-spacer-32">
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-a.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-a@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source
+                  srcset="img/wild_camp/wc-comp-b.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="img-800-max"
+                  src="img/wild_camp/wc-comp-b@2x.png"
+                  alt="competitive analysis"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION END -->
     </main>
 
     <!-- FOOTER SECTION -->
