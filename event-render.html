@@ -352,7 +352,12 @@
       </div>
 
       <!-- SECTION START -->
-      <div data-aos="fade-up" data-aos-offset="150" class="" id="usability">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="150"
+        class="section-start"
+        id="usability"
+      >
         <!-- Top Section -->
         <div class="container">
           <!-- wrapper -->
@@ -366,29 +371,52 @@
               usability principles and Gestalt laws of grouping could
               significantly improve how intuitive the app was.&nbsp;
             </p>
+            <!-- OLD UI IMAGE -->
+            <div class="">
+              <!-- wrapper -->
+              <div class="container center row-lg flex-row-md">
+                <div class="col-md-12">
+                  <picture>
+                    <source
+                      srcset="img/event_render/original-ui.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class=""
+                      src="img/event_render/original-ui@2x.png"
+                      alt="UX analysis"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <p class="caption center">
+                The existing UI of Event Render (above) suffered from a number
+                of usability issues, lack of consistency, and visual clutter.
+              </p>
+            </div>
             <p>
-              The tools menu was a prime example, with all tools appearing next
-              to eachother without separation by group or function. Furthermore,
-              buttons used &quot;system&quot; or &quot;insider&quot; language,
-              which made their operations challenging to parse. Lastly, the
-              inconsistent use of icons and font size increased cognitive load
-              and visual clutter.&nbsp;
+              The tools menu (upper-right) was a prime example, with all tools
+              appearing next to eachother without separation by group or
+              function. Furthermore, buttons used &quot;system&quot; or
+              &quot;insider&quot; language, which made their operations
+              challenging to parse. Lastly, the inconsistent use of icons, font
+              size, and color increased cognitive load and visual clutter.&nbsp;
             </p>
-            <h4 class="center strong">Recognition Rather Than Recall</h4>
+            <h4 class="center">Context is Everything</h4>
             <p>
               I saw another clear opportunity for improvement with what I came
-              to call &quot;selection controls.&quot; These functions would
-              appear once a user had selected an object in their scene, allowing
-              them to toggle between sizes, group items, change the color, etc.
-              But as it stood all controls would appear when ANY object was
-              selected, regardless of whether they applied to the current
-              selection. Making the selection controls sensitive to context
-              would be a massive usability improvement since users could
+              to call &quot;selection controls&quot; (right screen edge). These
+              functions would appear once a user had selected an object in their
+              scene, allowing them to toggle between sizes, group items, change
+              the color, etc. But as it stood all controls would appear when ANY
+              object was selected, regardless of whether they applied to the
+              current selection. Making the selection controls sensitive to
+              context would be a massive usability improvement since users could
               immediately see and understand the relevant tools available to
-              their current selection.&nbsp;
+              their current selection.
             </p>
             <h4 class="center">Accessibility</h4>
-            <p>
+            <p class="padding-spacer-32">
               Lastly, some images and text were too small to be able to see or
               read clearly. Ensuring these were an accessible size would be an
               essential consideration during the redesign. This presented a
@@ -399,37 +427,32 @@
             </p>
           </div>
         </div>
-        <!-- Bottom Image section -->
-        <div class="responsive-padding-top">
+        <!-- Image section -->
+
+        <!-- DOCUMENT IMAGE -->
+        <div class="">
           <!-- wrapper -->
-          <div class="container center row-lg flex-row-md padding-spacer-32">
+          <div
+            class="container center row-lg flex-row-md responsive-margin-top"
+          >
             <div class="col-md-6">
               <picture>
                 <source
-                  srcset="img/wild_camp/wc-comp-a.png"
+                  srcset="img/event_render/ux-analysis.png"
                   media="(max-width:767px)"
                 />
                 <img
-                  class="img-800-max"
-                  src="img/wild_camp/wc-comp-a@2x.png"
-                  alt="competitive analysis"
-                />
-              </picture>
-            </div>
-            <div class="col-md-6">
-              <picture>
-                <source
-                  srcset="img/wild_camp/wc-comp-b.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  class="img-800-max"
-                  src="img/wild_camp/wc-comp-b@2x.png"
-                  alt="competitive analysis"
+                  class="img-800-max paper-document"
+                  src="img/event_render/ux-analysis@2x.png"
+                  alt="UX analysis"
                 />
               </picture>
             </div>
           </div>
+          <p class="caption center">
+            A usability analysis document (above) was created as a first step in
+            this process
+          </p>
         </div>
       </div>
       <!-- SECTION END -->
@@ -452,8 +475,8 @@
               redefining the platform&apos;s navigation structure.&nbsp;
             </p>
 
-            <p>We arrived at 5 distinct navigation groups.</p>
-            <p>The first contains utilities:</p>
+            <p>We arrived at <strong>5 distinct navigation groups.</strong></p>
+            <p>The first contains <strong>utilities:</strong></p>
             <ul>
               <li>Render</li>
               <li>Save</li>
@@ -462,8 +485,8 @@
               <li>Help</li>
             </ul>
             <p>
-              The &quot;tools menu&quot; encompasses all preferences and tools
-              not tied to a current selection.
+              The <strong>tools menu</strong> encompasses all preferences and
+              tools not tied to a current selection.
             </p>
             <ul>
               <li>View Controls</li>
@@ -472,8 +495,8 @@
               <li>Visual Preferences</li>
             </ul>
             <p>
-              The &quot;Selection Controls&quot; menu presents all functions
-              relevant to the current selection.&nbsp;
+              The <strong>selection controls</strong> menu presents all
+              functions relevant to the current selection.&nbsp;
             </p>
             <ul>
               <li>Screen size / truss size</li>
@@ -483,8 +506,8 @@
               <li>Movement snap settings</li>
             </ul>
             <p>
-              The &quot;Lighting Controls&quot; menu presents all controls and
-              functions for adjusting stage lights and screens.&nbsp;
+              The <strong>lighting controls</strong> menu presents all controls
+              and functions for adjusting stage lights and screens.&nbsp;
             </p>
             <ul>
               <li>Light brightness / Screen brightness</li>
@@ -493,8 +516,8 @@
               <li>Venue Lights / Uplights / Selected Light</li>
             </ul>
             <p>
-              Finally, the &quot;Build&quot; menu encompassed the tools that
-              allow users to add objects to their scene, and manipulate the
+              Finally, the <strong>build menu</strong> encompassed the tools
+              that allow users to add objects to their scene, and manipulate the
               space.&nbsp;
             </p>
             <ul>
@@ -517,42 +540,38 @@
           </div>
         </div>
         <!-- Bottom Image section -->
-        <div class="responsive-padding-top">
+        <div class="margin-top-32">
           <!-- wrapper -->
-          <div class="container center row-lg flex-row-md padding-spacer-32">
-            <div class="col-md-6">
+          <div class="container center row-lg flex-row-md">
+            <div class="">
               <picture>
                 <source
-                  srcset="img/wild_camp/wc-comp-a.png"
+                  srcset="img/event_render/ia.png"
                   media="(max-width:767px)"
                 />
                 <img
-                  class="img-800-max"
-                  src="img/wild_camp/wc-comp-a@2x.png"
-                  alt="competitive analysis"
-                />
-              </picture>
-            </div>
-            <div class="col-md-6">
-              <picture>
-                <source
-                  srcset="img/wild_camp/wc-comp-b.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  class="img-800-max"
-                  src="img/wild_camp/wc-comp-b@2x.png"
-                  alt="competitive analysis"
+                  class="paper-document"
+                  src="img/event_render/ia@2x.png"
+                  alt="UX analysis"
                 />
               </picture>
             </div>
           </div>
+          <p class="caption center">
+            The findings from the card sorting exercise were sythesized into a
+            user flow diagram, which guided the rest of the design process.
+          </p>
         </div>
       </div>
       <!-- SECTION END -->
 
       <!-- SECTION START -->
-      <div data-aos="fade-up" data-aos-offset="150" class="" id="ux">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="150"
+        class="section-start"
+        id="patterns"
+      >
         <!-- Top Section -->
         <div class="container">
           <!-- wrapper -->
@@ -573,42 +592,46 @@
           </div>
         </div>
         <!-- Bottom Image section -->
-        <div class="responsive-padding-top">
+        <div class="padding-top">
           <!-- wrapper -->
-          <div class="container center row-lg flex-row-md padding-spacer-32">
-            <div class="col-md-6">
+          <div class="container center row-lg flex-row-md stack-images">
+            <div class="col-md-8">
               <picture>
                 <source
-                  srcset="img/wild_camp/wc-comp-a.png"
+                  srcset="img/event_render/ui_example_1.jpg"
                   media="(max-width:767px)"
                 />
                 <img
                   class="img-800-max"
-                  src="img/wild_camp/wc-comp-a@2x.png"
-                  alt="competitive analysis"
+                  src="img/event_render/ui_example_1@2x.jpg"
+                  alt="ui patterns"
                 />
               </picture>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
               <picture>
                 <source
-                  srcset="img/wild_camp/wc-comp-b.png"
+                  srcset="img/event_render/ui_example_2.jpg"
                   media="(max-width:767px)"
                 />
                 <img
                   class="img-800-max"
-                  src="img/wild_camp/wc-comp-b@2x.png"
-                  alt="competitive analysis"
+                  src="img/event_render/ui_example_2@2x.jpg"
+                  alt="Ui patterns 2"
                 />
               </picture>
             </div>
           </div>
+          <p class="caption center strip-margin">
+            UI pattern examples from scene-building games were used in research
+            the phase.
+          </p>
         </div>
       </div>
       <!-- SECTION END -->
 
       <!-- SECTION START -->
-      <div data-aos="fade-up" data-aos-offset="150" class="">
+      <div data-aos="fade-up" data-aos-offset="150" class="section-start">
         <!-- Top Section -->
         <div class="container">
           <!-- wrapper -->
@@ -627,42 +650,50 @@
           </div>
         </div>
         <!-- Bottom Image section -->
-        <div class="responsive-padding-top">
+        <div class="">
           <!-- wrapper -->
-          <div class="container center row-lg flex-row-md padding-spacer-32">
-            <div class="col-md-6">
+          <div class="container center row-lg flex-row-md stack-images">
+            <div class="col-md-12">
               <picture>
                 <source
-                  srcset="img/wild_camp/wc-comp-a.png"
+                  srcset="img/event_render/rapid-prot-1.png"
                   media="(max-width:767px)"
                 />
                 <img
-                  class="img-800-max"
-                  src="img/wild_camp/wc-comp-a@2x.png"
-                  alt="competitive analysis"
+                  class=""
+                  src="img/event_render/rapid-prot-1@2x.png"
+                  alt="rapid prototypes in mid fidelity"
                 />
               </picture>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
               <picture>
                 <source
-                  srcset="img/wild_camp/wc-comp-b.png"
+                  srcset="img/event_render/rapid-prot-2.png"
                   media="(max-width:767px)"
                 />
                 <img
-                  class="img-800-max"
-                  src="img/wild_camp/wc-comp-b@2x.png"
-                  alt="competitive analysis"
+                  class=""
+                  src="img/event_render/rapid-prot-2@2x.png"
+                  alt="rapid prototypes in mid fidelity"
                 />
               </picture>
             </div>
           </div>
+          <p class="caption center">
+            Mid-fidelity rapid prototypes were made during a design sprint to
+            quickly test and validate various layout options.
+          </p>
         </div>
       </div>
       <!-- SECTION END -->
 
       <!-- SECTION START -->
-      <div data-aos="fade-up" data-aos-offset="150" class="">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="150"
+        class="section-start color-block er-blue"
+      >
         <!-- Top Section -->
         <div class="container">
           <!-- wrapper -->
@@ -683,45 +714,24 @@
               new. This was excellent validation that the redesign would allow
               the software to be more learnable and intuitive.
             </p>
+            <div class="center">
+              <p>
+                <a
+                  href="https://www.figma.com/proto/0pNgwQd4DatwiS9k3CWKDG/EventRender-(Hi-Fid-Prototype)?page-id=401%3A6062&node-id=401%3A6443&viewport=586%2C823%2C0.23&scaling=contain&starting-point-node-id=401%3A6443"
+                  target="_blank"
+                  class="button-white center"
+                  >View Prototype</a
+                >
+              </p>
+            </div>
           </div>
         </div>
         <!-- Bottom Image section -->
-        <div class="responsive-padding-top">
-          <!-- wrapper -->
-          <div class="container center row-lg flex-row-md padding-spacer-32">
-            <div class="col-md-6">
-              <picture>
-                <source
-                  srcset="img/wild_camp/wc-comp-a.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  class="img-800-max"
-                  src="img/wild_camp/wc-comp-a@2x.png"
-                  alt="competitive analysis"
-                />
-              </picture>
-            </div>
-            <div class="col-md-6">
-              <picture>
-                <source
-                  srcset="img/wild_camp/wc-comp-b.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  class="img-800-max"
-                  src="img/wild_camp/wc-comp-b@2x.png"
-                  alt="competitive analysis"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
       </div>
       <!-- SECTION END -->
 
       <!-- SECTION START -->
-      <div data-aos="fade-up" data-aos-offset="150" class="">
+      <div data-aos="fade-up" data-aos-offset="150" class="section-start">
         <!-- Top Section -->
         <div class="container">
           <!-- wrapper -->
@@ -779,7 +789,7 @@
       <!-- SECTION END -->
 
       <!-- SECTION START -->
-      <div data-aos="fade-up" data-aos-offset="150" class="">
+      <div data-aos="fade-up" data-aos-offset="150" class="section-start">
         <!-- Top Section -->
         <div class="container">
           <!-- wrapper -->
@@ -831,7 +841,7 @@
       <!-- SECTION END -->
 
       <!-- SECTION START -->
-      <div data-aos="fade-up" data-aos-offset="150" class="">
+      <div data-aos="fade-up" data-aos-offset="150" class="section-start">
         <!-- Top Section -->
         <div class="container">
           <!-- wrapper -->
