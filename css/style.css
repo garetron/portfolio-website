@@ -62,6 +62,8 @@
 
   --header-margin-sm: 382px;
 
+  --er-blue: #536285;
+
   /* --primary: rgba(57, 65, 126, 1); */
 }
 
@@ -385,29 +387,59 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: var(--primary);
+  /* background-color: #fff; */
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  color: white;
+  background-color: var(--primary);
+  font-weight: 400;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  /* box-shadow: 19px 35px 16px rgba(0, 0, 0, 0.01),
+    11px 20px 13px rgba(0, 0, 0, 0.05), 5px 9px 10px rgba(0, 0, 0, 0.09),
+    1px 2px 5px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: var(--shadow-500); */
+  transition: 0.2s color, 0.1s box-shadow;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #26a1a1;
+  /* border: 1px solid rgba(0, 0, 0, 0); */
+  color: #ffffff;
+  box-shadow: 0px 4px 16px 0px #315151;
+  text-decoration: none;
+}
+
+.button-white {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  /* background-color: #fff; */
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  color: var(--default-gray);
+  background-color: white;
   font-weight: 500;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
+  margin-top: 32px;
   /* box-shadow: 19px 35px 16px rgba(0, 0, 0, 0.01),
     11px 20px 13px rgba(0, 0, 0, 0.05), 5px 9px 10px rgba(0, 0, 0, 0.09),
     1px 2px 5px rgba(0, 0, 0, 0.1); */
-  box-shadow: var(--shadow-500);
-  transition: 0.2s color;
-  transition: 0.2s background-color;
+  /* box-shadow: var(--shadow-500); */
+  transition: 0.1s color, 0.1s box-shadow;
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--primary);
-  border: 1px solid rgba(0, 0, 0, 0);
+.button-white:hover,
+.button-white:focus {
+  background-color: #26a1a1;
+  /* border: 1px solid rgba(0, 0, 0, 0); */
   color: #ffffff;
-  box-shadow: 0px 4px 16px 0px #233c3c;
+  box-shadow: 0px 4px 16px 0px #315151;
   text-decoration: none;
 }
 
@@ -745,8 +777,17 @@ nav ul li a {
   color: var(--wc-med-teal);
 }
 
+#event-render .intro-header {
+  color: var(--er-blue);
+}
+
 .caption {
   color: var(--caption-gray);
+}
+
+#event-render .caption {
+  margin-top: 16px;
+  margin-bottom: 48px;
 }
 
 /*
@@ -834,6 +875,16 @@ nav ul li a {
   fill: var(--wc-med-teal);
 }
 
+#event-render .overview path {
+  fill: var(--er-blue);
+}
+
+#event-render #usability h4 {
+  color: var(--er-blue);
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
 .wm-texture {
   background: linear-gradient(
     59.55deg,
@@ -854,6 +905,10 @@ nav ul li a {
 
 .wc-dark-teal {
   color: var(--wc-dark-teal);
+}
+
+.er-blue {
+  background: var(--er-blue);
 }
 
 .wc-dark-purple {
@@ -933,6 +988,10 @@ nav ul li a {
   margin-right: 3%;
   z-index: 4;
   /* margin-bottom: 32px; */
+}
+
+.paper-document {
+  box-shadow: 0px 8px 16px 0px #00000040;
 }
 
 .shadow-wrapper {
@@ -1476,10 +1535,64 @@ hr {
   float: none;
 }
 
+.stack-images {
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.section-start {
+  margin-top: 104px;
+}
+
+#index img {
+  border-radius: 20px;
+}
+
+.title-caption {
+  margin-bottom: 48px;
+  margin-top: 16px;
+  padding: 0px;
+}
+.ia-group {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.ia-post-it {
+  box-shadow: -4px 17px 26px rgba(0, 0, 0, 0.25);
+  padding: 2px;
+  width: 100%;
+  background-color: #fffbd8;
+  margin: 0 auto;
+}
+
+.ia-post-it ul {
+  padding-top: 4px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .ia-group {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  .ia-post-it {
+    box-shadow: -4px 17px 26px rgba(0, 0, 0, 0.25);
+    padding: 2px;
+    width: 350px;
+    background-color: #fffbd8;
+    margin: 0 auto;
+  }
+
+  .ia-post-it ul {
+    padding-top: 4px;
+  }
+
   .hide-md {
     display: none;
   }
@@ -1824,6 +1937,10 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .overview .container {
+    width: 50%;
+  }
+
   .hero-bg {
     animation: 22s hero-wall-color infinite alternate ease-out;
   }
