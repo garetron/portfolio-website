@@ -1548,10 +1548,51 @@ hr {
   border-radius: 20px;
 }
 
+.title-caption {
+  margin-bottom: 48px;
+  margin-top: 16px;
+  padding: 0px;
+}
+.ia-group {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.ia-post-it {
+  box-shadow: -4px 17px 26px rgba(0, 0, 0, 0.25);
+  padding: 2px;
+  width: 100%;
+  background-color: #fffbd8;
+  margin: 0 auto;
+}
+
+.ia-post-it ul {
+  padding-top: 4px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .ia-group {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  .ia-post-it {
+    box-shadow: -4px 17px 26px rgba(0, 0, 0, 0.25);
+    padding: 2px;
+    width: 350px;
+    background-color: #fffbd8;
+    margin: 0 auto;
+  }
+
+  .ia-post-it ul {
+    padding-top: 4px;
+  }
+
   .hide-md {
     display: none;
   }
@@ -1896,6 +1937,10 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .overview .container {
+    width: 50%;
+  }
+
   .hero-bg {
     animation: 22s hero-wall-color infinite alternate ease-out;
   }
