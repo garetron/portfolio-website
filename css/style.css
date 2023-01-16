@@ -42,7 +42,8 @@
   --header-solid: rgba(249, 249, 249, 1);
   /* --primary: rgba(14, 113, 127, 1); */
   /* --primary: rgba(24, 163, 163, 1); */
-  --primary: rgba(20, 130, 130, 1);
+  --primary: #e2dcff;
+  --primary-text: #391c58;
   --primary-light: rgba(24, 163, 163, 0.6);
   --beige: rgba(238, 230, 214, 1);
   --light-cyan: rgba(244, 255, 255, 1);
@@ -142,7 +143,7 @@ a:focus {
 
 nav li a:hover {
   background-color: var(--primary);
-  color: white;
+  color: var(--primary-text);
 }
 
 nav li a:focus {
@@ -164,6 +165,24 @@ nav li a {
 a:active {
   /* selected link */
   color: var(--primary);
+}
+
+@keyframes move-image {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes scale-image {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 
 @keyframes star-color {
@@ -389,7 +408,7 @@ a:active {
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   /* background-color: #fff; */
   /* border: 1px solid rgba(0, 0, 0, 0.1); */
-  color: white;
+  color: var(--primary-text);
   background-color: var(--primary);
   font-weight: 400;
   padding-left: 32px;
@@ -406,10 +425,11 @@ a:active {
 
 .button:hover,
 .button:focus {
-  background-color: #26a1a1;
+  /* background-color: #26a1a1; */
   /* border: 1px solid rgba(0, 0, 0, 0); */
-  color: #ffffff;
-  box-shadow: 0px 4px 16px 0px #315151;
+  /* color: #ffffff; */
+  box-shadow: 0px 4px 16px 0px var(--primary-text);
+  opacity: 85%;
   text-decoration: none;
 }
 
@@ -445,10 +465,10 @@ a:active {
 
 .button-contact {
   /* color: #4a4a4a; */
-  text-transform: uppercase;
-  color: var(--primary);
-  background-color: var(--primary);
-  color: #ffffff;
+  border-radius: 10px;
+  text-transform: none;
+  color: white;
+  background-color: var(--primary-text);
   /* border: 2px solid var(--primary); */
   padding-left: 32px;
   padding-right: 32px;
@@ -456,14 +476,14 @@ a:active {
   padding-bottom: 10px;
   display: inline-block;
   font-weight: 500;
-  transition: background-color 0.5s, color 0.3s;
+  transition: background-color 0.1s, color 0.1s;
 }
 
 .button-contact:hover,
 .button-contact:focus {
-  background-color: var(--primary-light);
+  background-color: var(--primary);
   /* color: var(--default-gray); */
-  color: white;
+  color: var(--primary-text);
   text-decoration: none;
 }
 
@@ -621,7 +641,8 @@ header.hidden {
 }
 
 .header-logo:hover {
-  color: var(--primary);
+  color: var(--primary-text);
+  opacity: 60%;
 }
 
 .header-logo img {
@@ -1282,7 +1303,7 @@ nav ul li a {
 }
 
 li i {
-  color: var(--primary);
+  color: var(--primary-text);
   transition: all 0.2s;
 }
 
@@ -1546,6 +1567,11 @@ hr {
 
 #index img {
   border-radius: 20px;
+}
+
+#index img:hover {
+  animation: 0.2s move-image ease-in-out forwards;
+  box-shadow: var(--shadow-500);
 }
 
 .title-caption {
@@ -2430,12 +2456,12 @@ X-large devices (1234px or larger)
 
     .index-nav li a:hover {
       background-color: white;
-      color: var(--primary);
+      color: var(--primary-text);
     }
 
     .scrolled li a:hover {
       background-color: var(--primary);
-      color: white;
+      color: var(--primary-text);
     }
   }
 }
