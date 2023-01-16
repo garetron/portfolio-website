@@ -42,8 +42,8 @@
   --header-solid: rgba(249, 249, 249, 1);
   /* --primary: rgba(14, 113, 127, 1); */
   /* --primary: rgba(24, 163, 163, 1); */
-  --primary: #ead3ff;
-  --primary-text: #40255a;
+  --primary: #e2dcff;
+  --primary-text: #391c58;
   --primary-light: rgba(24, 163, 163, 0.6);
   --beige: rgba(238, 230, 214, 1);
   --light-cyan: rgba(244, 255, 255, 1);
@@ -466,7 +466,7 @@ a:active {
 .button-contact {
   /* color: #4a4a4a; */
   border-radius: 10px;
-  text-transform: uppercase;
+  text-transform: none;
   color: white;
   background-color: var(--primary-text);
   /* border: 2px solid var(--primary); */
@@ -476,7 +476,7 @@ a:active {
   padding-bottom: 10px;
   display: inline-block;
   font-weight: 500;
-  transition: background-color 0.5s, color 0.3s;
+  transition: background-color 0.1s, color 0.1s;
 }
 
 .button-contact:hover,
@@ -641,7 +641,8 @@ header.hidden {
 }
 
 .header-logo:hover {
-  color: var(--primary);
+  color: var(--primary-text);
+  opacity: 60%;
 }
 
 .header-logo img {
